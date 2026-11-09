@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c2b" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c59b53" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#141c2b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#heroGrad)" />
+  <circle cx="800" cy="350" r="500" fill="url(#goldGlow)" />
+  <text x="800" y="450" fill="#c59b53" font-family="'Playfair Display', serif" font-size="42" font-weight="600" text-anchor="middle" letter-spacing="4">
+    RENOVA FACE
+  </text>
+  <text x="800" y="500" fill="#ffffff" opacity="0.6" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" text-anchor="middle" letter-spacing="2">
+    FOTO DE DESTAQUE DO ESPAÇO / CLÍNICA
+  </text>
+</svg>

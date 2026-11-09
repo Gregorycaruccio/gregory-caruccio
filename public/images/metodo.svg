@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="metodoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f2eb" />
+      <stop offset="100%" stop-color="#e8e2d5" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#metodoGrad)" rx="24" />
+  <circle cx="400" cy="270" r="100" fill="#c59b53" opacity="0.15" />
+  <path d="M370 270 L390 290 L440 240" fill="none" stroke="#c59b53" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <text x="400" y="420" fill="#8c6a2c" font-family="'Playfair Display', serif" font-size="28" font-weight="600" text-anchor="middle">
+    Foto do Procedimento / Estrutura
+  </text>
+  <text x="400" y="460" fill="#71717a" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" text-anchor="middle">
+    (Ambiente da clínica ou atendimento guiado)
+  </text>
+</svg>

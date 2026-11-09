@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="doresGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" />
+      <stop offset="100%" stop-color="#eedfc8" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#doresGrad)" rx="24" />
+  <circle cx="400" cy="450" r="180" fill="#c59b53" opacity="0.15" />
+  <path d="M400 350 C450 350 490 390 490 440 C490 510 400 580 400 580 C400 580 310 510 310 440 C310 390 350 350 400 350 Z" fill="none" stroke="#c59b53" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="660" fill="#8c6a2c" font-family="'Playfair Display', serif" font-size="28" font-weight="600" text-anchor="middle">
+    Foto da Seção "Você se Identifica?"
+  </text>
+  <text x="400" y="700" fill="#71717a" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" text-anchor="middle">
+    (Ex: Paciente em atendimento ou modelo)
+  </text>
+</svg>
