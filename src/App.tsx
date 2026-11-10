@@ -19,10 +19,10 @@ export const App: React.FC = () => {
       <main className="flex-1">
         <Hero />
         <EcosystemSection />
-        <ComboGrowthSection />
-        <AboutSection />
-        <ServicesSection />
         <PortfolioSection />
+        <ComboGrowthSection />
+        <ServicesSection />
+        <AboutSection />
         <ProcessSection />
         <FaqSection />
         <ContactSection />

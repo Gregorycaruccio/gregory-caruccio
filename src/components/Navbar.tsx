@@ -38,9 +38,12 @@ export const Navbar: React.FC = () => {
         </a>
 
         {/* Links Desktop */}
-        <div className="hidden lg:flex items-center gap-7 text-xs font-medium text-slate-300">
+        <div className="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
           <a href="#" className="text-white hover:text-blue-400 transition-colors">
             Início
+          </a>
+          <a href="#metodo" className="hover:text-blue-400 transition-colors">
+            Método A.C.C.O
           </a>
           <a
             href="#combo-growth"
@@ -49,14 +52,14 @@ export const Navbar: React.FC = () => {
             <span>Combo Growth</span>
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
           </a>
-          <a href="#sobre" className="hover:text-blue-400 transition-colors">
-            Sobre o Grégory
-          </a>
           <a href="#nichos" className="hover:text-blue-400 transition-colors">
             Cases Práticos
           </a>
           <a href="#servicos" className="hover:text-blue-400 transition-colors">
             Serviços
+          </a>
+          <a href="#sobre" className="hover:text-blue-400 transition-colors">
+            Sobre o Grégory
           </a>
           <a href="#faq" className="hover:text-blue-400 transition-colors">
             Dúvidas
@@ -96,6 +99,13 @@ export const Navbar: React.FC = () => {
               className="rounded-lg px-3 py-2 text-white font-medium hover:bg-white/[0.04]"
             >
               Início
+            </a>
+            <a
+              href="#metodo"
+              onClick={() => setMobileMenuOpen(false)}
+              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
+            >
+              Método A.C.C.O
             </a>
             <a
               href="#combo-growth"

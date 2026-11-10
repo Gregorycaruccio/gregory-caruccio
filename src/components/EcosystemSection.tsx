@@ -37,28 +37,28 @@ export const EcosystemSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Pipeline das 4 Etapas */}
+        {/* Pipeline Minimalista das 4 Etapas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {SITE_CONFIG.ecossistema.map((item, idx) => (
             <div
               key={idx}
-              className="rounded-xl border border-white/[0.07] bg-[#0B0F17] p-6 flex flex-col justify-between"
+              className="rounded-2xl border border-white/[0.07] bg-[#0B0F17] p-6 sm:p-7 flex flex-col justify-between hover:border-blue-500/30 transition-colors duration-200"
             >
               <div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10 border border-blue-500/20 mb-4">
-                  {getIcon(idx)}
-                </div>
-
-                <div className="flex items-center justify-between mb-1">
-                  <h3 className="font-heading font-bold text-lg text-white">
-                    {item.fase}
-                  </h3>
-                  <span className="text-[11px] font-semibold text-slate-400">
-                    Fase {idx + 1}
+                <div className="flex items-center justify-between mb-5">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10 border border-blue-500/20">
+                    {getIcon(idx)}
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2.5 py-1 rounded-md">
+                    0{idx + 1}
                   </span>
                 </div>
 
-                <p className="text-xs font-semibold text-blue-400 mt-0.5">
+                <h3 className="font-heading font-bold text-lg text-white">
+                  {item.fase}
+                </h3>
+
+                <p className="text-xs font-semibold text-blue-400 mt-1">
                   {item.subtitulo}
                 </p>
 
@@ -67,11 +67,11 @@ export const EcosystemSection: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-6 pt-3.5">
-                <p className="text-[11px] font-medium text-slate-400 mb-2">
+              <div className="mt-6 pt-4 border-t border-white/[0.05]">
+                <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-2.5">
                   Canais em operação:
                 </p>
-                <ul className="space-y-1.5">
+                <ul className="space-y-2">
                   {item.canais.map((canal, cIdx) => (
                     <li
                       key={cIdx}
