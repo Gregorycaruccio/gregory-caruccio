@@ -20,8 +20,12 @@ export const EcosystemSection: React.FC = () => {
     <section id="metodo" className="py-20 md:py-28 bg-[#101725] text-slate-100">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
-        {/* Header Direto e Sóbrio */}
+        {/* Header Direto e Sóbrio com Método A.C.C.O */}
         <div className="max-w-2xl mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs px-3.5 py-1.5 rounded-full font-bold tracking-wider uppercase mb-4">
+            <span>MÉTODO A.C.C.O</span>
+          </div>
+
           <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
             Um ecossistema comercial integrado. <br />
             <span className="text-blue-400">
@@ -29,7 +33,7 @@ export const EcosystemSection: React.FC = () => {
             </span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
-            Contratar posts avulsos ou rodar anúncios sem autoridade no perfil desperdiça orçamento. No nosso método, cada etapa cumpre uma função direta na decisão de compra do cliente.
+            Contratar posts avulsos ou rodar anúncios sem autoridade no perfil desperdiça orçamento. No Método A.C.C.O (Atrair, Construir, Converter e Otimizar), cada etapa cumpre uma função direta na decisão de compra do cliente.
           </p>
         </div>
 
