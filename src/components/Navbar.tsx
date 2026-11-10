@@ -19,9 +19,9 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       data-ui
-      className={`fixed top-0 left-0 right-0 z-40 transition-colors duration-200 ${ /* taste-skill-ignore */
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
         scrolled
-          ? "bg-[#0B0F17]/95 backdrop-blur-md border-b border-white/[0.07] py-3.5"
+          ? "bg-white/90 backdrop-blur-md border-b border-slate-200/80 py-3.5"
           : "bg-transparent py-5"
       }`}
     >
@@ -29,39 +29,39 @@ export const Navbar: React.FC = () => {
         
         {/* Identidade Editorial Sem Ícones Genéricos */}
         <a href="#" className="flex flex-col group">
-          <span className="font-heading font-extrabold text-white text-base tracking-tight group-hover:text-blue-400 transition-colors">
+          <span className="font-heading font-extrabold text-slate-900 text-base tracking-tight group-hover:text-blue-600 transition-colors">
             {SITE_CONFIG.nome}
           </span>
-          <span className="text-[11px] text-slate-400 font-sans tracking-normal">
+          <span className="text-[11px] text-slate-500 font-sans tracking-normal">
             Tráfego Pago, Automação & Performance RS
           </span>
         </a>
 
         {/* Links Desktop */}
-        <div className="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
-          <a href="#" className="text-white hover:text-blue-400 transition-colors">
+        <div className="hidden lg:flex items-center gap-6 text-xs font-semibold text-slate-600">
+          <a href="#" className="text-slate-900 hover:text-blue-600 transition-colors">
             Início
           </a>
-          <a href="#metodo" className="hover:text-blue-400 transition-colors">
+          <a href="#metodo" className="hover:text-blue-600 transition-colors">
             Método A.C.C.O
           </a>
           <a
             href="#combo-growth"
-            className="flex items-center gap-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-blue-400 hover:bg-blue-500/20 transition-colors font-semibold"
+            className="flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3 py-1 text-blue-700 hover:bg-blue-100 transition-colors font-semibold"
           >
             <span>Combo Growth</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
           </a>
-          <a href="#nichos" className="hover:text-blue-400 transition-colors">
+          <a href="#nichos" className="hover:text-blue-600 transition-colors">
             Cases Práticos
           </a>
-          <a href="#servicos" className="hover:text-blue-400 transition-colors">
+          <a href="#servicos" className="hover:text-blue-600 transition-colors">
             Serviços
           </a>
-          <a href="#sobre" className="hover:text-blue-400 transition-colors">
+          <a href="#sobre" className="hover:text-blue-600 transition-colors">
             Sobre o Grégory
           </a>
-          <a href="#faq" className="hover:text-blue-400 transition-colors">
+          <a href="#faq" className="hover:text-blue-600 transition-colors">
             Dúvidas
           </a>
         </div>
@@ -72,17 +72,17 @@ export const Navbar: React.FC = () => {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
+            className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 px-4 py-2 text-xs font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
           >
             <span>Falar no WhatsApp</span>
-            <ArrowUpRight className="h-3.5 w-3.5 text-blue-200" />
+            <ArrowUpRight className="h-3.5 w-3.5 text-blue-100" />
           </a>
         </div>
 
         {/* Menu Mobile Toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="flex lg:hidden rounded-lg p-2 text-slate-300 hover:bg-white/[0.05] hover:text-white focus:outline-none"
+          className="flex lg:hidden rounded-lg p-2 text-slate-700 hover:bg-slate-100 focus:outline-none"
           aria-label="Abrir menu"
         >
           {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -91,55 +91,55 @@ export const Navbar: React.FC = () => {
 
       {/* Menu Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0D131F] px-5 pt-3 pb-6">
+        <div className="lg:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6">
           <div className="flex flex-col gap-2 text-sm">
             <a
               href="#"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-white font-medium hover:bg-white/[0.04]"
+              className="rounded-lg px-3 py-2 text-slate-900 font-semibold hover:bg-slate-50"
             >
               Início
             </a>
             <a
               href="#metodo"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
+              className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50"
             >
               Método A.C.C.O
             </a>
             <a
               href="#combo-growth"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 flex items-center justify-between"
+              className="rounded-lg px-3 py-2 font-semibold text-blue-700 bg-blue-50 border border-blue-200 flex items-center justify-between"
             >
               <span>Combo Growth (R$ 1.600/mês)</span>
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            </a>
-            <a
-              href="#sobre"
-              onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
-            >
-              Sobre o Grégory
+              <span className="h-2 w-2 rounded-full bg-emerald-500" />
             </a>
             <a
               href="#nichos"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
+              className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50"
             >
               Cases Práticos de Vendas
             </a>
             <a
               href="#servicos"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
+              className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50"
             >
               Serviços e Planos
             </a>
             <a
+              href="#sobre"
+              onClick={() => setMobileMenuOpen(false)}
+              className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50"
+            >
+              Sobre o Grégory
+            </a>
+            <a
               href="#faq"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
+              className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-50"
             >
               Perguntas Frequentes
             </a>
@@ -150,7 +150,7 @@ export const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 py-3 text-xs font-semibold text-white w-full"
+                className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 py-3 text-xs font-semibold text-white w-full"
               >
                 <span>Conversar no WhatsApp</span>
               </a>

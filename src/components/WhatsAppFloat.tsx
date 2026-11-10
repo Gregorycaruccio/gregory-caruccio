@@ -12,14 +12,14 @@ export const WhatsAppFloat: React.FC = () => {
     <div data-ui className="fixed bottom-5 right-5 z-50 flex items-end gap-3 pointer-events-auto">
       {/* Tooltip flutuante discreto em telas médias e grandes */}
       {showTooltip && (
-        <div className="hidden sm:flex items-center gap-2 rounded-xl border border-white/[0.08] bg-[#101725] px-3.5 py-2">
-          <span className="flex h-2 w-2 rounded-full bg-emerald-400" />
-          <p className="text-xs font-sans text-slate-200">
-            Fale direto com o <strong className="text-white">Grégory</strong>
+        <div className="hidden sm:flex items-center gap-2 rounded-xl border border-slate-200/90 bg-white px-3.5 py-2">
+          <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
+          <p className="text-xs font-sans text-slate-700">
+            Fale direto com o <strong className="text-slate-950 font-bold">Grégory</strong>
           </p>
           <button
             onClick={() => setShowTooltip(false)}
-            className="text-slate-400 hover:text-slate-200 ml-1"
+            className="text-slate-400 hover:text-slate-600 ml-1"
             aria-label="Fechar aviso"
           >
             <X className="h-3 w-3" />

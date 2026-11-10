@@ -10,24 +10,27 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-[#101725] text-slate-100">
+    <section id="faq" className="py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio */}
         <div className="max-w-2xl mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full font-medium mb-4">
+          <div className="inline-flex items-center gap-2 border border-blue-200 bg-blue-50 text-blue-700 text-xs px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider mb-4">
             <span>Perguntas Frequentes</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight leading-tight">
-            Dúvidas comuns sobre a assessoria.
+          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
+            Dúvidas frequentes <br />
+            <span className="text-blue-600">
+              sobre a assessoria comercial.
+            </span>
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-300 font-sans">
-            Informações claras sobre investimento em anúncios, rotina de entregas e contratos.
+          <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans">
+            Informações claras sobre investimento em anúncios, rotina de entregas, bots e contratos.
           </p>
         </div>
 
-        {/* Accordions com Micro-bordas e Superfície Sólida */}
+        {/* Accordions com Cards Brancos e Destaque Azul */}
         <div className="space-y-3.5">
           {SITE_CONFIG.faq.map((item, idx) => {
             const isOpen = openIndex === idx;
@@ -35,10 +38,10 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className={`rounded-xl transition-colors duration-150 overflow-hidden ${
+                className={`rounded-2xl transition-all duration-150 overflow-hidden ${
                   isOpen
-                    ? "border border-blue-500/40 bg-[#0B0F17]"
-                    : "border border-white/[0.07] bg-[#0B0F17] hover:border-white/[0.12]"
+                    ? "border border-blue-400 bg-white"
+                    : "border border-slate-200/90 bg-white hover:border-slate-300"
                 }`}
               >
                 <button
@@ -47,12 +50,12 @@ export const FaqSection: React.FC = () => {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between p-5 sm:p-6 text-left"
                 >
-                  <span className="font-heading font-bold text-sm sm:text-base text-white pr-4">
+                  <span className="font-heading font-extrabold text-sm sm:text-base text-slate-950 pr-4">
                     {item.pergunta}
                   </span>
                   <div
-                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-blue-500/20 text-blue-400" : "bg-white/[0.05] text-slate-400"
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-xl transition-transform duration-200 ${
+                      isOpen ? "rotate-180 bg-blue-50 text-blue-600" : "bg-slate-100 text-slate-500"
                     }`}
                   >
                     <ChevronDown className="h-4 w-4" />
@@ -60,7 +63,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-xs sm:text-sm text-slate-300 font-sans leading-relaxed pt-1">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-slate-100 text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
                     {item.resposta}
                   </div>
                 )}
