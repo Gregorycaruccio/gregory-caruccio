@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUp, Instagram, MessageSquare, Hexagon } from "lucide-react";
+import { ArrowUp, Instagram, MessageSquare, ShieldCheck } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Footer: React.FC = () => {
@@ -8,60 +8,57 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#030611] pt-16 pb-12 relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
+    <footer className="bg-[#080C14] pt-14 pb-12 text-slate-400">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8">
           
           {/* Logo e Descrição */}
           <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-electric-blue text-white">
-                <Hexagon className="h-5 w-5 fill-white/20 stroke-white" />
+            <div className="flex items-center justify-center md:justify-start gap-2.5">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20 text-blue-400">
+                <ShieldCheck className="h-4 w-4" />
               </div>
-              <span className="font-heading font-extrabold text-lg text-white">
+              <span className="font-heading font-bold text-white text-base tracking-tight">
                 {SITE_CONFIG.nome}
               </span>
             </div>
-            <p className="mt-2 text-xs text-slate-400 font-sans max-w-sm">
+            <p className="mt-2 text-xs text-slate-400 font-sans max-w-md leading-relaxed">
               Gestão de tráfego pago hiperlocal, social media de autoridade e páginas rápidas no Litoral Norte do RS (Cidreira, Tramandaí, Capão da Canoa e região) e em todo o Brasil. Vendas reais no WhatsApp.
             </p>
           </div>
 
-          {/* Links Rápidos */}
-          <div className="flex flex-wrap justify-center gap-6 text-xs font-sans font-medium text-slate-400">
-            <a href="#" className="hover:text-electric-cyan transition-colors">
+          {/* Links Rápidos Essenciais */}
+          <div className="flex flex-wrap justify-center gap-5 text-xs font-medium text-slate-300">
+            <a href="#" className="hover:text-blue-400 transition-colors">
               Início
             </a>
-            <a href="#combo-growth" className="hover:text-electric-cyan transition-colors text-white font-bold">
+            <a href="#combo-growth" className="hover:text-blue-400 transition-colors text-white font-semibold">
               Combo Growth (R$ 1.600)
             </a>
-            <a href="#sobre" className="hover:text-electric-cyan transition-colors">
+            <a href="#sobre" className="hover:text-blue-400 transition-colors">
               Sobre o Grégory
             </a>
-            <a href="#servicos" className="hover:text-electric-cyan transition-colors">
-              Serviços
-            </a>
-            <a href="#nichos" className="hover:text-electric-cyan transition-colors">
+            <a href="#nichos" className="hover:text-blue-400 transition-colors">
               Cases Práticos
             </a>
-            <a href="#processo" className="hover:text-electric-cyan transition-colors">
-              Processo
+            <a href="#servicos" className="hover:text-blue-400 transition-colors">
+              Serviços
             </a>
-            <a href="#faq" className="hover:text-electric-cyan transition-colors">
+            <a href="#faq" className="hover:text-blue-400 transition-colors">
               Dúvidas
             </a>
-            <a href="#contato" className="hover:text-electric-cyan transition-colors text-electric-cyan">
+            <a href="#contato" className="hover:text-blue-400 transition-colors text-blue-400">
               Contato
             </a>
           </div>
 
           {/* Ações e Redes */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             <a
               href={SITE_CONFIG.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-obsidian-850 text-slate-300 hover:bg-electric-blue hover:text-white transition-colors duration-200"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.07] bg-[#101725] text-slate-300 hover:border-blue-500/40 hover:text-white transition-colors"
               aria-label="Instagram de Grégory Caruccio"
             >
               <Instagram className="h-4 w-4" />
@@ -71,7 +68,7 @@ export const Footer: React.FC = () => {
               href={`https://wa.me/${SITE_CONFIG.telefoneRaw}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-obsidian-850 text-slate-300 hover:bg-emerald-500 hover:text-white transition-colors duration-200"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.07] bg-[#101725] text-slate-300 hover:border-emerald-500/40 hover:text-emerald-400 transition-colors"
               aria-label="WhatsApp Oficial"
             >
               <MessageSquare className="h-4 w-4" />
@@ -79,7 +76,7 @@ export const Footer: React.FC = () => {
 
             <button
               onClick={scrollToTop}
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-obsidian-850 text-slate-300 hover:text-electric-cyan transition-colors duration-200"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.07] bg-[#101725] text-slate-300 hover:border-blue-500/40 hover:text-white transition-colors"
               aria-label="Voltar ao topo"
             >
               <ArrowUp className="h-4 w-4" />
@@ -87,15 +84,15 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Rodapé Inferior */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-slate-500">
+        {/* Rodapé Inferior: Direitos e Status Técnico Alinhado à Direita */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-sans">
           <p>
             © {new Date().getFullYear()} {SITE_CONFIG.nome}. Todos os direitos reservados.
           </p>
-          <p className="flex items-center gap-1.5 font-sans">
-            <span>Desenvolvido para alta performance com</span>
-            <span className="text-electric-cyan font-bold">React e Tailwind</span>
-          </p>
+          <div className="flex items-center gap-2 text-[11px] text-slate-400">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+            <span>Sistema Operacional Ativo • React & Tailwind</span>
+          </div>
         </div>
       </div>
     </footer>

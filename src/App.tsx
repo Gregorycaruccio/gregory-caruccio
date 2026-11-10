@@ -14,7 +14,7 @@ import { WhatsAppFloat } from "./components/WhatsAppFloat";
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-[100dvh] bg-[#040814] text-slate-100 flex flex-col font-sans selection:bg-electric-blue selection:text-white relative">
+    <div className="min-h-[100dvh] bg-[#0B0F17] text-white flex flex-col font-sans selection:bg-blue-600 selection:text-white relative">
       <Navbar />
       <main className="flex-1">
         <Hero />

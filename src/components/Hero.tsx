@@ -1,310 +1,168 @@
 import React from "react";
-import { ArrowRight, MessageSquare, TrendingUp, Target, Globe, Flame, Zap } from "lucide-react";
+import { ArrowRight, MessageSquare, Target, Globe, Zap, CheckCircle2 } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Hero: React.FC = () => {
   const whatsappHeroHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Quero%20entender%20como%20estruturar%20uma%20m%C3%A1quina%20de%20vendas%20no%20WhatsApp%20para%20minha%20empresa.`;
 
   return (
-    <header className="relative pt-32 pb-20 md:pt-40 md:pb-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <header className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-[#0B0F17] text-slate-100">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="flex flex-col items-center text-center">
           
-          {/* Eyebrow Direto Ancorado no Nicho e Localidade */}
-          <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-[2px] bg-electric-cyan" />
-            <span className="text-electric-cyan text-sm sm:text-base font-semibold">
-              Gestor de Tráfego Pago & Performance no Litoral Norte RS
+          {/* Indicador Vivo de Status de Operação */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1 text-xs text-emerald-400 mb-6">
+            <span className="flex h-2 w-2 rounded-full bg-emerald-400" />
+            <span className="font-medium tracking-tight">
+              Campanhas Ativas • Otimização em Tempo Real (Litoral Norte RS)
             </span>
-            <span className="w-8 h-[2px] bg-electric-cyan" />
           </div>
 
-          {/* Headline Monumental com Foco em Vendas e WhatsApp */}
-          <h1 className="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight max-w-5xl leading-[1.08]">
+          {/* Headline Monumental e Sóbria */}
+          <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight max-w-3xl leading-[1.12]">
             Compradores reais no seu WhatsApp <br />
-            <span className="text-electric-cyan">
+            <span className="text-blue-400">
               todos os dias.
             </span>
           </h1>
 
-          {/* Subtítulo Tecnológico & Assertivo com Prova Humana */}
-          <p className="mt-5 max-w-3xl text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-            Tráfego pago no Meta Ads e Google, autoridade no Instagram e páginas rápidas em React. Sem artes genéricas do Canva e sem métricas de vaidade: apenas clientes prontos para comprar no seu balcão em Tramandaí, Cidreira, Litoral Norte e em todo o Brasil.
+          {/* Subtítulo Analítico e Sem Clichês */}
+          <p className="mt-5 max-w-2xl text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
+            Gestão profissional de tráfego pago no Meta Ads e Google Ads, autoridade visual no Instagram e páginas rápidas em React. Filtramos curiosos e colocamos pessoas prontas para comprar no balcão da sua empresa.
           </p>
 
+          {/* Grupo de CTAs Primários com Microinteração */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
+            <a
+              href={whatsappHeroHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
+            >
+              <MessageSquare className="h-4 w-4" />
+              <span>Solicitar Diagnóstico Comercial</span>
+              <ArrowRight className="h-4 w-4 text-blue-200" />
+            </a>
+
+            <a
+              href="#combo-growth"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.03] hover:bg-white/[0.07] px-6 py-3.5 text-sm font-medium text-slate-200 hover:text-white transition-colors"
+            >
+              <span>Ver Combo Growth (R$ 1.600)</span>
+            </a>
+          </div>
+
           {/* ======================================================== */}
-          {/* CENTERPIECE: O LAPTOP COM DASHBOARD DE CRESCIMENTO REAL */}
+          {/* PAINEL DE STATUS DE OPERAÇÃO & DASHBOARD ANCORADO */}
           {/* ======================================================== */}
-          <div data-ui className="mt-12 sm:mt-16 w-full max-w-4xl relative">
+          <div data-ui className="mt-14 w-full rounded-2xl border border-white/[0.07] bg-[#101725] p-5 sm:p-7 text-left">
             
-            {/* Chassi do Laptop */}
-            <div className="relative rounded-[28px] border border-obsidian-borderHover bg-[#070D1D] p-3 sm:p-5">
+            {/* Header do Painel */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5">
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                  <Target className="h-4 w-4" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-white tracking-tight">
+                    Painel Consolidado de Performance de Tráfego
+                  </h3>
+                  <p className="text-[11px] text-slate-400 font-sans">
+                    Operação direta por Grégory Caruccio • Litoral Norte & Atendimento Nacional
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2 text-xs text-slate-400">
+                <span className="inline-flex items-center gap-1.5 rounded-md bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 text-emerald-400 font-medium">
+                  <CheckCircle2 className="h-3.5 w-3.5" />
+                  Dayparting nos Horários de Pico
+                </span>
+              </div>
+            </div>
+
+            {/* Grid de Métricas de Precisão Analítica */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               
-              {/* Moldura da Tela do Laptop */}
-              <div className="rounded-[20px] bg-[#050914] p-3 sm:p-6 overflow-hidden relative">
-                
-                {/* Barra Superior da Tela (Menu do App) */}
-                <div className="flex items-center justify-between pb-3 mb-5 bg-[#091124] px-4 py-2.5 rounded-xl">
-                  <div className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-yellow-500" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
-                    <span className="text-xs font-semibold text-slate-300 pl-2 hidden sm:inline">
-                      Grégory Caruccio • Painel de Performance de Tráfego
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3 text-xs text-slate-400">
-                    <span className="hidden md:inline hover:text-white transition-colors">Meta Ads v21</span>
-                    <span className="hidden md:inline hover:text-white transition-colors">Google Ads</span>
-                    <span className="rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 text-xs font-bold">
-                      Campanha Ativa
-                    </span>
-                  </div>
+              <div className="rounded-xl border border-white/[0.05] bg-[#0B0F17]/80 p-4">
+                <span className="text-xs text-slate-400 block font-sans">
+                  Volume de Vendas Locais
+                </span>
+                <div className="mt-1 flex items-baseline gap-1.5">
+                  <code className="font-mono text-emerald-400 font-semibold tracking-normal text-xl sm:text-2xl">
+                    +R$ 1.6M
+                  </code>
                 </div>
-
-                {/* Conteúdo Interno da Tela: Split de Crescimento */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center text-left">
-                  
-                  {/* Coluna Esquerda: Chamada e Proposta */}
-                  <div className="lg:col-span-7 flex flex-col justify-between">
-                    <div>
-                      <span className="text-xs font-semibold text-electric-cyan">
-                        Operação de Campo • Horários Comerciais de Pico
-                      </span>
-                      <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1 leading-snug">
-                        Anúncios que colocam dinheiro no caixa, não curtidas na tela.
-                      </h3>
-                      <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        Campanhas com Dayparting cirúrgico rodando quando sua equipe atende. Filtramos curiosos e entregamos clientes com intenção real de compra no WhatsApp.
-                      </p>
-                    </div>
-
-                    <div className="mt-5 flex items-center gap-3">
-                      <a
-                        href={whatsappHeroHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-electric !py-2.5 !px-5 text-xs sm:text-sm !rounded-full"
-                      >
-                        <span>Ativar Estrutura</span>
-                        <ArrowRight className="h-3.5 w-3.5" />
-                      </a>
-                      <a
-                        href="#servicos"
-                        className="btn-glass !py-2.5 !px-4 text-xs !rounded-full"
-                      >
-                        <span>Ver Tabela</span>
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Coluna Direita: Box Gráfico com Curva de Crescimento (+184% Vendas) */}
-                  <div className="lg:col-span-5 rounded-2xl border border-electric-blue/30 bg-[#091124] p-4 relative overflow-hidden">
-                    <div className="flex items-center justify-between mb-3">
-                      <div>
-                        <span className="text-xs text-slate-400 block">Vendas no WhatsApp</span>
-                        <span className="font-heading font-extrabold text-2xl text-white">
-                          +184%
-                        </span>
-                      </div>
-                      <span className="rounded-md bg-electric-blue/20 text-electric-cyan border border-electric-cyan/30 px-2 py-0.5 text-xs font-bold">
-                        ROI 4.8x
-                      </span>
-                    </div>
-
-                    {/* Gráfico Curvado SVG com Cores Sólidas */}
-                    <div className="h-28 w-full relative">
-                      <svg className="w-full h-full overflow-visible" viewBox="0 0 200 80" preserveAspectRatio="none">
-                        {/* Linha brilhante */}
-                        <path
-                          d="M0,70 Q40,65 70,45 T140,25 T200,8"
-                          fill="none"
-                          stroke="#00D2FF"
-                          strokeWidth="3.5"
-                          strokeLinecap="round"
-                        />
-                        {/* Pontos de Dados */}
-                        <circle cx="70" cy="45" r="3.5" fill="#00D2FF" />
-                        <circle cx="140" cy="25" r="3.5" fill="#00D2FF" />
-                        <circle cx="200" cy="8" r="4.5" fill="#FFFFFF" />
-                      </svg>
-                    </div>
-
-                    <div className="mt-2 flex items-center justify-between text-xs text-slate-400 pt-2 bg-[#060B18] px-3 py-1.5 rounded-lg">
-                      <span>Custo por lead: <strong className="text-slate-200">R$ 3,40</strong></span>
-                      <span className="text-emerald-400 font-semibold">142 Conversas</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Rodapé da Tela: Plataformas Conectadas */}
-                <div className="mt-6 pt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400 bg-[#080E1E] p-3 rounded-xl">
-                  <span className="font-semibold text-slate-300">Ferramentas oficiais:</span>
-                  <div className="flex items-center gap-4 sm:gap-6 text-slate-300 font-medium">
-                    <span className="flex items-center gap-1.5 hover:text-white">
-                      <Target className="h-3.5 w-3.5 text-electric-cyan" /> Meta Ads
-                    </span>
-                    <span className="flex items-center gap-1.5 hover:text-white">
-                      <Globe className="h-3.5 w-3.5 text-electric-blue" /> Google Ads
-                    </span>
-                    <span className="flex items-center gap-1.5 hover:text-white">
-                      <MessageSquare className="h-3.5 w-3.5 text-emerald-400" /> WhatsApp API
-                    </span>
-                    <span className="flex items-center gap-1.5 hover:text-white">
-                      <Zap className="h-3.5 w-3.5 text-yellow-400" /> n8n Automações
-                    </span>
-                  </div>
-                </div>
-
+                <span className="text-[11px] text-slate-400 block mt-1">
+                  Gerados diretamente no balcão
+                </span>
               </div>
 
-              {/* Base do Laptop */}
-              <div className="h-3 w-40 mx-auto bg-[#132142] rounded-b-xl" />
-            </div>
-          </div>
+              <div className="rounded-xl border border-white/[0.05] bg-[#0B0F17]/80 p-4">
+                <span className="text-xs text-slate-400 block font-sans">
+                  Custo Médio / Conversa
+                </span>
+                <div className="mt-1 flex items-baseline gap-1.5">
+                  <code className="font-mono text-emerald-400 font-semibold tracking-normal text-xl sm:text-2xl">
+                    R$ 3,40
+                  </code>
+                </div>
+                <span className="text-[11px] text-slate-400 block mt-1">
+                  Leads qualificados no WhatsApp
+                </span>
+              </div>
 
-          {/* ======================================================== */}
-          {/* AS 4 CARTELAS FLUTUANTES (BIZNEXT STYLE: BRANCO ACRÍLICO + AZUL ATIVO) */}
-          {/* ======================================================== */}
-          <div className="mt-10 sm:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl">
-            
-            {/* Card 1: Tráfego Pago (Branco Acrílico BizNext) */}
-            <div className="bg-white rounded-2xl p-5 text-center flex flex-col items-center justify-between border border-white/90">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-electric-blue mb-3">
-                <Target className="h-6 w-6" />
+              <div className="rounded-xl border border-white/[0.05] bg-[#0B0F17]/80 p-4">
+                <span className="text-xs text-slate-400 block font-sans">
+                  Retorno sobre Investimento
+                </span>
+                <div className="mt-1 flex items-baseline gap-1.5">
+                  <code className="font-mono text-emerald-400 font-semibold tracking-normal text-xl sm:text-2xl">
+                    4.8x
+                  </code>
+                </div>
+                <span className="text-[11px] text-slate-400 block mt-1">
+                  Média consolidada dos clientes
+                </span>
               </div>
-              <h4 className="font-heading font-bold text-base text-slate-900">
-                Tráfego Pago
-              </h4>
-              <p className="text-xs text-slate-500 mt-1">
-                Meta Ads e Google Ads
-              </p>
-              <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-blue" />
-                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
-                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
+
+              <div className="rounded-xl border border-white/[0.05] bg-[#0B0F17]/80 p-4">
+                <span className="text-xs text-slate-400 block font-sans">
+                  Taxa de Retenção
+                </span>
+                <div className="mt-1 flex items-baseline gap-1.5">
+                  <code className="font-mono text-emerald-400 font-semibold tracking-normal text-xl sm:text-2xl">
+                    98%
+                  </code>
+                </div>
+                <span className="text-[11px] text-slate-400 block mt-1">
+                  Contratos renovados mensalmente
+                </span>
               </div>
+
             </div>
 
-            {/* Card 2: Combo Growth (DESTAQUE AZUL COBALTO ATIVO) */}
-            <div className="bg-electric-blue rounded-2xl p-5 text-center flex flex-col items-center justify-between relative transform -translate-y-1">
-              <span className="absolute -top-2.5 bg-white text-electric-blueDark px-3 py-0.5 rounded-full text-xs font-bold">
-                O Carro-Chefe
+            {/* Plataformas e Ferramentas Oficiais */}
+            <div className="mt-5 rounded-xl bg-[#0B0F17]/50 p-3.5 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+              <span className="font-medium text-slate-300">
+                Canais integrados na operação:
               </span>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 text-white border border-white/40 mb-3">
-                <Flame className="h-6 w-6 fill-white" />
-              </div>
-              <h4 className="font-heading font-extrabold text-base text-white">
-                Combo Growth
-              </h4>
-              <p className="text-xs text-blue-100 font-medium mt-1">
-                Tráfego + Social + Wpp
-              </p>
-              <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-white" />
-                <span className="h-1.5 w-1.5 rounded-full bg-white" />
-                <span className="h-1.5 w-1.5 rounded-full bg-white" />
-              </div>
-            </div>
-
-            {/* Card 3: Landing Pages (Branco Acrílico BizNext) */}
-            <div className="bg-white rounded-2xl p-5 text-center flex flex-col items-center justify-between border border-white/90">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-electric-blue mb-3">
-                <Globe className="h-6 w-6" />
-              </div>
-              <h4 className="font-heading font-bold text-base text-slate-900">
-                Landing Pages
-              </h4>
-              <p className="text-xs text-slate-500 mt-1">
-                Alta Conversão em React
-              </p>
-              <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-blue" />
-                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
-                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
-              </div>
-            </div>
-
-            {/* Card 4: Social Media (Branco Acrílico BizNext) */}
-            <div className="bg-white rounded-2xl p-5 text-center flex flex-col items-center justify-between border border-white/90">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-electric-blue mb-3">
-                <TrendingUp className="h-6 w-6" />
-              </div>
-              <h4 className="font-heading font-bold text-base text-slate-900">
-                Social Media
-              </h4>
-              <p className="text-xs text-slate-500 mt-1">
-                Autoridade e Conteúdo
-              </p>
-              <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-blue" />
-                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
-                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
-              </div>
-            </div>
-
-          </div>
-
-          {/* ======================================================== */}
-          {/* FAIXA DE ESTATÍSTICAS + BOTAO DE ORÇAMENTO */}
-          {/* ======================================================== */}
-          <div className="mt-10 sm:mt-14 w-full max-w-5xl rounded-2xl border border-obsidian-border bg-obsidian-900 p-5 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 w-full md:w-auto text-center sm:text-left">
-              <div className="pr-2 sm:pr-6">
-                <span className="font-heading font-extrabold text-2xl sm:text-3xl text-white block">
-                  +R$ 1.6M
+              <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-300 font-medium">
+                <span className="flex items-center gap-1.5">
+                  <Target className="h-3.5 w-3.5 text-blue-400" /> Meta Ads (v21.0)
                 </span>
-                <span className="text-xs text-slate-400 font-sans">
-                  Vendas Geradas
+                <span className="flex items-center gap-1.5">
+                  <Globe className="h-3.5 w-3.5 text-blue-400" /> Google Ads
                 </span>
-              </div>
-
-              <div className="px-2 sm:px-6">
-                <span className="font-heading font-extrabold text-2xl sm:text-3xl text-white block">
-                  98%
+                <span className="flex items-center gap-1.5">
+                  <MessageSquare className="h-3.5 w-3.5 text-emerald-400" /> WhatsApp Cloud API
                 </span>
-                <span className="text-xs text-slate-400 font-sans">
-                  Retenção Contratual
-                </span>
-              </div>
-
-              <div className="pl-2 sm:pl-6">
-                <span className="font-heading font-extrabold text-2xl sm:text-3xl text-white block">
-                  +15 Nichos
-                </span>
-                <span className="text-xs text-slate-400 font-sans">
-                  No Campo de Batalha
+                <span className="flex items-center gap-1.5">
+                  <Zap className="h-3.5 w-3.5 text-amber-400" /> Automações n8n
                 </span>
               </div>
             </div>
 
-            {/* Botão de Cotação Grátis */}
-            <div className="w-full md:w-auto">
-              <a
-                href={whatsappHeroHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-electric w-full sm:w-auto !rounded-full text-sm group"
-              >
-                <span>Solicitar Proposta Gratuita</span>
-                <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-              </a>
-            </div>
-
-          </div>
-
-          {/* Rodapé da Hero */}
-          <div className="mt-10 flex items-center justify-center gap-3 text-xs text-slate-400 font-sans tracking-wide">
-            <span className="w-6 h-[2px] bg-electric-cyan rounded-full" />
-            <span>Moderno</span>
-            <span className="text-electric-cyan">•</span>
-            <span>Rápido</span>
-            <span className="text-electric-cyan">•</span>
-            <span>Lucrativo</span>
-            <span className="text-electric-cyan">•</span>
-            <span>Escalável</span>
-            <span className="w-6 h-[2px] bg-electric-cyan rounded-full" />
           </div>
 
         </div>

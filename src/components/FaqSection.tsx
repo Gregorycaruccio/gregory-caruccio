@@ -10,20 +10,24 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-28 relative bg-white text-slate-900">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-20 md:py-28 bg-[#101725] text-slate-100">
+      <div className="mx-auto max-w-4xl px-5 sm:px-8">
         
-        {/* Header Direto Sem Kicker */}
+        {/* Header Direto e Sóbrio */}
         <div className="max-w-2xl mb-12 sm:mb-16">
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-slate-950 tracking-tight">
-            Perguntas frequentes sobre a assessoria.
+          <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full font-medium mb-4">
+            <span>Perguntas Frequentes</span>
+          </div>
+
+          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight leading-tight">
+            Dúvidas comuns sobre a assessoria.
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans">
-            Informações claras sobre verba de anúncios, entregáveis e formato dos contratos.
+          <p className="mt-3 text-sm sm:text-base text-slate-300 font-sans">
+            Informações claras sobre investimento em anúncios, rotina de entregas e contratos.
           </p>
         </div>
 
-        {/* Accordions (Estilo Nexora Clean) */}
+        {/* Accordions com Micro-bordas e Superfície Sólida */}
         <div className="space-y-3.5">
           {SITE_CONFIG.faq.map((item, idx) => {
             const isOpen = openIndex === idx;
@@ -31,10 +35,10 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className={`rounded-2xl transition-colors duration-200 overflow-hidden ${
+                className={`rounded-xl transition-colors duration-150 overflow-hidden ${
                   isOpen
-                    ? "border-2 border-electric-blue bg-white"
-                    : "bg-slate-50 border border-slate-200/90 hover:border-slate-300"
+                    ? "border border-blue-500/40 bg-[#0B0F17]"
+                    : "border border-white/[0.07] bg-[#0B0F17] hover:border-white/[0.12]"
                 }`}
               >
                 <button
@@ -43,12 +47,12 @@ export const FaqSection: React.FC = () => {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between p-5 sm:p-6 text-left"
                 >
-                  <span className="font-heading font-bold text-sm sm:text-base text-slate-950 pr-4">
+                  <span className="font-heading font-bold text-sm sm:text-base text-white pr-4">
                     {item.pergunta}
                   </span>
                   <div
-                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-blue-50 text-electric-blue" : "bg-slate-200 text-slate-600"
+                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg transition-transform duration-200 ${
+                      isOpen ? "rotate-180 bg-blue-500/20 text-blue-400" : "bg-white/[0.05] text-slate-400"
                     }`}
                   >
                     <ChevronDown className="h-4 w-4" />
@@ -56,7 +60,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-xs sm:text-sm text-slate-600 font-sans leading-relaxed pt-2">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-xs sm:text-sm text-slate-300 font-sans leading-relaxed pt-1">
                     {item.resposta}
                   </div>
                 )}
@@ -64,6 +68,7 @@ export const FaqSection: React.FC = () => {
             );
           })}
         </div>
+
       </div>
     </section>
   );

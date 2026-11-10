@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#040814" />
+    <meta name="theme-color" content="#0B0F17" />
     
     <!-- SEO Local: Título e Descrição Otimizados para Busca no Google -->
     <title>Grégory Caruccio | Gestor de Tráfego Pago & Social Media no Litoral Norte RS</title>
@@ -106,15 +106,21 @@
       }
     </script>
     
-    <!-- Google Font: Manrope -->
+    <!-- Fonte Editorial & Técnica -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" /> <!-- taste-skill-ignore -->
   </head>
-  <body class="bg-[#040814] text-slate-200 antialiased selection:bg-[#1E6BFF] selection:text-white font-sans">
+  <body class="bg-[#0B0F17] text-slate-200 antialiased selection:bg-blue-600 selection:text-white font-sans relative">
+    
+    <!-- Camada de Noise/Grain Sutil em SVG (2.5% de opacidade) -->
+    <svg class="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.025]" xmlns="http://www.w3.org/2000/svg">
+      <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+    </svg>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

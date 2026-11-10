@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, ShieldCheck, Zap, ArrowRight, MessageSquare, Award } from "lucide-react";
+import { Check, ShieldCheck, ArrowRight, MessageSquare } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const ComboGrowthSection: React.FC = () => {
@@ -7,121 +7,110 @@ export const ComboGrowthSection: React.FC = () => {
   const whatsappComboHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Tenho%20interesse%20no%20Combo%20Growth%20(R$%201.600/m%C3%AAs)%20para%20minha%20empresa.%20Como%20funciona%20o%20in%C3%ADcio?`;
 
   return (
-    <section id="combo-growth" className="py-20 md:py-28 relative">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="combo-growth" className="py-20 md:py-28 bg-[#0B0F17] text-slate-100">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
-        {/* Header Direto Sem Kicker */}
-        <div className="max-w-3xl mb-12 sm:mb-16">
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+        {/* Header Direto e Sóbrio */}
+        <div className="max-w-3xl mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full font-medium mb-4">
+            <span>O Carro-Chefe Mais Contratado</span>
+          </div>
+
+          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight">
             Combo Growth: <br />
-            <span className="text-electric-cyan">
+            <span className="text-blue-400">
               Tráfego pago e autoridade no mesmo contrato.
             </span>
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
             Em vez de contratar um gestor de anúncios de um lado e um freelancer de posts do outro, o Combo Growth une as duas maiores fontes de receita com um único responsável técnico pelo seu resultado comercial.
           </p>
         </div>
 
-        {/* Painel Executivo do Combo Growth */}
-        <div className="relative rounded-3xl border border-electric-blue/40 bg-[#091226] p-6 sm:p-10 lg:p-12">
+        {/* Card Executivo Principal do Combo Growth */}
+        <div className="rounded-2xl border border-white/[0.08] bg-[#101725] p-6 sm:p-9 lg:p-10">
           
-          {/* Badge Flutuante no Topo */}
-          <div className="absolute -top-3.5 left-8 sm:left-12 flex items-center gap-1.5 rounded-full bg-electric-blue px-4 py-1 text-xs font-heading font-bold text-white">
-            <Award className="h-4 w-4" />
-            <span>O Carro-Chefe Recomendado</span>
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-8">
+            <div>
+              <span className="text-xs font-semibold text-blue-400">
+                Assessoria Comercial Integrada
+              </span>
+              <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1">
+                {combo.nome}
+              </h3>
+              <p className="mt-2 text-xs sm:text-sm text-slate-300 font-sans max-w-2xl leading-relaxed">
+                {combo.descricao}
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-white/[0.06] bg-[#0B0F17] p-5 shrink-0 flex flex-col sm:items-end">
+              <span className="text-xs text-slate-400 line-through">
+                De R$ 2.000,00 por mês avulso
+              </span>
+              <div className="flex items-baseline gap-2 mt-0.5">
+                <code className="font-mono text-white text-3xl sm:text-4xl font-extrabold tracking-normal">
+                  {combo.preco}
+                </code>
+                <span className="text-xs text-slate-400 font-medium">
+                  {combo.periodo}
+                </span>
+              </div>
+              <span className="mt-2 inline-flex items-center gap-1.5 rounded-md bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 text-xs text-emerald-400 font-medium">
+                <Check className="h-3 w-3" />
+                {combo.economia}
+              </span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
-            {/* Lado Esquerdo: Valor e Ancoragem */}
-            <div className="lg:col-span-5 flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-semibold text-electric-cyan">
-                  Assessoria Integrada
-                </span>
-                <h3 className="font-heading font-extrabold text-3xl sm:text-4xl text-white mt-1">
-                  {combo.nome}
-                </h3>
-                <p className="mt-3 text-sm text-slate-300 font-sans leading-relaxed">
-                  {combo.descricao}
-                </p>
-              </div>
+          {/* Entregáveis Organizados em 2 Colunas Limpas no Desktop */}
+          <div className="pt-8">
+            <h4 className="text-xs font-bold text-slate-300 mb-5 tracking-tight">
+              O que está incluso na assessoria mensal:
+            </h4>
 
-              <div className="my-6 sm:my-8 rounded-2xl bg-[#040814] border border-electric-blue/20 p-5">
-                <span className="text-xs text-slate-400 block line-through">
-                  De R$ 2.000,00 por mês avulso
-                </span>
-                <div className="flex items-baseline gap-2 mt-1">
-                  <span className="font-heading font-extrabold text-4xl sm:text-5xl text-white">
-                    {combo.preco}
-                  </span>
-                  <span className="text-sm text-slate-400 font-medium">
-                    {combo.periodo}
-                  </span>
-                </div>
-                <div className="mt-3 inline-flex items-center gap-1.5 rounded-md bg-electric-cyan/15 px-2.5 py-1 text-xs font-semibold text-electric-cyan border border-electric-cyan/30">
-                  <Check className="h-3.5 w-3.5" />
-                  <span>{combo.economia}</span>
-                </div>
-              </div>
-
-              <div>
-                <a
-                  href={whatsappComboHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-electric w-full justify-center !py-4 text-base group !rounded-full"
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {combo.entregaveis.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-xl border border-white/[0.05] bg-[#0B0F17]/70 p-4 flex items-start gap-3.5"
                 >
-                  <MessageSquare className="h-5 w-5" />
-                  <span>{combo.cta}</span>
-                  <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                </a>
-                <p className="mt-3 text-center text-xs text-slate-400">
-                  Sem contrato de fidelidade forçada • Atendimento direto com o especialista
-                </p>
-              </div>
-            </div>
-
-            {/* Lado Direito: Entregáveis do Combo */}
-            <div className="lg:col-span-7 flex flex-col justify-center">
-              <h4 className="font-heading font-bold text-base sm:text-lg text-white mb-5 flex items-center gap-2">
-                <Zap className="h-5 w-5 text-electric-cyan" />
-                <span>O que está incluso na assessoria mensal:</span>
-              </h4>
-
-              <div className="space-y-3">
-                {combo.entregaveis.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-start gap-3.5 rounded-xl bg-obsidian-850 p-4"
-                  >
-                    <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-electric-blue/20 text-electric-cyan mt-0.5">
-                      <Check className="h-3.5 w-3.5" />
-                    </div>
-                    <div>
-                      <h5 className="font-heading font-bold text-sm text-white">
-                        {item.titulo}
-                      </h5>
-                      <p className="mt-1 text-xs text-slate-300 font-sans leading-relaxed">
-                        {item.detalhe}
-                      </p>
-                    </div>
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400 mt-0.5 border border-blue-500/20">
+                    <Check className="h-3.5 w-3.5" />
                   </div>
-                ))}
-              </div>
+                  <div>
+                    <h5 className="font-heading font-bold text-sm text-white">
+                      {item.titulo}
+                    </h5>
+                    <p className="mt-1 text-xs text-slate-300 font-sans leading-relaxed">
+                      {item.detalhe}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-              {/* Box de Relacionamento Direto */}
-              <div className="mt-6 flex items-center gap-3 rounded-xl bg-[#040814] p-4 text-xs text-slate-300">
-                <ShieldCheck className="h-5 w-5 text-electric-cyan shrink-0" />
-                <span>
-                  <strong>Atendimento Direto:</strong> Você fala e alinha estratégias diretamente com o Grégory. Nada de intermediários.
-                </span>
-              </div>
+          {/* Rodapé do Combo: CTA e Garantia */}
+          <div className="mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2.5 text-xs text-slate-300">
+              <ShieldCheck className="h-4 w-4 text-emerald-400 shrink-0" />
+              <span>Contrato mensal renovável sem fidelidade forçada • Atendimento direto com Grégory</span>
             </div>
 
+            <a
+              href={whatsappComboHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
+            >
+              <MessageSquare className="h-4 w-4" />
+              <span>Contratar o Combo Growth</span>
+              <ArrowRight className="h-4 w-4 text-blue-200" />
+            </a>
           </div>
+
         </div>
+
       </div>
     </section>
   );

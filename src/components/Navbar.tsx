@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MessageSquare, Menu, X, ArrowUpRight, Hexagon } from "lucide-react";
+import { MessageSquare, Menu, X, ArrowUpRight, ShieldCheck } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Navbar: React.FC = () => {
@@ -19,147 +19,141 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       data-ui
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-colors duration-200 ${ /* taste-skill-ignore */
         scrolled
-          ? "bg-[#040814]/95 backdrop-blur-sm py-3.5"
+          ? "bg-[#0B0F17]/95 backdrop-blur-md border-b border-white/[0.07] py-3.5"
           : "bg-transparent py-5"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Identidade */}
-        <a href="#" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-electric-blue text-white">
-            <Hexagon className="h-5 w-5 fill-white/20 stroke-white stroke-[2.2]" />
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 sm:px-8">
+        
+        {/* Identidade Editorial */}
+        <a href="#" className="flex items-center gap-3 group">
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20 text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <ShieldCheck className="h-5 w-5" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-heading font-extrabold text-white text-base tracking-tight sm:text-lg">
+              <span className="font-heading font-bold text-white text-base tracking-tight">
                 {SITE_CONFIG.nome}
               </span>
-              <span className="hidden sm:inline-block rounded-full bg-electric-blue/15 px-2.5 py-0.5 text-xs font-bold text-electric-cyan border border-electric-cyan/30">
-                Performance
-              </span>
             </div>
-            <p className="text-xs text-slate-400 font-sans">
-              Estratégia & Vendas
+            <p className="text-[11px] text-slate-400 font-sans tracking-normal">
+              Tráfego Pago & Performance RS
             </p>
           </div>
         </a>
 
         {/* Links Desktop */}
-        <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
-          <a href="#" className="relative text-white font-semibold py-1">
+        <div className="hidden lg:flex items-center gap-7 text-xs font-medium text-slate-300">
+          <a href="#" className="text-white hover:text-blue-400 transition-colors">
             Início
-            <span className="absolute bottom-0 left-0 w-full h-[2px] bg-electric-cyan rounded-full" />
           </a>
-          <a href="#combo-growth" className="relative transition-colors hover:text-electric-cyan font-bold text-white flex items-center gap-1.5">
+          <a
+            href="#combo-growth"
+            className="flex items-center gap-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 px-3 py-1 text-blue-400 hover:bg-blue-500/20 transition-colors font-semibold"
+          >
             <span>Combo Growth</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
           </a>
-          <a href="#sobre" className="transition-colors hover:text-electric-cyan">
+          <a href="#sobre" className="hover:text-blue-400 transition-colors">
             Sobre o Grégory
           </a>
-          <a href="#servicos" className="transition-colors hover:text-electric-cyan">
-            Serviços
-          </a>
-          <a href="#nichos" className="transition-colors hover:text-electric-cyan">
+          <a href="#nichos" className="hover:text-blue-400 transition-colors">
             Cases Práticos
           </a>
-          <a href="#processo" className="transition-colors hover:text-electric-cyan">
-            Processo
+          <a href="#servicos" className="hover:text-blue-400 transition-colors">
+            Serviços
           </a>
-          <a href="#faq" className="transition-colors hover:text-electric-cyan">
+          <a href="#faq" className="hover:text-blue-400 transition-colors">
             Dúvidas
           </a>
         </div>
 
         {/* CTA Direct WhatsApp */}
-        <div className="hidden sm:flex items-center gap-4">
+        <div className="hidden sm:flex items-center gap-3">
           <a
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-electric !py-2.5 !px-5 text-sm"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
           >
-            <MessageSquare className="h-4 w-4" />
+            <MessageSquare className="h-3.5 w-3.5" />
             <span>Falar no WhatsApp</span>
-            <ArrowUpRight className="h-4 w-4" />
+            <ArrowUpRight className="h-3.5 w-3.5 text-blue-200" />
           </a>
         </div>
 
-        {/* Menu Mobile Button */}
+        {/* Menu Mobile Toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="flex lg:hidden rounded-lg p-2 text-slate-300 hover:bg-obsidian-850 hover:text-white focus:outline-none"
-          aria-label="Menu principal"
+          className="flex lg:hidden rounded-lg p-2 text-slate-300 hover:bg-white/[0.05] hover:text-white focus:outline-none"
+          aria-label="Abrir menu"
         >
-          {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
 
-      {/* Menu Mobile Dropdown */}
+      {/* Menu Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#060B18] px-4 pt-3 pb-6">
-          <div className="flex flex-col gap-2.5 text-sm">
+        <div className="lg:hidden bg-[#0D131F] px-5 pt-3 pb-6">
+          <div className="flex flex-col gap-2 text-sm">
             <a
               href="#"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-white font-semibold bg-electric-blue/15"
+              className="rounded-lg px-3 py-2 text-white font-medium hover:bg-white/[0.04]"
             >
               Início
             </a>
             <a
               href="#combo-growth"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 font-bold text-white bg-electric-blue flex items-center justify-between"
+              className="rounded-lg px-3 py-2 font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 flex items-center justify-between"
             >
-              <span>Combo Growth (R$ 1.600)</span>
-              <span className="text-xs bg-white text-electric-blueDark px-2 py-0.5 rounded-full font-bold">Destaque</span>
+              <span>Combo Growth (R$ 1.600/mês)</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-400" />
             </a>
             <a
               href="#sobre"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-obsidian-850 hover:text-electric-cyan"
+              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
             >
               Sobre o Grégory
             </a>
             <a
-              href="#servicos"
-              onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-obsidian-850 hover:text-electric-cyan"
-            >
-              Tabela de Serviços
-            </a>
-            <a
               href="#nichos"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-obsidian-850 hover:text-electric-cyan"
+              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
             >
-              Cases Práticos
+              Cases Práticos de Vendas
             </a>
             <a
-              href="#processo"
+              href="#servicos"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-obsidian-850 hover:text-electric-cyan"
+              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
             >
-              Processo de Trabalho
+              Serviços e Planos
             </a>
             <a
               href="#faq"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-obsidian-850 hover:text-electric-cyan"
+              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-white/[0.04]"
             >
-              Dúvidas Frequentes
+              Perguntas Frequentes
             </a>
-            <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-electric mt-2 w-full justify-center !rounded-xl"
-            >
-              <MessageSquare className="h-4 w-4" />
-              <span>Chamar no WhatsApp</span>
-            </a>
+
+            <div className="pt-3">
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 py-3 text-xs font-semibold text-white w-full"
+              >
+                <MessageSquare className="h-4 w-4" />
+                <span>Conversar no WhatsApp</span>
+              </a>
+            </div>
           </div>
         </div>
       )}

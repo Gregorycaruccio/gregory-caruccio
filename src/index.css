@@ -9,7 +9,7 @@
   }
 
   body {
-    background-color: #040814;
+    background-color: #0B0F17;
     color: #E2E8F0;
     font-family: 'Manrope', sans-serif;
     overflow-x: hidden;
@@ -17,61 +17,39 @@
 
   /* Themed focus states for accessibility */
   :focus-visible {
-    outline: 2px solid #00D2FF;
+    outline: 2px solid #3B82F6;
     outline-offset: 2px;
   }
 
   /* Themed text selection */
   ::selection {
-    background-color: #1E6BFF;
+    background-color: #2563EB;
     color: #FFFFFF;
   }
 }
 
-/* Surface styles: rich opaque tone steps instead of noisy glass */
-.glass-card {
-  background: #091024;
-  border: 1px solid rgba(30, 107, 255, 0.2);
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-.glass-card:hover {
-  border-color: rgba(0, 210, 255, 0.5);
-  transform: translateY(-2px);
-}
-
-.glass-card-active {
-  background: #1E6BFF;
-  border: 1px solid #00D2FF;
-  color: #FFFFFF;
-}
-
-/* Buttons */
-.btn-electric {
-  @apply inline-flex items-center justify-center gap-2 rounded-full bg-electric-blue px-7 py-3.5 text-sm font-heading font-bold text-white transition-colors duration-200 hover:bg-[#1557D6] active:bg-[#0E42A8] sm:px-8 sm:py-4 sm:text-base;
-}
-
-.btn-glass {
-  @apply inline-flex items-center justify-center gap-2 rounded-full border border-obsidian-border bg-obsidian-850 px-6 py-3.5 text-sm font-heading font-semibold text-slate-200 transition-colors duration-200 hover:border-electric-cyan hover:bg-obsidian-800 hover:text-white sm:px-7 sm:py-4 sm:text-base;
-}
-
-/* Cyber Accent Line */
-.cyber-beam {
-  height: 2px;
-  background: #00D2FF;
+/* Utilities */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #040814;
+  background: #0B0F17;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0D172E;
+  background: #1A2338;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1E6BFF;
+  background: #2563EB;
 }

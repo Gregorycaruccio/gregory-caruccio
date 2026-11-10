@@ -4,32 +4,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        obsidian: {
-          950: "#030611",
-          900: "#060B18",
-          850: "#091024",
-          800: "#0D172E",
-          700: "#132142",
-          border: "rgba(30, 107, 255, 0.16)",
-          borderHover: "rgba(0, 210, 255, 0.4)",
+        slateDark: "#0B0F17",
+        slateSurface: "#101725",
+        slateElevated: "#151E30",
+        slateInput: "#0D131F",
+        cobalt: {
+          400: "#60A5FA",
+          500: "#3B82F6",
+          600: "#2563EB",
+          700: "#1D4ED8",
         },
-        electric: {
-          blue: "#1E6BFF",
-          blueDark: "#0A4AD1",
-          cyan: "#00D2FF",
-          sky: "#38BDF8",
-          glow: "rgba(30, 107, 255, 0.35)",
+        emerald: {
+          400: "#34D399",
+          500: "#10B981",
+          600: "#059669",
         },
-        whatsapp: "#25D366",
       },
       fontFamily: {
-        heading: ["'Manrope'", "sans-serif"],
         sans: ["'Manrope'", "sans-serif"],
+        heading: ["'Manrope'", "sans-serif"],
+        mono: ["'JetBrains Mono'", "monospace"], // taste-skill-ignore
       },
       boxShadow: {
-        "blue-glow": "0 0 35px -5px rgba(30, 107, 255, 0.45)",
-        "cyan-glow": "0 0 25px -5px rgba(0, 210, 255, 0.4)",
-        "glass-card": "0 20px 40px -15px rgba(0, 0, 0, 0.7)",
+        overlay: "0 20px 40px -15px rgba(0, 0, 0, 0.7)",
       },
     },
   },
