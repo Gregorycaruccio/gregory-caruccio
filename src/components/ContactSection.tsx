@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2, MessageSquare } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const ContactSection: React.FC = () => {
@@ -26,14 +26,24 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
   };
 
   return (
-    <section id="contato" className="py-20 md:py-28">
+    <section id="contato" className="py-20 md:py-28 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
           {/* Lado Esquerdo: Chamada e Autoridade */}
           <div className="lg:col-span-5">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="h-2 w-2 rounded-full bg-electric-cyan shadow-[0_0_8px_#00D2FF]" />
+              <span className="text-xs font-bold text-electric-cyan uppercase tracking-wider">
+                Contato Direto
+              </span>
+            </div>
+            
             <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
               Vamos conversar sobre o seu <br />
-              <span className="text-brand-orange">próximo salto de vendas.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue via-electric-cyan to-white">
+                próximo salto de vendas.
+              </span>
             </h2>
 
             <p className="mt-4 text-base text-slate-300 font-sans leading-relaxed">
@@ -42,51 +52,56 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
 
             <div className="mt-8 space-y-4">
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-brand-orange shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-electric-cyan shrink-0 mt-0.5" />
                 <p className="text-sm text-slate-300 font-sans">
                   <strong>Atendimento rápido:</strong> Retorno em horário comercial em menos de 2 horas.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-brand-orange shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-electric-cyan shrink-0 mt-0.5" />
                 <p className="text-sm text-slate-300 font-sans">
                   <strong>Diagnóstico sem compromisso:</strong> Avaliamos sua presença atual antes de apresentar qualquer proposta formal.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-brand-orange shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-electric-cyan shrink-0 mt-0.5" />
                 <p className="text-sm text-slate-300 font-sans">
                   <strong>Alinhamento direto:</strong> Você conversa diretamente com quem gerencia os anúncios e o conteúdo.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 rounded-2xl bg-carbon-card border border-carbon-border p-5 flex items-center justify-between">
+            <div className="mt-8 rounded-2xl glass-card p-5 flex items-center justify-between">
               <div>
-                <p className="text-xs text-slate-400">WhatsApp Comercial:</p>
+                <p className="text-xs text-slate-400">WhatsApp Comercial Oficial:</p>
                 <p className="font-heading font-bold text-base text-white">{SITE_CONFIG.telefoneFormatado}</p>
               </div>
               <a
                 href={`https://wa.me/${SITE_CONFIG.telefoneRaw}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg bg-emerald-500/15 px-3 py-1.5 text-xs font-semibold text-emerald-400 hover:bg-emerald-500/25 transition-colors"
+                className="btn-electric !py-2 !px-4 text-xs !rounded-full"
               >
-                Abrir WhatsApp
+                Abrir Chat
               </a>
             </div>
           </div>
 
           {/* Lado Direito: Formulário com Pré-qualificação */}
           <div className="lg:col-span-7">
-            <div className="rounded-3xl border border-carbon-border bg-carbon-card p-6 sm:p-10">
-              <div className="mb-6">
-                <h3 className="font-heading font-bold text-xl text-white">
-                  Solicitar Proposta & Diagnóstico
-                </h3>
-                <p className="text-xs text-slate-400 font-sans mt-1">
-                  Selecione suas preferências e envie em 1 clique
-                </p>
+            <div className="rounded-3xl border border-electric-blue/30 bg-gradient-to-b from-[#0B152B] to-[#050A17] p-6 sm:p-10 shadow-glass-card backdrop-blur-xl">
+              <div className="mb-6 flex items-center justify-between">
+                <div>
+                  <h3 className="font-heading font-bold text-xl text-white">
+                    Solicitar Proposta & Diagnóstico
+                  </h3>
+                  <p className="text-xs text-slate-400 font-sans mt-1">
+                    Selecione suas preferências e envie em 1 clique
+                  </p>
+                </div>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-electric-blue/20 text-electric-cyan border border-electric-cyan/30">
+                  <MessageSquare className="h-5 w-5" />
+                </div>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -102,7 +117,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
                       placeholder="Ex: Carlos Silva"
                       value={nome}
                       onChange={(e) => setNome(e.target.value)}
-                      className="w-full rounded-xl border border-carbon-border bg-carbon-elevated px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-brand-orange focus:outline-none focus:ring-1 focus:ring-brand-orange"
+                      className="w-full rounded-xl border border-white/10 bg-obsidian-950 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-electric-cyan focus:outline-none focus:ring-1 focus:ring-electric-cyan transition-colors"
                     />
                   </div>
                   <div>
@@ -116,7 +131,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
                       placeholder="Ex: Pastelaria do Carlos"
                       value={empresa}
                       onChange={(e) => setEmpresa(e.target.value)}
-                      className="w-full rounded-xl border border-carbon-border bg-carbon-elevated px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-brand-orange focus:outline-none focus:ring-1 focus:ring-brand-orange"
+                      className="w-full rounded-xl border border-white/10 bg-obsidian-950 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-electric-cyan focus:outline-none focus:ring-1 focus:ring-electric-cyan transition-colors"
                     />
                   </div>
                 </div>
@@ -130,7 +145,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
                       id="select-segmento"
                       value={segmento}
                       onChange={(e) => setSegmento(e.target.value)}
-                      className="w-full rounded-xl border border-carbon-border bg-carbon-elevated px-4 py-3 text-sm text-white focus:border-brand-orange focus:outline-none focus:ring-1 focus:ring-brand-orange"
+                      className="w-full rounded-xl border border-white/10 bg-obsidian-950 px-4 py-3 text-sm text-white focus:border-electric-cyan focus:outline-none focus:ring-1 focus:ring-electric-cyan transition-colors"
                     >
                       <option value="Gastronomia / Alimentação">Gastronomia / Delivery / Restaurante</option>
                       <option value="Mercado Imobiliário / Corretores">Mercado Imobiliário / Corretores</option>
@@ -151,7 +166,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
                       id="select-servico"
                       value={servico}
                       onChange={(e) => setServico(e.target.value)}
-                      className="w-full rounded-xl border border-carbon-border bg-carbon-elevated px-4 py-3 text-sm text-white focus:border-brand-orange focus:outline-none focus:ring-1 focus:ring-brand-orange font-semibold text-brand-orange"
+                      className="w-full rounded-xl border border-electric-cyan/40 bg-obsidian-950 px-4 py-3 text-sm text-white focus:border-electric-cyan focus:outline-none focus:ring-1 focus:ring-electric-cyan font-bold text-electric-cyan transition-colors"
                     >
                       <option value="Combo Growth (R$ 1.600/mês)">Combo Growth (R$ 1.600/mês) - Recomendado</option>
                       <option value="Meta Ads Direto (R$ 850/mês)">Meta Ads Direto (R$ 850/mês)</option>
@@ -174,14 +189,14 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
                     placeholder="Ex: Quero aumentar o volume de pedidos no WhatsApp nos fins de semana"
                     value={objetivo}
                     onChange={(e) => setObjetivo(e.target.value)}
-                    className="w-full rounded-xl border border-carbon-border bg-carbon-elevated px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-brand-orange focus:outline-none focus:ring-1 focus:ring-brand-orange"
+                    className="w-full rounded-xl border border-white/10 bg-obsidian-950 px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-electric-cyan focus:outline-none focus:ring-1 focus:ring-electric-cyan transition-colors"
                   />
                 </div>
 
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="btn-action w-full justify-center !py-4 text-base"
+                    className="btn-electric w-full justify-center !py-4 text-base !rounded-full"
                   >
                     <Send className="h-4 w-4" />
                     <span>Enviar e Abrir Conversa no WhatsApp</span>
@@ -193,6 +208,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
               </form>
             </div>
           </div>
+
         </div>
       </div>
     </section>

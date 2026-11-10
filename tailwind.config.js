@@ -4,30 +4,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        carbon: {
-          DEFAULT: "#0A0D14",
-          card: "#121620",
-          elevated: "#181F2C",
-          hover: "#1D2535",
-          border: "rgba(255, 255, 255, 0.08)",
+        obsidian: {
+          950: "#030611",
+          900: "#060B18",
+          850: "#091024",
+          800: "#0D172E",
+          700: "#132142",
+          border: "rgba(30, 107, 255, 0.16)",
+          borderHover: "rgba(0, 210, 255, 0.4)",
         },
-        brand: {
-          orange: "#FF5500",
-          hover: "#E64D00",
-          accent: "#FF7700",
-          subtle: "rgba(255, 85, 0, 0.10)",
-          border: "rgba(255, 85, 0, 0.35)",
-        },
-        silver: {
-          light: "#E2E8F0",
-          DEFAULT: "#94A3B8",
-          dark: "#64748B",
+        electric: {
+          blue: "#1E6BFF",
+          blueDark: "#0A4AD1",
+          cyan: "#00D2FF",
+          sky: "#38BDF8",
+          glow: "rgba(30, 107, 255, 0.35)",
         },
         whatsapp: "#25D366",
       },
       fontFamily: {
         heading: ["'Manrope'", "sans-serif"],
         sans: ["'Manrope'", "sans-serif"],
+      },
+      boxShadow: {
+        "blue-glow": "0 0 35px -5px rgba(30, 107, 255, 0.45)",
+        "cyan-glow": "0 0 25px -5px rgba(0, 210, 255, 0.4)",
+        "glass-card": "0 20px 40px -15px rgba(0, 0, 0, 0.7)",
       },
     },
   },

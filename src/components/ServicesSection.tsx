@@ -4,16 +4,25 @@ import { SITE_CONFIG } from "../config/site-config";
 
 export const ServicesSection: React.FC = () => {
   return (
-    <section id="servicos" className="py-20 md:py-28">
+    <section id="servicos" className="py-20 md:py-28 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header Direto Sem Eyebrow */}
+        
+        {/* Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="h-2 w-2 rounded-full bg-electric-cyan shadow-[0_0_8px_#00D2FF]" />
+            <span className="text-xs font-bold text-electric-cyan uppercase tracking-wider">
+              Soluções Modulares
+            </span>
+          </div>
           <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
-            Serviços modulares <br />
-            <span className="text-brand-orange">para cada momento da empresa.</span>
+            Contratações individuais <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-electric-cyan">
+              para a etapa exata da sua empresa.
+            </span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-            Se sua empresa precisa apenas de uma Landing Page com carregamento rápido ou da gestão exclusiva dos anúncios no Google, os contratos podem ser contratados individualmente.
+            Seja para criar sua primeira Landing Page com carregamento instantâneo ou para assumir a gestão exclusiva dos seus anúncios no Google, nossos contratos são objetivos e transparentes.
           </p>
         </div>
 
@@ -25,7 +34,7 @@ export const ServicesSection: React.FC = () => {
             return (
               <div
                 key={servico.id}
-                className="rounded-2xl border border-carbon-border bg-carbon-card p-6 sm:p-7 flex flex-col justify-between"
+                className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between relative group"
               >
                 <div>
                   <div className="flex items-center justify-between">
@@ -33,20 +42,20 @@ export const ServicesSection: React.FC = () => {
                       {servico.categoria}
                     </span>
                     {servico.destaque && (
-                      <span className="rounded-md bg-brand-orange/15 px-2 py-0.5 text-xs font-semibold text-brand-orange">
+                      <span className="rounded-full bg-electric-blue/20 px-2.5 py-0.5 text-xs font-semibold text-electric-cyan border border-electric-cyan/30">
                         {servico.destaque}
                       </span>
                     )}
                   </div>
 
-                  <h3 className="mt-2 font-heading font-bold text-xl text-white">
+                  <h3 className="mt-2 font-heading font-bold text-xl text-white group-hover:text-electric-cyan transition-colors">
                     {servico.nome}
                   </h3>
                   <p className="mt-2 text-xs text-slate-300 font-sans leading-relaxed min-h-[3rem]">
                     {servico.descricao}
                   </p>
 
-                  <div className="my-5 rounded-xl bg-[#0A0D14] p-4">
+                  <div className="my-5 rounded-xl bg-obsidian-950/80 border border-electric-blue/15 p-4">
                     <div className="flex items-baseline gap-1.5">
                       <span className="font-heading font-extrabold text-2xl text-white">
                         {servico.preco}
@@ -57,25 +66,25 @@ export const ServicesSection: React.FC = () => {
                     </div>
                   </div>
 
-                  <ul className="space-y-2">
+                  <ul className="space-y-2.5">
                     {servico.features.map((feat, fIdx) => (
                       <li
                         key={fIdx}
                         className="flex items-start gap-2.5 text-xs text-slate-300 font-sans leading-relaxed"
                       >
-                        <Check className="h-4 w-4 text-brand-orange shrink-0 mt-0.5" />
+                        <Check className="h-4 w-4 text-electric-cyan shrink-0 mt-0.5" />
                         <span>{feat}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="mt-8 pt-4">
+                <div className="mt-8 pt-4 border-t border-white/5">
                   <a
                     href={whatsappServicoHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-secondary w-full justify-center !py-2.5 !text-xs"
+                    className="btn-glass w-full justify-center !py-2.5 !text-xs !rounded-full group-hover:bg-electric-blue group-hover:border-electric-blue group-hover:text-white"
                   >
                     <MessageSquare className="h-3.5 w-3.5" />
                     <span>Solicitar Proposta</span>
