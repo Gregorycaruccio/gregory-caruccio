@@ -1,12 +1,23 @@
 // =========================================================================
-// CONFIGURAÇÃO GERAL DO SITE — GRÉGORY CARUCCIO
+// CONFIGURAÇÃO GERAL & COPYWRITING DE ALTA CONVERSÃO — GRÉGORY CARUCCIO
 // =========================================================================
 
 export const SITE_CONFIG = {
-  // Informações Pessoais & Contato
+  // Informações Pessoais & Localização Estratégica (SEO Local RS)
   nome: "Grégory Caruccio",
-  cargo: "Estrategista de Crescimento, Tráfego Pago & Performance",
-  cidade: "Litoral Norte - RS & Atendimento Nacional",
+  cargo: "Gestor de Tráfego Pago, Estrategista de Vendas & Desenvolvedor",
+  cidade: "Litoral Norte do RS (Cidreira & Tramandaí) • Atendimento Nacional",
+  regiaoAtendimentoPresencial: [
+    "Cidreira",
+    "Tramandaí",
+    "Imbé",
+    "Osório",
+    "Capão da Canoa",
+    "Xangri-lá",
+    "Torres",
+    "Santo Antônio da Patrulha",
+    "Porto Alegre e Região Metropolitana",
+  ],
   email: "contato@gregorycaruccio.com.br",
   
   // WhatsApp Oficial (Formato DDI + DDD + Número)
@@ -14,89 +25,119 @@ export const SITE_CONFIG = {
   telefoneFormatado: "(51) 98055-2320",
   instagramUrl: "https://instagram.com/gregorycaruccio",
   
-  // Hero Section
+  // Hero Section — Foco em Conversão e Vendas Reais
   hero: {
-    tituloPrincipal: "Compradores reais no seu WhatsApp.",
+    kicker: "Gestor de Tráfego Pago & Estrategista Comercial no Litoral Norte RS",
+    tituloPrincipal: "Compradores reais no seu WhatsApp todos os dias.",
     subtitulo:
-      "Tráfego pago hiperlocal no Meta Ads e Google, autoridade visual no Instagram e páginas rápidas de conversão para transformar cliques em clientes no balcão da sua empresa.",
-    ctaPrincipal: "Conversar no WhatsApp",
-    ctaSecundario: "Ver planos e combos",
+      "Tráfego pago hiperlocal no Meta Ads e Google, autoridade visual no Instagram e páginas rápidas em React. Chega de pagar agência para postar artes genéricas: colocamos pessoas prontas para comprar no balcão da sua empresa em Tramandaí, Cidreira, Litoral Norte e em todo o Brasil.",
+    ctaPrincipal: "Conversar com o Grégory no WhatsApp",
+    ctaSecundario: "Conhecer o Combo Growth (R$ 1.600)",
     metricas: [
-      { valor: "+R$ 1.6M", label: "Gerados em vendas locais" },
-      { valor: "85%+", label: "Margem bruta média dos clientes" },
-      { valor: "+15", label: "Nichos no campo de batalha" },
+      { valor: "+R$ 1.6M", label: "Em vendas geradas para negócios locais" },
+      { valor: "R$ 3,40", label: "Custo médio por conversa qualificada" },
+      { valor: "+15", label: "Nichos atendidos no campo de batalha" },
       { valor: "98%", label: "Retenção em contratos recorrentes" },
     ],
   },
 
-  // Método: Ecossistema de 4 Fases
+  // Sobre o Grégory — A Prova de Humanidade e Autoridade Técnica
+  sobre: {
+    titulo: "Quem comanda a sua estratégia comercial.",
+    subtitulo: "Sem estagiários mexendo na sua conta. Você fala diretamente com quem planeja, executa e cobra resultado.",
+    paragrafos: [
+      "Se você já contratou uma agência tradicional no passado, provavelmente viveu a mesma frustração: assinou o contrato com um vendedor simpático, mas a sua conta foi entregue para um estagiário que só postava frases motivacionais e te mandava relatórios cheios de 'curtidas' e 'alcance' que não pagavam suas contas.",
+      "Comigo o jogo é outro. Sou Grégory Caruccio, gestor de tráfego pago, estrategista de social media e desenvolvedor web radicado no Litoral Norte do RS. Não opero com promessas de gurus nem layouts vazios de inteligência artificial. Conheço na pele a rotina do empresário local: a sazonalidade da praia, o custo de motoboy no delivery, a comissão imobiliária e a necessidade urgente de fazer o estoque girar.",
+      "No meu modelo de trabalho, eu cuido pessoalmente da sua estratégia. Criativos gravados com o que você realmente vende, anúncios rodando nos horários que você tem equipe para atender e acompanhamento semanal direto no WhatsApp.",
+    ],
+    diferenciais: [
+      {
+        titulo: "Operação Direta com o Grégory",
+        descricao: "Sem intermediários, gerentes de conta ou telefone sem fio. Linha direta no WhatsApp com quem aperta os botões.",
+      },
+      {
+        titulo: "Criativos Nativos que Vendem",
+        descricao: "Nada de artes pasteurizadas do Canva. Vídeos reais do seu produto, fotos do seu pátio e bastidores autênticos.",
+      },
+      {
+        titulo: "Métricas de Caixa e Dinheiro no Bolso",
+        descricao: "Não apresento relatório de curtida. Nosso foco semanal é: quantas pessoas mandaram mensagem e quantas compraram.",
+      },
+      {
+        titulo: "Presença Forte no Litoral Norte RS",
+        descricao: "Atendimento presencial em Cidreira, Tramandaí, Imbé e Osório, além de empresas em todo o Brasil no modelo remoto.",
+      },
+    ],
+  },
+
+  // Método: Ecossistema de 4 Fases Integradas
   ecossistema: [
     {
       fase: "Atrair",
-      subtitulo: "Tráfego Pago & Intenção de Compra",
+      subtitulo: "Tráfego Pago Hiperlocal no Meta & Google",
       descricao:
-        "Anúncios no Meta Ads e Google Ads direcionados para quem tem poder de compra e urgência na sua cidade. Programação por horários de pico para não queimar verba quando a loja está fechada.",
-      canais: ["Meta Ads (Instagram e Facebook)", "Google Ads (Rede de Pesquisa)", "Google Meu Negócio & Maps"],
+        "Anúncios calibrados por CEP e raio de atuação em Tramandaí, Cidreira, Porto Alegre ou na sua cidade. Programação com Dayparting nos horários exatos de pico de vendas para não desperdiçar verba com a loja fechada.",
+      canais: ["Meta Ads (Instagram e Facebook)", "Google Ads (Rede de Pesquisa)", "Google Meu Negócio & Google Maps"],
     },
     {
       fase: "Construir",
-      subtitulo: "Social Media & Autoridade Real",
+      subtitulo: "Social Media de Autoridade & Desejo",
       descricao:
-        "O feed da empresa deixa de ser um panfleto abandonado e se torna uma vitrine profissional baseada em 4 pilares: educar, conectar, vender e entreter. Imagens e vídeos autênticos da sua rotina.",
-      canais: ["Carrosséis de posicionamento", "Reels nativos gravados no local", "Arquétipo de marca consistente"],
+        "O feed da sua empresa deixa de ser um panfleto abandonado e vira uma vitrine de respeito. Seguimos o método de 4 pilares: educar seu cliente, conectar com a rotina, vender suas soluções e entreter sem parecer forçado.",
+      canais: ["Carrosséis informativos de autoridade", "Vídeos curtos nativos (Reels no local)", "Identidade visual elegante e limpa"],
     },
     {
       fase: "Converter",
-      subtitulo: "Landing Pages & Triagem no WhatsApp",
+      subtitulo: "Landing Pages Instantâneas & WhatsApp",
       descricao:
-        "Páginas com carregamento instantâneo e scripts de atendimento que eliminam curiosos antes do atendente responder, entregando o lead pronto para fechar.",
-      canais: ["Landing Pages em React e Tailwind", "Triagem de leads qualificados", "Link direto de conversão"],
+        "Páginas em código limpo (React) que carregam em menos de 1 segundo no 4G da praia, com textos persuasivos que tiram as dúvidas comuns e entregam o lead com interesse real na mão do seu atendente.",
+      canais: ["Landing Pages ultra velozes em React", "Triagem de clientes qualificados", "Link de WhatsApp pré-preenchido"],
     },
     {
       fase: "Otimizar",
-      subtitulo: "Métricas de Caixa & Retorno Real",
+      subtitulo: "Reuniões Semanais & Calibração de Caixa",
       descricao:
-        "Acompanhamento semanal de quantas vendas foram fechadas e qual o custo por comprador real. Nada de relatórios vazios com métricas de curtidas ou seguidores.",
-      canais: ["Relatório semanal de fechamentos", "Testes contínuos de criativos", "Otimização de orçamento por ROI"],
+        "Toda semana analisamos: quanto custou cada conversa iniciada, quais criativos trouxeram clientes e onde ajustar o script de atendimento para aumentar o ticket médio e o fechamento no balcão.",
+      canais: ["Feedback direto do atendente/vendedor", "Testes semanais de novos anúncios", "Remanejamento de verba para o maior ROI"],
     },
   ],
 
-  // O Carro-Chefe (Combo Growth)
+  // O Carro-Chefe (Combo Growth) — A Âncora Comercial
   comboGrowth: {
     nome: "Combo Growth",
-    subtitulo: "Assessoria Completa de Crescimento & Vendas",
+    subtitulo: "A Estratégia Completa: Tráfego Pago + Social Media + Vendas no WhatsApp",
     preco: "R$ 1.600,00",
     periodo: "/ mês",
-    destaque: "Recomendado",
-    economia: "Economia de R$ 400 em relação à contratação avulsa",
+    destaque: "O Carro-Chefe Mais Contratado",
+    economia: "Economia de R$ 400 em comparação com as contratações individuais",
     descricao:
-      "A solução integrada para o empresário que quer vender mais todos os dias sem perder horas da semana tentando gerenciar marketing sozinho.",
+      "A solução definitiva para o empresário que não tem tempo de ficar postando no Instagram ou tentando adivinhar como o gerenciador de anúncios funciona. Unimos a atração de novos clientes com a autoridade visual da sua marca em um único contrato direto comigo.",
     entregaveis: [
       {
-        titulo: "Gestão Completa de Meta Ads",
-        detalhe: "Campanhas contínuas no Instagram e Facebook com foco exclusivo em mensagens no WhatsApp e Direct.",
+        titulo: "Gestão Ativa de Meta Ads (Instagram & Facebook)",
+        detalhe: "Campanhas contínuas de captação de leads focadas exclusivamente em gerar fluxo de mensagens comerciais no seu WhatsApp e Direct.",
       },
       {
-        titulo: "Social Media de Alta Autoridade",
-        detalhe: "8 Posts estratégicos em carrossel + 4 roteiros e edição de Reels dinâmicos por mês.",
+        titulo: "Social Media Estratégica (8 Carrosséis + 4 Reels)",
+        detalhe: "Conteúdo autêntico baseado na rotina do seu negócio, posicionando sua marca como a principal referência da sua cidade.",
       },
       {
-        titulo: "Otimização de Atendimento no WhatsApp",
-        detalhe: "Alinhamento das mensagens rápidas, scripts de quebra de objeção e filtragem de curiosos.",
+        titulo: "Programação de Horários (Dayparting Inteligente)",
+        detalhe: "Seus anúncios são pausados de madrugada e ativados exatamente quando seu time comercial ou motoboys estão prontos para atender.",
       },
       {
-        titulo: "Programação Inteligente (Dayparting)",
-        detalhe: "Seus anúncios rodam exatamente nos dias e horários em que sua equipe está disponível para atender.",
+        titulo: "Alinhamento de Atendimento & Scripts de WhatsApp",
+        detalhe: "Ajustamos as respostas rápidas do seu WhatsApp Business para fechar vendas mais rápido e contornar objeções de preço.",
       },
       {
-        titulo: "Relatório Executivo Semanal de Caixa",
-        detalhe: "Mensuração de leads reais gerados, custo por conversa e feedback direto de fechamentos.",
+        titulo: "Acompanhamento Semanal com Grégory Caruccio",
+        detalhe: "Contato direto para checar quantas vendas foram fechadas, custo por comprador e planejamento das ofertas da semana seguinte.",
       },
     ],
-    cta: "Contratar o Combo Growth",
+    cta: "Quero Contratar o Combo Growth",
   },
 
-  // Grade Completa de Serviços Individuais
+  // Grade de Serviços Individuais
   servicos: [
     {
       id: "meta-ads",
@@ -105,13 +146,13 @@ export const SITE_CONFIG = {
       preco: "R$ 850,00",
       periodo: "/ mês",
       descricao:
-        "Campanhas hipersegmentadas no Instagram e Facebook focadas em gerar fluxo previsível de mensagens comerciais no seu balcão.",
+        "Campanhas hipersegmentadas no Instagram e Facebook para lotar o WhatsApp da sua empresa com clientes interessados nos seus produtos ou serviços.",
       features: [
-        "Foco exclusivo em conversão no WhatsApp",
-        "Criação e testes de criativos (Hook, Body, CTA)",
-        "Dayparting inteligente nos horários de funcionamento",
-        "Exclusão de públicos desqualificados e curiosos",
-        "Relatório semanal de custo por lead",
+        "Foco exclusivo em mensagens e ligações comerciais",
+        "Criação e testes contínuos de criativos em foto e vídeo",
+        "Dayparting inteligente ligado nos seus horários de pico",
+        "Negativação de curiosos e compradores fora da região",
+        "Acompanhamento direto semanal do custo por contato",
       ],
     },
     {
@@ -121,29 +162,29 @@ export const SITE_CONFIG = {
       preco: "R$ 850,00",
       periodo: "/ mês",
       descricao:
-        "Captura o cliente no momento exato em que ele busca pelo seu serviço ou produto na sua cidade.",
+        "Apareça no topo das buscas do Google no momento exato em que alguém pesquisa pelo seu serviço ou produto em Tramandaí, Cidreira ou na sua cidade.",
       features: [
-        "Anúncios na Rede de Pesquisa do Google",
+        "Campanhas de Rede de Pesquisa focadas em urgência",
         "Otimização e integração com Google Meu Negócio e Maps",
-        "Negativação diária de termos irrelevantes",
-        "Métricas de chamadas, rotas e cliques no WhatsApp",
-        "Ideal para imobiliárias, oficinas, clínicas e serviços urgentes",
+        "Negativação diária de termos irrelevantes para economizar verba",
+        "Métricas claras de ligações, rotas e cliques no WhatsApp",
+        "Perfeito para imobiliárias, oficinas, clínicas e serviços locais",
       ],
     },
     {
       id: "combo-trafego",
       categoria: "Tráfego Pago",
-      nome: "Combo Tráfego Total (Meta + Google)",
+      nome: "Cerco Total (Meta Ads + Google Ads)",
       preco: "R$ 1.300,00",
       periodo: "/ mês",
       destaque: "Economia de R$ 400",
       descricao:
-        "Cerco completo: sua empresa aparece para quem é lembrado no feed do Instagram e para quem procura ativamente no Google.",
+        "Presença completa: você é lembrado todos os dias no feed do Instagram e encontrado no topo do Google quando o cliente tem urgência de compra.",
       features: [
-        "Gestão unificada Meta Ads + Google Ads",
-        "Estratégia integrada de reconhecimento e conversão",
-        "Relatório unificado de retorno consolidado",
-        "Otimização cruzada de públicos e termos de busca",
+        "Gestão unificada de anúncios no Meta e Google",
+        "Estratégia integrada de reconhecimento local e busca ativa",
+        "Relatório consolidado de retorno sobre investimento",
+        "Alinhamento dos públicos de remarketing entre as plataformas",
       ],
     },
     {
@@ -153,13 +194,13 @@ export const SITE_CONFIG = {
       preco: "R$ 950,00",
       periodo: "/ mês",
       descricao:
-        "Conteúdo profissional para posicionar sua empresa como a principal referência da sua região.",
+        "Acabe com o feed fantasma. Criamos uma linha editorial profissional que transmite credibilidade e prepara o cliente para comprar.",
       features: [
-        "8 Posts em carrossel e estáticos de alto padrão",
+        "8 Posts estratégicos em carrossel e estáticos de alto padrão",
         "4 Roteiros e edição de Reels com legendas dinâmicas",
-        "Linha editorial baseada em 4 pilares: educar, conectar, vender e entreter",
-        "Design sóbrio e profissional sem templates genéricos",
-        "Otimização de biografia, destaques e canais de contato",
+        "Aplicação do método Alfredo Soares: educar, conectar, vender e entreter",
+        "Design sóbrio e profissional sem molduras infantis do Canva",
+        "Otimização da biografia, destaques e link da bio",
       ],
     },
     {
@@ -167,129 +208,129 @@ export const SITE_CONFIG = {
       categoria: "Desenvolvimento Web",
       nome: "Landing Page de Alta Conversão",
       preco: "R$ 1.200 a R$ 1.500",
-      periodo: "peça única",
+      periodo: "taxa única",
       descricao:
-        "Página de alto padrão com carregamento veloz em React e Tailwind, desenhada exclusivamente para transformar cliques em contatos comerciais.",
+        "Página própria construída em código profissional (React + Tailwind) com carregamento instantâneo, feita para transformar cliques em chamados no WhatsApp.",
       features: [
         "Carregamento em menos de 1 segundo (Mobile-first)",
-        "Copy persuasiva focada em agendamento no WhatsApp",
-        "Instalação e verificação do Meta Pixel e Google Analytics",
-        "Configuração de domínio próprio e hospedagem de alta disponibilidade",
-        "Sem taxas mensais de plataformas proprietárias",
+        "Copy persuasiva focada em tirar dúvidas e quebrar objeções",
+        "Instalação do Pixel da Meta e Google Analytics para rastreio",
+        "Configuração de domínio próprio sem taxas mensais de plataformas",
+        "Botão de WhatsApp com mensagem pré-preenchida",
       ],
     },
     {
       id: "sistemas-especiais",
       categoria: "Sistemas & Automações",
-      nome: "Catálogos & Automação n8n",
+      nome: "Cardápios & Catálogos para WhatsApp",
       preco: "Sob Consulta",
-      periodo: "setup + manutenção",
+      periodo: "setup + suporte",
       descricao:
-        "Sistemas próprios para livrar seu negócio de comissões abusivas de aplicativos terceiros ou triar leads no WhatsApp.",
+        "Sistemas sob medida para livrar seu negócio de comissões abusivas de plataformas terceiras e organizar o atendimento de pedidos.",
       features: [
-        "Cardápios digitais próprios sem cobrança de taxas de pedidos",
-        "Catálogos interativos de centenas de produtos para WhatsApp",
-        "Fluxos de triagem e qualificação de clientes no WhatsApp",
-        "Integração direta com o balcão de vendas",
+        "Cardápios digitais para delivery sem taxa de 27% por pedido",
+        "Catálogos interativos de centenas de produtos físicos para WhatsApp",
+        "Triagem automática de clientes para aliviar o balcão",
+        "Integração rápida com a rotina da sua equipe",
       ],
     },
   ],
 
-  // Casos de Campo & Experiência por Nicho
+  // Casos de Campo & Experiência por Nicho (Validação de Mercado)
   nichos: [
     {
       nicho: "Gastronomia & Delivery",
-      exemplo: "Fleck Pastel",
-      foco: "Vídeos curtos de produto com áudio ambiente e campanhas noturnas com Dayparting ligando apenas nos horários de funcionamento.",
-      resultado: "Picos de 25+ pedidos por noite sem pagar comissões de aplicativos de entrega.",
+      exemplo: "Fleck Pastel (Cidreira - RS)",
+      foco: "Vídeos no ponto certo com áudio ambiente de corte e recheio farto. Anúncios com Dayparting estrito das 18h às 23h30 para clientes no raio de entrega.",
+      resultado: "Picos de mais de 25 pedidos diretos por noite no WhatsApp, economizando milhares de reais em taxas de intermediários.",
     },
     {
       nicho: "Mercado Imobiliário",
-      exemplo: "Quezia Auler Imóveis",
-      foco: "Captação de compradores qualificados da Região Metropolitana e Serra buscando casas e terrenos no Litoral.",
-      resultado: "Filtro prévio de renda e leads com interesse real prontos para visitação.",
+      exemplo: "Quezia Auler Imóveis (Litoral Norte RS)",
+      foco: "Captação de compradores qualificados de Porto Alegre, Canoas e Serra buscando casas geminadas e terrenos em Cidreira e Nazaré a partir de R$ 80k.",
+      resultado: "Filtro prévio de renda que elimina especuladores de temporada e entrega compradores com dinheiro na mão para visitação.",
     },
     {
       nicho: "Agropecuária & Pet Shop",
-      exemplo: "Agro Salinas",
-      foco: "Digitalização do estoque de balcão com catálogo interativo e comunicação baseada no arquétipo 'O Vizinho Especialista'.",
-      resultado: "Vendas diretas de rações, medicamentos e acessórios pet pelo WhatsApp.",
+      exemplo: "Agro Salinas (Cidreira - RS)",
+      foco: "Digitalização de centenas de itens de balcão (rações a granel, medicamentos e acessórios) no arquétipo 'O Vizinho Especialista'.",
+      resultado: "Venda direta e entrega de rações e insumos pet direto pelo WhatsApp para moradores e veranistas do Litoral.",
     },
     {
-      nicho: "Saúde & Estética Facial",
-      exemplo: "Renova Face & Espaço Pró Corpo",
-      foco: "Páginas profissionais com apresentação clínica clara de procedimentos, quebra de dúvidas e agendamento direto.",
-      resultado: "Agenda de procedimentos estéticos e sessões de pilates preenchidas com previsibilidade.",
+      nicho: "Saúde & Estética Avançada",
+      exemplo: "Dra. Sandra & Espaço Pró Corpo",
+      foco: "Páginas profissionais com vídeos explicativos dos procedimentos faciais, quebrando medos sobre tempo de recuperação e dor.",
+      resultado: "Preenchimento da agenda de procedimentos estéticos e turmas de pilates com semanas de antecedência.",
+    },
+    {
+      nicho: "Revenda de Seminovos",
+      exemplo: "Alex Contini Multimarcas (Tramandaí - RS)",
+      foco: "O estoque dita os anúncios: fotos e vídeos reais do pátio com mensagem já trazendo o modelo do carro e condições de financiamento.",
+      resultado: "Aceleração do giro de veículos no pátio e redução drástica do custo por comprador interessado em trocar de carro.",
     },
     {
       nicho: "Comunicação Visual & B2B",
       exemplo: "Win Comunicação Visual",
-      foco: "Fachadas comerciais em ACM e letra caixa para lojistas e empresários do Litoral Norte.",
-      resultado: "Agendamentos de medição técnica no local com donos de imóveis comerciais.",
-    },
-    {
-      nicho: "Revenda de Veículos",
-      exemplo: "Alex Contini Multimarcas",
-      foco: "O estoque dita os anúncios: fotos e vídeos reais do pátio com mensagem trazendo o modelo do veículo pré-preenchido.",
-      resultado: "Giro rápido de estoque seminovo e redução do custo por lead interessado em financiamento.",
+      foco: "Captação de comerciantes e lojistas que precisam renovar suas fachadas em ACM e letra caixa antes da temporada de verão.",
+      resultado: "Agendamento frequente de medições técnicas no local com empresários de Cidreira, Tramandaí e Imbé.",
     },
   ],
 
-  // O Processo de Trabalho em 5 Etapas
+  // O Processo de Trabalho em 5 Etapas Práticas
   processo: [
     {
-      titulo: "Diagnóstico Inicial",
+      titulo: "1. Diagnóstico do Balcão",
       prazo: "Primeiro dia",
-      descricao: "Analisamos o histórico de vendas, os concorrentes locais e onde há perda de oportunidades de contato.",
+      descricao: "Entendo o que mais dá lucro no seu negócio, quem é o seu cliente ideal na região e onde as vendas estão sendo perdidas hoje.",
     },
     {
-      titulo: "Definição Estratégica",
+      titulo: "2. Estratégia & Oferta",
       prazo: "Segundo dia",
-      descricao: "Estabelecemos as ofertas de entrada, o público-alvo prioritário e o tom visual adequado para a marca.",
+      descricao: "Definimos qual produto ou serviço será a porta de entrada dos anúncios e alinhamos o tom de conversa com o seu público.",
     },
     {
-      titulo: "Setup & Produção",
+      titulo: "3. Produção dos Criativos",
       prazo: "Dias 3 a 5",
-      descricao: "Configuração técnica das contas de anúncio, produção dos criativos iniciais e alinhamento do canal de atendimento.",
+      descricao: "Criamos anúncios com fotos e vídeos autênticos da sua empresa, escrevemos copies diretas e configuramos as ferramentas oficiais.",
     },
     {
-      titulo: "Campanhas no Ar",
-      prazo: "Até 48 horas após setup",
-      descricao: "Ativação dos anúncios nos horários comerciais de pico, monitorando a entrada dos primeiros contatos no WhatsApp.",
+      titulo: "4. Campanhas no Ar",
+      prazo: "Até 48h após setup",
+      descricao: "Ativamos os anúncios nos horários em que sua equipe atende. As primeiras notificações de WhatsApp começam a chegar.",
     },
     {
-      titulo: "Acompanhamento Contínuo",
-      prazo: "Semanal",
-      descricao: "Substituição de criativos desgastados, ampliação do que gera retorno financeiro e alinhamento direto com o responsável.",
+      titulo: "5. Acompanhamento Semanal",
+      prazo: "Toda semana",
+      descricao: "Troco criativos desgastados, coloco mais verba no que traz comprador e ajusto com você os pontos de melhoria no atendimento.",
     },
   ],
 
   // Perguntas Frequentes (FAQ)
   faq: [
     {
-      pergunta: "Por que o Combo Growth de R$ 1.600 é mais vantajoso que contratar apenas tráfego?",
+      pergunta: "Por que o Combo Growth de R$ 1.600 é mais vantajoso que contratar apenas tráfego pago?",
       resposta:
-        "O tráfego pago atrai as pessoas até o perfil da empresa. Se o perfil estiver sem publicações recentes ou com aparência amadora, o visitante desconfia e não entra em contato. O Combo une a atração ativa dos anúncios com a autoridade visual de um perfil organizado, completando o ciclo de decisão do cliente.",
+        "O tráfego pago atrai o cliente até a sua porta. Quando ele clica no anúncio, o primeiro impulso dele é olhar o seu perfil no Instagram para checar se a sua empresa é confiável. Se o perfil estiver sem posts há semanas ou com fotos mal feitas, ele desiste e não manda mensagem. O Combo Growth resolve os dois lados da mesma moeda: atrai novas pessoas todo dia com os anúncios e passa autoridade imediata no feed.",
     },
     {
-      pergunta: "O valor investido nos anúncios está incluso na mensalidade?",
+      pergunta: "O valor investido nos anúncios está incluso na mensalidade de R$ 1.600?",
       resposta:
-        "Não. A mensalidade cobre toda a estratégia, produção de criativos, configuração técnica, programação de horários e acompanhamento. O valor pago aos anúncios é pago diretamente por você às plataformas (Meta e Google) via cartão ou boleto.",
+        "Não. A mensalidade cobre a minha assessoria técnica completa: planejamento, criação de anúncios, gestão diária, dayparting, produção de conteúdo e reuniões semanais. O orçamento dos anúncios é pago diretamente por você para o Meta (Facebook/Instagram) e Google, através de cartão de crédito ou boleto, com controle total do seu extrato.",
     },
     {
-      pergunta: "Posso contratar apenas o serviço de Tráfego Pago ou apenas a Landing Page?",
+      pergunta: "Quanto preciso investir em anúncios por dia para ter resultado no Litoral Norte?",
       resposta:
-        "Sim. Caso seu perfil já esteja ativo ou sua empresa precise apenas de uma Landing Page rápida (R$ 1.200 a R$ 1.500 peça única), todos os serviços podem ser contratados individualmente.",
+        "Para negócios locais no Litoral Norte (Cidreira, Tramandaí, Imbé e região), recomendamos começar entre R$ 20 e R$ 40 por dia (R$ 600 a R$ 1.200 no mês). Com esse valor bem distribuído nos horários de funcionamento, já é possível gerar um volume constante de conversas diárias no WhatsApp.",
     },
     {
-      pergunta: "Em quanto tempo os contatos começam a chegar no WhatsApp?",
+      pergunta: "Existe contrato de fidelidade obrigatória por 6 ou 12 meses?",
       resposta:
-        "Assim que os anúncios são aprovados pelas plataformas (geralmente entre 24 e 48 horas após a conclusão do setup), as primeiras mensagens começam a chegar. Os primeiros 7 dias servem para calibrar o custo por conversa e refinar a segmentação.",
+        "Não acredito em prender clientes por contrato burocrático. Minha retenção de 98% acontece porque os clientes vendem mais e veem o dinheiro voltando para o caixa. O contrato é mensal, renovado a cada 30 dias enquanto estiver sendo vantajoso e lucrativo para a sua empresa.",
     },
     {
-      pergunta: "O atendimento é exclusivo para o Litoral Norte do Rio Grande do Sul?",
+      pergunta: "Você atende apenas empresas do Litoral Norte do RS?",
       resposta:
-        "Realizamos atendimento presencial no Litoral Norte (Cidreira, Tramandaí, Imbé e Osório) e atendemos empresas em todo o país de forma 100% remota com o mesmo acompanhamento semanal.",
+        "Tenho base física no Litoral Norte Gaúcho (Cidreira e Tramandaí), onde realizo visitas e captação de materiais presencialmente. No entanto, atendo clientes em Porto Alegre, Serra Gaúcha e em diversos estados do Brasil de forma 100% remota com a mesma proximidade e reuniões semanais.",
     },
   ],
 };

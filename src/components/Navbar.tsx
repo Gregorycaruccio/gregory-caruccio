@@ -52,12 +52,15 @@ export const Navbar: React.FC = () => {
             Início
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-electric-cyan rounded-full" />
           </a>
-          <a href="#servicos" className="transition-colors hover:text-electric-cyan">
-            Serviços
-          </a>
           <a href="#combo-growth" className="relative transition-colors hover:text-electric-cyan font-bold text-white flex items-center gap-1.5">
             <span>Combo Growth</span>
             <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
+          </a>
+          <a href="#sobre" className="transition-colors hover:text-electric-cyan">
+            Sobre o Grégory
+          </a>
+          <a href="#servicos" className="transition-colors hover:text-electric-cyan">
+            Serviços
           </a>
           <a href="#nichos" className="transition-colors hover:text-electric-cyan">
             Cases Práticos
@@ -112,6 +115,13 @@ export const Navbar: React.FC = () => {
             >
               <span>Combo Growth (R$ 1.600)</span>
               <span className="text-xs bg-white text-electric-blueDark px-2 py-0.5 rounded-full font-bold">Destaque</span>
+            </a>
+            <a
+              href="#sobre"
+              onClick={() => setMobileMenuOpen(false)}
+              className="rounded-lg px-3 py-2 text-slate-300 hover:bg-obsidian-850 hover:text-electric-cyan"
+            >
+              Sobre o Grégory
             </a>
             <a
               href="#servicos"

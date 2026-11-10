@@ -10,30 +10,27 @@ export const Hero: React.FC = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           
-          {/* Eyebrow Direto e Limpo */}
+          {/* Eyebrow Direto Ancorado no Nicho e Localidade */}
           <div className="flex items-center gap-3 mb-4">
             <span className="w-8 h-[2px] bg-electric-cyan" />
             <span className="text-electric-cyan text-sm sm:text-base font-semibold">
-              Estratégia e Performance Comercial
+              Gestor de Tráfego Pago & Performance no Litoral Norte RS
             </span>
             <span className="w-8 h-[2px] bg-electric-cyan" />
           </div>
 
-          {/* Headline Monumental com Cor Sólida de Alto Contraste */}
+          {/* Headline Monumental com Foco em Vendas e WhatsApp */}
           <h1 className="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight max-w-5xl leading-[1.08]">
-            Máquina de Vendas e <br />
+            Compradores reais no seu WhatsApp <br />
             <span className="text-electric-cyan">
-              Tráfego de Alta Conversão
+              todos os dias.
             </span>
           </h1>
 
-          {/* Subtítulo Tecnológico & Assertivo */}
-          <p className="mt-5 max-w-2xl text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
-            Unimos anúncios hiperlocais no Meta Ads e Google, autoridade no Instagram e páginas rápidas em React para colocar compradores qualificados conversando no seu WhatsApp todos os dias.
+          {/* Subtítulo Tecnológico & Assertivo com Prova Humana */}
+          <p className="mt-5 max-w-3xl text-base sm:text-lg text-slate-300 font-sans leading-relaxed">
+            Tráfego pago no Meta Ads e Google, autoridade no Instagram e páginas rápidas em React. Sem artes genéricas do Canva e sem métricas de vaidade: apenas clientes prontos para comprar no seu balcão em Tramandaí, Cidreira, Litoral Norte e em todo o Brasil.
           </p>
-
-          {/* Divisor Cyber Beam */}
-          <div className="mt-8 w-44 cyber-beam rounded-full" />
 
           {/* ======================================================== */}
           {/* CENTERPIECE: O LAPTOP COM DASHBOARD DE CRESCIMENTO REAL */}
@@ -72,13 +69,13 @@ export const Hero: React.FC = () => {
                   <div className="lg:col-span-7 flex flex-col justify-between">
                     <div>
                       <span className="text-xs font-semibold text-electric-cyan">
-                        Resultado em Tempo Real
+                        Operação de Campo • Horários Comerciais de Pico
                       </span>
                       <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1 leading-snug">
-                        Multiplique as vendas do seu negócio online.
+                        Anúncios que colocam dinheiro no caixa, não curtidas na tela.
                       </h3>
                       <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                        Campanhas com Dayparting inteligente rodando nos horários de pico comercial, filtrando curiosos e atraindo clientes prontos para comprar.
+                        Campanhas com Dayparting cirúrgico rodando quando sua equipe atende. Filtramos curiosos e entregamos clientes com intenção real de compra no WhatsApp.
                       </p>
                     </div>
 

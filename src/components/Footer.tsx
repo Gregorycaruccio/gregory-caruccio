@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="mt-2 text-xs text-slate-400 font-sans max-w-sm">
-              Estratégia de crescimento, tráfego pago hiperlocal e arquitetura de conversão para empresas que buscam previsibilidade de vendas no balcão.
+              Gestão de tráfego pago hiperlocal, social media de autoridade e páginas rápidas no Litoral Norte do RS (Cidreira, Tramandaí, Capão da Canoa e região) e em todo o Brasil. Vendas reais no WhatsApp.
             </p>
           </div>
 
@@ -35,17 +35,23 @@ export const Footer: React.FC = () => {
             <a href="#combo-growth" className="hover:text-electric-cyan transition-colors text-white font-bold">
               Combo Growth (R$ 1.600)
             </a>
+            <a href="#sobre" className="hover:text-electric-cyan transition-colors">
+              Sobre o Grégory
+            </a>
             <a href="#servicos" className="hover:text-electric-cyan transition-colors">
               Serviços
             </a>
             <a href="#nichos" className="hover:text-electric-cyan transition-colors">
-              Cases
+              Cases Práticos
             </a>
             <a href="#processo" className="hover:text-electric-cyan transition-colors">
               Processo
             </a>
             <a href="#faq" className="hover:text-electric-cyan transition-colors">
               Dúvidas
+            </a>
+            <a href="#contato" className="hover:text-electric-cyan transition-colors text-electric-cyan">
+              Contato
             </a>
           </div>
 

@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { EcosystemSection } from "./components/EcosystemSection";
 import { ComboGrowthSection } from "./components/ComboGrowthSection";
+import { AboutSection } from "./components/AboutSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { PortfolioSection } from "./components/PortfolioSection";
 import { ProcessSection } from "./components/ProcessSection";
@@ -19,6 +20,7 @@ export const App: React.FC = () => {
         <Hero />
         <EcosystemSection />
         <ComboGrowthSection />
+        <AboutSection />
         <ServicesSection />
         <PortfolioSection />
         <ProcessSection />
