@@ -183,6 +183,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia no meu ne
                       <option value="Cerco Total Meta + Google (R$ 1.300/mês)">Cerco Total (R$ 1.300)</option>
                       <option value="Social Media Autoridade (R$ 950/mês)">Social Media (R$ 950)</option>
                       <option value="Landing Page de Alta Conversão">Landing Page</option>
+                      <option value="Bots no WhatsApp & SDRs com IA">Bots no WhatsApp & SDRs com IA</option>
                       <option value="Cardápios & Catálogos WhatsApp">Cardápios WhatsApp</option>
                     </select>
                   </div>

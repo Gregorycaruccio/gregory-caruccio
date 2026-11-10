@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
             {SITE_CONFIG.nome}
           </span>
           <span className="text-[11px] text-slate-400 font-sans tracking-normal">
-            Tráfego Pago & Performance RS
+            Tráfego Pago, Automação & Performance RS
           </span>
         </a>
 

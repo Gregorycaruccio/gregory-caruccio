@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Target, Globe, Zap, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Target, Globe, Zap, Bot, CheckCircle2 } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { SITE_CONFIG } from "../config/site-config";
 
@@ -156,6 +156,9 @@ export const Hero: React.FC = () => {
                 </span>
                 <span className="flex items-center gap-1.5">
                   <WhatsAppIcon className="h-3.5 w-3.5 text-emerald-400" /> WhatsApp Cloud API
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Bot className="h-3.5 w-3.5 text-blue-400" /> Bots & SDRs com IA
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Zap className="h-3.5 w-3.5 text-amber-400" /> Automações n8n

@@ -5,7 +5,7 @@
 export const SITE_CONFIG = {
   // Informações Pessoais & Localização Estratégica (SEO Local RS)
   nome: "Grégory Caruccio",
-  cargo: "Gestor de Tráfego Pago, Estrategista de Vendas & Desenvolvedor",
+  cargo: "Gestor de Tráfego Pago, Estrategista de Vendas, Bots com IA & Desenvolvedor",
   cidade: "Litoral Norte do RS (Cidreira & Tramandaí) • Atendimento Nacional",
   regiaoAtendimentoPresencial: [
     "Cidreira",
@@ -27,10 +27,10 @@ export const SITE_CONFIG = {
   
   // Hero Section — Foco em Conversão e Vendas Reais
   hero: {
-    kicker: "Gestor de Tráfego Pago & Estrategista Comercial no Litoral Norte RS",
+    kicker: "Gestor de Tráfego Pago, Bots com IA & Estrategista no Litoral Norte RS",
     tituloPrincipal: "Compradores reais no seu WhatsApp todos os dias.",
     subtitulo:
-      "Tráfego pago hiperlocal no Meta Ads e Google, autoridade visual no Instagram e páginas rápidas em React. Chega de pagar agência para postar artes genéricas: colocamos pessoas prontas para comprar no balcão da sua empresa em Tramandaí, Cidreira, Litoral Norte e em todo o Brasil.",
+      "Tráfego pago hiperlocal no Meta Ads e Google, autoridade no Instagram, páginas rápidas em React e automações com bots e SDRs de Inteligência Artificial. Chega de pagar agência para postar artes genéricas: colocamos pessoas prontas para comprar no WhatsApp da sua empresa em Tramandaí, Cidreira, Litoral Norte e em todo o Brasil.",
     ctaPrincipal: "Conversar com o Grégory no WhatsApp",
     ctaSecundario: "Conhecer o Combo Growth (R$ 1.600)",
     metricas: [
@@ -47,8 +47,8 @@ export const SITE_CONFIG = {
     subtitulo: "Sem estagiários mexendo na sua conta. Você fala diretamente com quem planeja, executa e cobra resultado.",
     paragrafos: [
       "Se você já contratou uma agência tradicional no passado, provavelmente viveu a mesma frustração: assinou o contrato com um vendedor simpático, mas a sua conta foi entregue para um estagiário que só postava frases motivacionais e te mandava relatórios cheios de 'curtidas' e 'alcance' que não pagavam suas contas.",
-      "Comigo o jogo é outro. Sou Grégory Caruccio, gestor de tráfego pago, estrategista de social media e desenvolvedor web radicado no Litoral Norte do RS. Não opero com promessas de gurus nem layouts vazios de inteligência artificial. Conheço na pele a rotina do empresário local: a sazonalidade da praia, o custo de motoboy no delivery, a comissão imobiliária e a necessidade urgente de fazer o estoque girar.",
-      "No meu modelo de trabalho, eu cuido pessoalmente da sua estratégia. Criativos gravados com o que você realmente vende, anúncios rodando nos horários que você tem equipe para atender e acompanhamento semanal direto no WhatsApp.",
+      "Comigo o jogo é outro. Sou Grégory Caruccio, gestor de tráfego pago, estrategista de vendas e desenvolvedor de automações com IA radicado no Litoral Norte do RS. Além da gestão de anúncios e criativos autênticos, desenvolvo bots inteligentes no WhatsApp e agentes SDR com Inteligência Artificial para responder clientes em segundos, qualificar compradores e garantir que nenhum lead fique no vácuo.",
+      "No meu modelo de trabalho, eu cuido pessoalmente da sua estratégia. Criativos gravados com o que você realmente vende, anúncios rodando nos horários que você tem equipe para atender, robôs inteligentes de apoio e acompanhamento semanal direto no WhatsApp.",
     ],
     diferenciais: [
       {
@@ -62,6 +62,10 @@ export const SITE_CONFIG = {
       {
         titulo: "Métricas de Caixa e Dinheiro no Bolso",
         descricao: "Não apresento relatório de curtida. Nosso foco semanal é: quantas pessoas mandaram mensagem e quantas compraram.",
+      },
+      {
+        titulo: "Bots no WhatsApp & SDRs com IA",
+        descricao: "Criação de agentes SDR inteligentes com Inteligência Artificial para atender 24/7, qualificar leads e agilizar o fechamento de vendas.",
       },
       {
         titulo: "Presença Forte no Litoral Norte RS",
@@ -88,10 +92,10 @@ export const SITE_CONFIG = {
     },
     {
       fase: "Converter",
-      subtitulo: "Landing Pages Instantâneas & WhatsApp",
+      subtitulo: "Landing Pages, Bots & SDRs com IA",
       descricao:
-        "Páginas em código limpo (React) que carregam em menos de 1 segundo no 4G da praia, com textos persuasivos que tiram as dúvidas comuns e entregam o lead com interesse real na mão do seu atendente.",
-      canais: ["Landing Pages ultra velozes em React", "Triagem de clientes qualificados", "Link de WhatsApp pré-preenchido"],
+        "Páginas em React de carregamento instantâneo e automações inteligentes com bots e SDRs de Inteligência Artificial no WhatsApp. Triagem automática em segundos que qualifica o lead e o entrega pronto para o fechamento.",
+      canais: ["Landing Pages ultra velozes em React", "Bots no WhatsApp & SDRs com IA", "Triagem inteligente e resposta 24/7"],
     },
     {
       fase: "Otimizar",
@@ -128,6 +132,10 @@ export const SITE_CONFIG = {
       {
         titulo: "Alinhamento de Atendimento & Scripts de WhatsApp",
         detalhe: "Ajustamos as respostas rápidas do seu WhatsApp Business para fechar vendas mais rápido e contornar objeções de preço.",
+      },
+      {
+        titulo: "Automação Comercial & Bots com IA",
+        detalhe: "Estruturação de fluxos inteligentes no WhatsApp e agentes SDR com Inteligência Artificial para responder dúvidas e qualificar contatos comerciais 24/7.",
       },
       {
         titulo: "Acompanhamento Semanal com Grégory Caruccio",
@@ -220,18 +228,20 @@ export const SITE_CONFIG = {
       ],
     },
     {
-      id: "sistemas-especiais",
-      categoria: "Sistemas & Automações",
-      nome: "Cardápios & Catálogos para WhatsApp",
+      id: "bots-ia-sdr",
+      categoria: "Inteligência Artificial & Automação",
+      nome: "Bots no WhatsApp & SDRs com IA",
       preco: "Sob Consulta",
-      periodo: "setup + suporte",
+      periodo: "setup + evolução",
+      destaque: "Atendimento 24/7",
       descricao:
-        "Sistemas sob medida para livrar seu negócio de comissões abusivas de plataformas terceiras e organizar o atendimento de pedidos.",
+        "Criação de sistemas de automação, bots inteligentes no WhatsApp e agentes SDR com Inteligência Artificial para responder instantaneamente, qualificar contatos e organizar vendas sem perda de tempo.",
       features: [
-        "Cardápios digitais para delivery sem taxa de 27% por pedido",
-        "Catálogos interativos de centenas de produtos físicos para WhatsApp",
-        "Triagem automática de clientes para aliviar o balcão",
-        "Integração rápida com a rotina da sua equipe",
+        "Agente SDR com Inteligência Artificial treinado com o catálogo e regras da sua empresa",
+        "Atendimento e triagem 24 horas por dia no WhatsApp sem deixar clientes no vácuo",
+        "Qualificação automática de interesse, renda e urgência antes de acionar o vendedor",
+        "Automação de cardápios, catálogos e pedidos integrados direto no WhatsApp",
+        "Integração com n8n, CRM, planilhas Google Sheets e alertas para a equipe",
       ],
     },
   ],
@@ -331,6 +341,11 @@ export const SITE_CONFIG = {
       pergunta: "Você atende apenas empresas do Litoral Norte do RS?",
       resposta:
         "Tenho base física no Litoral Norte Gaúcho (Cidreira e Tramandaí), onde realizo visitas e captação de materiais presencialmente. No entanto, atendo clientes em Porto Alegre, Serra Gaúcha e em diversos estados do Brasil de forma 100% remota com a mesma proximidade e reuniões semanais.",
+    },
+    {
+      pergunta: "Como funcionam a criação de bots, SDRs e a Inteligência Artificial?",
+      resposta:
+        "Criamos sistemas de automação sob medida com agentes SDR (Sales Development Representative) movidos a Inteligência Artificial no WhatsApp da sua empresa. Eles respondem instantaneamente aos clientes atraídos pelos anúncios, tiram dúvidas frequentes, qualificam o interesse de compra e transferem o contato pronto e aquecido para a sua equipe comercial finalizar a venda.",
     },
   ],
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { UserCheck, Camera, TrendingUp, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
+import { UserCheck, Camera, TrendingUp, Bot, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const AboutSection: React.FC = () => {
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Lado Direito: Os 4 Pilares de Confiança Técnica */}
+          {/* Lado Direito: Os 5 Pilares de Confiança Técnica & IA */}
           <div className="lg:col-span-6 space-y-3.5">
             {sobre.diferenciais.map((dif, idx) => {
               const getIcon = () => {
@@ -64,6 +64,8 @@ export const AboutSection: React.FC = () => {
                     return <Camera className="h-5 w-5 text-blue-400" />;
                   case 2:
                     return <TrendingUp className="h-5 w-5 text-emerald-400" />;
+                  case 3:
+                    return <Bot className="h-5 w-5 text-blue-400" />;
                   default:
                     return <MapPin className="h-5 w-5 text-blue-400" />;
                 }

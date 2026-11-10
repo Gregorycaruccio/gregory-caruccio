@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
               {SITE_CONFIG.nome}
             </span>
             <p className="mt-2 text-xs text-slate-400 font-sans max-w-md leading-relaxed">
-              Gestão de tráfego pago hiperlocal, social media de autoridade e páginas rápidas no Litoral Norte do RS (Cidreira, Tramandaí, Capão da Canoa e região) e em todo o Brasil. Vendas reais no WhatsApp.
+              Gestão de tráfego pago hiperlocal, social media de autoridade, páginas rápidas e bots inteligentes com IA no Litoral Norte do RS (Cidreira, Tramandaí, Capão da Canoa e região) e em todo o Brasil. Vendas reais no WhatsApp.
             </p>
           </div>
 
