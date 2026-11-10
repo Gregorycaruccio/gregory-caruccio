@@ -167,30 +167,30 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* ======================================================== */}
-          {/* AS 4 CARTELAS FLUTUANTES (BIZNEXT STYLE) */}
+          {/* AS 4 CARTELAS FLUTUANTES (BIZNEXT STYLE: BRANCO ACRÍLICO + AZUL ATIVO) */}
           {/* ======================================================== */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl">
             
-            {/* Card 1: Tráfego Pago */}
-            <div className="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-between">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3">
+            {/* Card 1: Tráfego Pago (Branco Acrílico BizNext) */}
+            <div className="bg-white rounded-2xl p-5 text-center flex flex-col items-center justify-between border border-white/90">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-electric-blue mb-3">
                 <Target className="h-6 w-6" />
               </div>
-              <h4 className="font-heading font-bold text-base text-white">
+              <h4 className="font-heading font-bold text-base text-slate-900">
                 Tráfego Pago
               </h4>
-              <p className="text-xs text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 Meta Ads e Google Ads
               </p>
               <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan/40" />
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan/40" />
+                <span className="h-1.5 w-1.5 rounded-full bg-electric-blue" />
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
               </div>
             </div>
 
-            {/* Card 2: Combo Growth (DESTAQUE AZUL COBALTO) */}
-            <div className="glass-card-active rounded-2xl p-5 text-center flex flex-col items-center justify-between relative transform -translate-y-1">
+            {/* Card 2: Combo Growth (DESTAQUE AZUL COBALTO ATIVO) */}
+            <div className="bg-electric-blue rounded-2xl p-5 text-center flex flex-col items-center justify-between relative transform -translate-y-1">
               <span className="absolute -top-2.5 bg-white text-electric-blueDark px-3 py-0.5 rounded-full text-xs font-bold">
                 O Carro-Chefe
               </span>
@@ -210,39 +210,39 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Card 3: Landing Pages */}
-            <div className="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-between">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3">
+            {/* Card 3: Landing Pages (Branco Acrílico BizNext) */}
+            <div className="bg-white rounded-2xl p-5 text-center flex flex-col items-center justify-between border border-white/90">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-electric-blue mb-3">
                 <Globe className="h-6 w-6" />
               </div>
-              <h4 className="font-heading font-bold text-base text-white">
+              <h4 className="font-heading font-bold text-base text-slate-900">
                 Landing Pages
               </h4>
-              <p className="text-xs text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 Alta Conversão em React
               </p>
               <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan/40" />
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan/40" />
+                <span className="h-1.5 w-1.5 rounded-full bg-electric-blue" />
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
               </div>
             </div>
 
-            {/* Card 4: Social Media */}
-            <div className="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-between">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3">
+            {/* Card 4: Social Media (Branco Acrílico BizNext) */}
+            <div className="bg-white rounded-2xl p-5 text-center flex flex-col items-center justify-between border border-white/90">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-electric-blue mb-3">
                 <TrendingUp className="h-6 w-6" />
               </div>
-              <h4 className="font-heading font-bold text-base text-white">
+              <h4 className="font-heading font-bold text-base text-slate-900">
                 Social Media
               </h4>
-              <p className="text-xs text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 Autoridade e Conteúdo
               </p>
               <div className="mt-4 flex gap-1.5">
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan/40" />
-                <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan/40" />
+                <span className="h-1.5 w-1.5 rounded-full bg-electric-blue" />
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
+                <span className="h-1.5 w-1.5 rounded-full bg-slate-300" />
               </div>
             </div>
 
