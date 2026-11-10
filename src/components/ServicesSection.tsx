@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, ArrowRight, MessageSquare } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const ServicesSection: React.FC = () => {
@@ -85,7 +85,6 @@ export const ServicesSection: React.FC = () => {
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-white/[0.1] bg-white/[0.02] hover:bg-white/[0.06] hover:border-blue-500/30 px-4 py-2.5 text-xs font-medium text-slate-200 hover:text-white transition-colors"
                   >
-                    <MessageSquare className="h-3.5 w-3.5 text-blue-400" />
                     <span>Solicitar Proposta</span>
                     <ArrowRight className="h-3 w-3" />
                   </a>

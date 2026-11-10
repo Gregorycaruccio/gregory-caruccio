@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowRight, MessageSquare, Target, Globe, Zap, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Target, Globe, Zap, CheckCircle2 } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Hero: React.FC = () => {
@@ -39,7 +40,6 @@ export const Hero: React.FC = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
             >
-              <MessageSquare className="h-4 w-4" />
               <span>Solicitar Diagnóstico Comercial</span>
               <ArrowRight className="h-4 w-4 text-blue-200" />
             </a>
@@ -155,7 +155,7 @@ export const Hero: React.FC = () => {
                   <Globe className="h-3.5 w-3.5 text-blue-400" /> Google Ads
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <MessageSquare className="h-3.5 w-3.5 text-emerald-400" /> WhatsApp Cloud API
+                  <WhatsAppIcon className="h-3.5 w-3.5 text-emerald-400" /> WhatsApp Cloud API
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Zap className="h-3.5 w-3.5 text-amber-400" /> Automações n8n

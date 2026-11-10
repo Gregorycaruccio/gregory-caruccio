@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowUp, Instagram, MessageSquare, ShieldCheck } from "lucide-react";
+import { ArrowUp, Instagram } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Footer: React.FC = () => {
@@ -12,16 +13,11 @@ export const Footer: React.FC = () => {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8">
           
-          {/* Logo e Descrição */}
+          {/* Logo e Descrição Sem Ícone Genérico */}
           <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-2.5">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20 text-blue-400">
-                <ShieldCheck className="h-4 w-4" />
-              </div>
-              <span className="font-heading font-bold text-white text-base tracking-tight">
-                {SITE_CONFIG.nome}
-              </span>
-            </div>
+            <span className="font-heading font-extrabold text-white text-base tracking-tight">
+              {SITE_CONFIG.nome}
+            </span>
             <p className="mt-2 text-xs text-slate-400 font-sans max-w-md leading-relaxed">
               Gestão de tráfego pago hiperlocal, social media de autoridade e páginas rápidas no Litoral Norte do RS (Cidreira, Tramandaí, Capão da Canoa e região) e em todo o Brasil. Vendas reais no WhatsApp.
             </p>
@@ -71,7 +67,7 @@ export const Footer: React.FC = () => {
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.07] bg-[#101725] text-slate-300 hover:border-emerald-500/40 hover:text-emerald-400 transition-colors"
               aria-label="WhatsApp Oficial"
             >
-              <MessageSquare className="h-4 w-4" />
+              <WhatsAppIcon className="h-4 w-4 fill-current" />
             </a>
 
             <button

@@ -1,5 +1,5 @@
 import React from "react";
-import { UserCheck, Camera, TrendingUp, MapPin, CheckCircle2, MessageSquare, ArrowRight } from "lucide-react";
+import { UserCheck, Camera, TrendingUp, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const AboutSection: React.FC = () => {
@@ -42,7 +42,6 @@ export const AboutSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
               >
-                <MessageSquare className="h-4 w-4" />
                 <span>Conversar com Grégory</span>
                 <ArrowRight className="h-4 w-4 text-blue-200" />
               </a>

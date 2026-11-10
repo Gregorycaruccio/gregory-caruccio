@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MessageSquare, Menu, X, ArrowUpRight, ShieldCheck } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Navbar: React.FC = () => {
@@ -27,21 +27,14 @@ export const Navbar: React.FC = () => {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 sm:px-8">
         
-        {/* Identidade Editorial */}
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600/10 border border-blue-500/20 text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-            <ShieldCheck className="h-5 w-5" />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-heading font-bold text-white text-base tracking-tight">
-                {SITE_CONFIG.nome}
-              </span>
-            </div>
-            <p className="text-[11px] text-slate-400 font-sans tracking-normal">
-              Tráfego Pago & Performance RS
-            </p>
-          </div>
+        {/* Identidade Editorial Sem Ícones Genéricos */}
+        <a href="#" className="flex flex-col group">
+          <span className="font-heading font-extrabold text-white text-base tracking-tight group-hover:text-blue-400 transition-colors">
+            {SITE_CONFIG.nome}
+          </span>
+          <span className="text-[11px] text-slate-400 font-sans tracking-normal">
+            Tráfego Pago & Performance RS
+          </span>
         </a>
 
         {/* Links Desktop */}
@@ -76,9 +69,8 @@ export const Navbar: React.FC = () => {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
+            className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
           >
-            <MessageSquare className="h-3.5 w-3.5" />
             <span>Falar no WhatsApp</span>
             <ArrowUpRight className="h-3.5 w-3.5 text-blue-200" />
           </a>
@@ -150,7 +142,6 @@ export const Navbar: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 py-3 text-xs font-semibold text-white w-full"
               >
-                <MessageSquare className="h-4 w-4" />
                 <span>Conversar no WhatsApp</span>
               </a>
             </div>

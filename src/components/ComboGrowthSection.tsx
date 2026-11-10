@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, ShieldCheck, ArrowRight, MessageSquare } from "lucide-react";
+import { Check, ShieldCheck, ArrowRight } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const ComboGrowthSection: React.FC = () => {
@@ -103,7 +103,6 @@ export const ComboGrowthSection: React.FC = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-150 hover:scale-[1.01] active:scale-[0.99]"
             >
-              <MessageSquare className="h-4 w-4" />
               <span>Contratar o Combo Growth</span>
               <ArrowRight className="h-4 w-4 text-blue-200" />
             </a>

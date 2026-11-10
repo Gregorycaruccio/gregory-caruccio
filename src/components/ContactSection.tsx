@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Send, CheckCircle2, MessageSquare, MapPin } from "lucide-react";
+import { Send, CheckCircle2, MapPin } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const ContactSection: React.FC = () => {
@@ -89,18 +89,13 @@ Gostaria de entender os próximos passos para aplicar essa estratégia no meu ne
           {/* Lado Direito: Formulário com Inputs Técnicos */}
           <div className="lg:col-span-7">
             <div className="rounded-2xl border border-white/[0.08] bg-[#101725] p-6 sm:p-9">
-              <div className="mb-6 flex items-center justify-between">
-                <div>
-                  <h3 className="font-heading font-bold text-lg sm:text-xl text-white">
-                    Solicitar Diagnóstico Comercial
-                  </h3>
-                  <p className="text-xs text-slate-400 font-sans mt-0.5">
-                    Selecione suas preferências e envie os dados em 1 clique
-                  </p>
-                </div>
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                  <MessageSquare className="h-4 w-4" />
-                </div>
+              <div className="mb-6">
+                <h3 className="font-heading font-bold text-lg sm:text-xl text-white">
+                  Solicitar Diagnóstico Comercial
+                </h3>
+                <p className="text-xs text-slate-400 font-sans mt-0.5">
+                  Selecione suas preferências e envie os dados em 1 clique
+                </p>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-4">
