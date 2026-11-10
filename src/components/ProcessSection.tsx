@@ -6,17 +6,11 @@ export const ProcessSection: React.FC = () => {
     <section id="processo" className="py-20 md:py-28 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
+        {/* Header Direto Sem Kicker */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="h-2 w-2 rounded-full bg-electric-cyan shadow-[0_0_8px_#00D2FF]" />
-            <span className="text-xs font-bold text-electric-cyan uppercase tracking-wider">
-              Metodologia de Implantação
-            </span>
-          </div>
           <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
             Processo ágil de trabalho, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-electric-cyan">
+            <span className="text-electric-cyan">
               do alinhamento às primeiras vendas.
             </span>
           </h2>
@@ -30,13 +24,13 @@ export const ProcessSection: React.FC = () => {
           {SITE_CONFIG.processo.map((p, idx) => (
             <div
               key={idx}
-              className="glass-card rounded-2xl p-5 flex flex-col justify-between group"
+              className="glass-card rounded-2xl p-5 flex flex-col justify-between"
             >
               <div>
                 <span className="text-xs font-bold text-electric-cyan bg-electric-blue/15 px-2.5 py-1 rounded-md border border-electric-cyan/20 inline-block">
-                  Etapa 0{idx + 1}
+                  Etapa {idx + 1}
                 </span>
-                <h3 className="mt-3 font-heading font-bold text-base text-white group-hover:text-electric-cyan transition-colors">
+                <h3 className="mt-3 font-heading font-bold text-base text-white">
                   {p.titulo}
                 </h3>
                 <p className="mt-2 text-xs text-slate-300 font-sans leading-relaxed">
@@ -44,7 +38,7 @@ export const ProcessSection: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-5 pt-3 border-t border-white/5 text-xs text-slate-400">
+              <div className="mt-5 pt-3 text-xs text-slate-400">
                 Prazo: <strong className="text-slate-200">{p.prazo}</strong>
               </div>
             </div>

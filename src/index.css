@@ -28,43 +28,37 @@
   }
 }
 
-/* Glass & Neon Effects inspired by BizNext */
+/* Surface styles: rich opaque tone steps instead of noisy glass */
 .glass-card {
-  background: rgba(13, 23, 46, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(30, 107, 255, 0.18);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #091024;
+  border: 1px solid rgba(30, 107, 255, 0.2);
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .glass-card:hover {
-  border-color: rgba(0, 210, 255, 0.45);
-  transform: translateY(-3px);
-  box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.9), 0 0 30px -10px rgba(30, 107, 255, 0.25);
+  border-color: rgba(0, 210, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 .glass-card-active {
-  background: linear-gradient(135deg, #1E6BFF 0%, #0A4AD1 100%);
-  border: 1px solid rgba(0, 210, 255, 0.6);
-  box-shadow: 0 20px 45px -10px rgba(30, 107, 255, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  background: #1E6BFF;
+  border: 1px solid #00D2FF;
   color: #FFFFFF;
 }
 
 /* Buttons */
 .btn-electric {
-  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-electric-blue to-[#0055FF] px-7 py-3.5 text-sm font-heading font-bold text-white shadow-blue-glow transition-all duration-300 hover:from-[#2B75FF] hover:to-[#1A60FF] hover:shadow-cyan-glow hover:-translate-y-0.5 active:translate-y-0 sm:px-8 sm:py-4 sm:text-base;
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-electric-blue px-7 py-3.5 text-sm font-heading font-bold text-white transition-colors duration-200 hover:bg-[#1557D6] active:bg-[#0E42A8] sm:px-8 sm:py-4 sm:text-base;
 }
 
 .btn-glass {
-  @apply inline-flex items-center justify-center gap-2 rounded-full border border-obsidian-border bg-obsidian-850/80 px-6 py-3.5 text-sm font-heading font-semibold text-slate-200 backdrop-blur-md transition-all duration-300 hover:border-electric-cyan hover:bg-obsidian-800 hover:text-white sm:px-7 sm:py-4 sm:text-base;
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-obsidian-border bg-obsidian-850 px-6 py-3.5 text-sm font-heading font-semibold text-slate-200 transition-colors duration-200 hover:border-electric-cyan hover:bg-obsidian-800 hover:text-white sm:px-7 sm:py-4 sm:text-base;
 }
 
-/* Cyber Accent Glow Lines */
+/* Cyber Accent Line */
 .cyber-beam {
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #1E6BFF 30%, #00D2FF 50%, #1E6BFF 70%, transparent 100%);
-  box-shadow: 0 0 15px rgba(0, 210, 255, 0.7);
+  background: #00D2FF;
 }
 
 /* Custom Scrollbar */
@@ -77,7 +71,6 @@
 ::-webkit-scrollbar-thumb {
   background: #0D172E;
   border-radius: 4px;
-  border: 1px solid rgba(30, 107, 255, 0.2);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #1E6BFF;

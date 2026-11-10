@@ -8,17 +8,14 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#030611] pt-16 pb-12 relative overflow-hidden border-t border-obsidian-border">
-      {/* Subtle Bottom Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-electric-blue/10 blur-[140px] pointer-events-none -z-10" />
-
+    <footer className="bg-[#030611] pt-16 pb-12 relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
           
           {/* Logo e Descrição */}
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-electric-blue to-[#0A3EB5] text-white shadow-blue-glow">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-electric-blue text-white">
                 <Hexagon className="h-5 w-5 fill-white/20 stroke-white" />
               </div>
               <span className="font-heading font-extrabold text-lg text-white">
@@ -58,7 +55,7 @@ export const Footer: React.FC = () => {
               href={SITE_CONFIG.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-obsidian-border bg-obsidian-850 text-slate-300 hover:border-electric-cyan hover:bg-electric-blue hover:text-white transition-all duration-200"
+              className="flex h-10 w-10 items-center justify-center rounded-xl bg-obsidian-850 text-slate-300 hover:bg-electric-blue hover:text-white transition-colors duration-200"
               aria-label="Instagram de Grégory Caruccio"
             >
               <Instagram className="h-4 w-4" />
@@ -68,7 +65,7 @@ export const Footer: React.FC = () => {
               href={`https://wa.me/${SITE_CONFIG.telefoneRaw}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-obsidian-border bg-obsidian-850 text-slate-300 hover:border-emerald-500 hover:bg-emerald-500 hover:text-white transition-all duration-200"
+              className="flex h-10 w-10 items-center justify-center rounded-xl bg-obsidian-850 text-slate-300 hover:bg-emerald-500 hover:text-white transition-colors duration-200"
               aria-label="WhatsApp Oficial"
             >
               <MessageSquare className="h-4 w-4" />
@@ -76,7 +73,7 @@ export const Footer: React.FC = () => {
 
             <button
               onClick={scrollToTop}
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-obsidian-border bg-obsidian-850 text-slate-300 hover:border-electric-cyan hover:text-electric-cyan transition-all duration-200"
+              className="flex h-10 w-10 items-center justify-center rounded-xl bg-obsidian-850 text-slate-300 hover:text-electric-cyan transition-colors duration-200"
               aria-label="Voltar ao topo"
             >
               <ArrowUp className="h-4 w-4" />

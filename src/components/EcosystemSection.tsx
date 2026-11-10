@@ -17,20 +17,14 @@ export const EcosystemSection: React.FC = () => {
   };
 
   return (
-    <section id="metodo" className="py-20 md:py-28 relative">
+    <section id="metodo" className="py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Header Direto */}
+        {/* Header Direto Sem Kicker */}
         <div className="max-w-3xl">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="h-2 w-2 rounded-full bg-electric-cyan shadow-[0_0_8px_#00D2FF]" />
-            <span className="text-xs font-bold text-electric-cyan uppercase tracking-wider">
-              Metodologia de Escala
-            </span>
-          </div>
           <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
             Um ecossistema digital integrado. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-electric-cyan">
+            <span className="text-electric-cyan">
               Não ações isoladas.
             </span>
           </h2>
@@ -39,15 +33,15 @@ export const EcosystemSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Pipeline das 4 Etapas estilo BizNext / Nexora */}
+        {/* Pipeline das 4 Etapas */}
         <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {SITE_CONFIG.ecossistema.map((item, idx) => (
             <div
               key={idx}
-              className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between relative group"
+              className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between"
             >
               <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-obsidian-800 border border-electric-blue/20 mb-5 group-hover:border-electric-cyan/40 group-hover:bg-electric-blue/15 transition-all duration-300 shadow-md">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-obsidian-800 mb-5">
                   {getIcon(idx)}
                 </div>
 
@@ -55,8 +49,8 @@ export const EcosystemSection: React.FC = () => {
                   <h3 className="font-heading font-bold text-xl text-white">
                     {item.fase}
                   </h3>
-                  <span className="text-[11px] font-bold text-slate-400 group-hover:text-electric-cyan transition-colors">
-                    Fase 0{idx + 1}
+                  <span className="text-xs font-semibold text-slate-400">
+                    Fase {idx + 1}
                   </span>
                 </div>
 
@@ -69,11 +63,11 @@ export const EcosystemSection: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-white/5">
-                <p className="text-xs font-semibold text-slate-400 mb-2.5">
+              <div className="mt-6 pt-4 bg-[#060B18] p-3.5 rounded-xl">
+                <p className="text-xs font-semibold text-slate-400 mb-2">
                   Canais em operação:
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-1.5">
                   {item.canais.map((canal, cIdx) => (
                     <li
                       key={cIdx}

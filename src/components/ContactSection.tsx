@@ -32,16 +32,9 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
           
           {/* Lado Esquerdo: Chamada e Autoridade */}
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="h-2 w-2 rounded-full bg-electric-cyan shadow-[0_0_8px_#00D2FF]" />
-              <span className="text-xs font-bold text-electric-cyan uppercase tracking-wider">
-                Contato Direto
-              </span>
-            </div>
-            
             <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
               Vamos conversar sobre o seu <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue via-electric-cyan to-white">
+              <span className="text-electric-cyan">
                 próximo salto de vendas.
               </span>
             </h2>
@@ -89,7 +82,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia!`;
 
           {/* Lado Direito: Formulário com Pré-qualificação */}
           <div className="lg:col-span-7">
-            <div className="rounded-3xl border border-electric-blue/30 bg-gradient-to-b from-[#0B152B] to-[#050A17] p-6 sm:p-10 shadow-glass-card backdrop-blur-xl">
+            <div className="rounded-3xl border border-electric-blue/30 bg-[#0A1124] p-6 sm:p-10">
               <div className="mb-6 flex items-center justify-between">
                 <div>
                   <h3 className="font-heading font-bold text-xl text-white">

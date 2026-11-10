@@ -1,32 +1,28 @@
 import React from "react";
-import { ArrowRight, MessageSquare, TrendingUp, Target, Globe, Flame, ShieldCheck, CheckCircle2, Zap } from "lucide-react";
+import { ArrowRight, MessageSquare, TrendingUp, Target, Globe, Flame, Zap } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
 export const Hero: React.FC = () => {
   const whatsappHeroHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Quero%20entender%20como%20estruturar%20uma%20m%C3%A1quina%20de%20vendas%20no%20WhatsApp%20para%20minha%20empresa.`;
 
   return (
-    <header className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-      {/* Background Lighting & Horizon Glow */}
-      <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-electric-blue/20 blur-[150px] rounded-full pointer-events-none -z-10" />
-      <div className="absolute top-80 left-1/2 -translate-x-1/2 w-[1100px] h-[400px] bg-electric-cyan/10 blur-[180px] rounded-full pointer-events-none -z-10" />
-
+    <header className="relative pt-32 pb-20 md:pt-40 md:pb-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           
-          {/* Eyebrow Script Style (BizNext Style) */}
+          {/* Eyebrow Direto e Limpo */}
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-[1px] bg-electric-cyan/60" />
-            <span className="text-electric-cyan text-sm sm:text-base font-medium tracking-widest italic font-sans">
-              Estratégia & Performance Comercial
+            <span className="w-8 h-[2px] bg-electric-cyan" />
+            <span className="text-electric-cyan text-sm sm:text-base font-semibold">
+              Estratégia e Performance Comercial
             </span>
-            <span className="w-8 h-[1px] bg-electric-cyan/60" />
+            <span className="w-8 h-[2px] bg-electric-cyan" />
           </div>
 
-          {/* Headline Monumental (BizNext Style) */}
+          {/* Headline Monumental com Cor Sólida de Alto Contraste */}
           <h1 className="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight max-w-5xl leading-[1.08]">
-            Máquina de Vendas & <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue via-electric-cyan to-electric-sky drop-shadow-[0_0_35px_rgba(0,210,255,0.4)]">
+            Máquina de Vendas e <br />
+            <span className="text-electric-cyan">
               Tráfego de Alta Conversão
             </span>
           </h1>
@@ -40,25 +36,22 @@ export const Hero: React.FC = () => {
           <div className="mt-8 w-44 cyber-beam rounded-full" />
 
           {/* ======================================================== */}
-          {/* CENTERPIECE: O LAPTOP 3D COM DASHBOARD DE CRESCIMENTO REAL */}
+          {/* CENTERPIECE: O LAPTOP COM DASHBOARD DE CRESCIMENTO REAL */}
           {/* ======================================================== */}
-          <div className="mt-12 sm:mt-16 w-full max-w-4xl relative group">
+          <div data-ui className="mt-12 sm:mt-16 w-full max-w-4xl relative">
             
-            {/* Brilho da Base do Laptop na Mesa */}
-            <div className="absolute -inset-1 bg-gradient-to-b from-electric-blue/30 to-electric-cyan/20 rounded-[32px] blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-
             {/* Chassi do Laptop */}
-            <div className="relative rounded-[28px] border border-obsidian-borderHover bg-[#070D1D] p-3 sm:p-5 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)]">
+            <div className="relative rounded-[28px] border border-obsidian-borderHover bg-[#070D1D] p-3 sm:p-5">
               
               {/* Moldura da Tela do Laptop */}
-              <div className="rounded-[20px] border border-white/10 bg-[#050914] p-3 sm:p-6 overflow-hidden relative">
+              <div className="rounded-[20px] bg-[#050914] p-3 sm:p-6 overflow-hidden relative">
                 
                 {/* Barra Superior da Tela (Menu do App) */}
-                <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-5">
+                <div className="flex items-center justify-between pb-3 mb-5 bg-[#091124] px-4 py-2.5 rounded-xl">
                   <div className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/80" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-red-500" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-yellow-500" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
                     <span className="text-xs font-semibold text-slate-300 pl-2 hidden sm:inline">
                       Grégory Caruccio • Painel de Performance de Tráfego
                     </span>
@@ -66,8 +59,8 @@ export const Hero: React.FC = () => {
                   <div className="flex items-center gap-3 text-xs text-slate-400">
                     <span className="hidden md:inline hover:text-white transition-colors">Meta Ads v21</span>
                     <span className="hidden md:inline hover:text-white transition-colors">Google Ads</span>
-                    <span className="rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 text-[11px] font-bold">
-                      ● Campanha Ativa
+                    <span className="rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2.5 py-0.5 text-xs font-bold">
+                      Campanha Ativa
                     </span>
                   </div>
                 </div>
@@ -78,7 +71,7 @@ export const Hero: React.FC = () => {
                   {/* Coluna Esquerda: Chamada e Proposta */}
                   <div className="lg:col-span-7 flex flex-col justify-between">
                     <div>
-                      <span className="text-xs font-semibold text-electric-cyan uppercase tracking-wider">
+                      <span className="text-xs font-semibold text-electric-cyan">
                         Resultado em Tempo Real
                       </span>
                       <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white mt-1 leading-snug">
@@ -109,11 +102,11 @@ export const Hero: React.FC = () => {
                   </div>
 
                   {/* Coluna Direita: Box Gráfico com Curva de Crescimento (+184% Vendas) */}
-                  <div className="lg:col-span-5 rounded-2xl border border-electric-blue/30 bg-[#091124] p-4 relative overflow-hidden shadow-inner">
+                  <div className="lg:col-span-5 rounded-2xl border border-electric-blue/30 bg-[#091124] p-4 relative overflow-hidden">
                     <div className="flex items-center justify-between mb-3">
                       <div>
-                        <span className="text-[11px] text-slate-400 block">Vendas no WhatsApp</span>
-                        <span className="font-heading font-extrabold text-2xl text-white text-transparent bg-clip-text bg-gradient-to-r from-white to-electric-cyan">
+                        <span className="text-xs text-slate-400 block">Vendas no WhatsApp</span>
+                        <span className="font-heading font-extrabold text-2xl text-white">
                           +184%
                         </span>
                       </div>
@@ -122,49 +115,33 @@ export const Hero: React.FC = () => {
                       </span>
                     </div>
 
-                    {/* Gráfico Curvado SVG com Gradiente Neon Azul */}
+                    {/* Gráfico Curvado SVG com Cores Sólidas */}
                     <div className="h-28 w-full relative">
                       <svg className="w-full h-full overflow-visible" viewBox="0 0 200 80" preserveAspectRatio="none">
-                        <defs>
-                          <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#00D2FF" stopOpacity="0.5" />
-                            <stop offset="100%" stopColor="#1E6BFF" stopOpacity="0.0" />
-                          </linearGradient>
-                          <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
-                            <stop offset="0%" stopColor="#1E6BFF" />
-                            <stop offset="50%" stopColor="#00D2FF" />
-                            <stop offset="100%" stopColor="#38BDF8" />
-                          </linearGradient>
-                        </defs>
-                        {/* Área sob a curva */}
-                        <path
-                          d="M0,70 Q40,65 70,45 T140,25 T200,8 L200,80 L0,80 Z"
-                          fill="url(#chartGradient)"
-                        />
                         {/* Linha brilhante */}
                         <path
                           d="M0,70 Q40,65 70,45 T140,25 T200,8"
                           fill="none"
-                          stroke="url(#lineGradient)"
+                          stroke="#00D2FF"
                           strokeWidth="3.5"
                           strokeLinecap="round"
                         />
                         {/* Pontos de Dados */}
-                        <circle cx="70" cy="45" r="3.5" fill="#00D2FF" className="shadow-[0_0_8px_#00D2FF]" />
-                        <circle cx="140" cy="25" r="3.5" fill="#00D2FF" className="shadow-[0_0_8px_#00D2FF]" />
-                        <circle cx="200" cy="8" r="4.5" fill="#FFFFFF" className="animate-pulse" />
+                        <circle cx="70" cy="45" r="3.5" fill="#00D2FF" />
+                        <circle cx="140" cy="25" r="3.5" fill="#00D2FF" />
+                        <circle cx="200" cy="8" r="4.5" fill="#FFFFFF" />
                       </svg>
                     </div>
 
-                    <div className="mt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-white/5 pt-2">
-                      <span>Custo/Lead: <strong>R$ 3,40</strong></span>
+                    <div className="mt-2 flex items-center justify-between text-xs text-slate-400 pt-2 bg-[#060B18] px-3 py-1.5 rounded-lg">
+                      <span>Custo por lead: <strong className="text-slate-200">R$ 3,40</strong></span>
                       <span className="text-emerald-400 font-semibold">142 Conversas</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Rodapé da Tela: Plataformas Conectadas (BizNext Style) */}
-                <div className="mt-6 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+                {/* Rodapé da Tela: Plataformas Conectadas */}
+                <div className="mt-6 pt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400 bg-[#080E1E] p-3 rounded-xl">
                   <span className="font-semibold text-slate-300">Ferramentas oficiais:</span>
                   <div className="flex items-center gap-4 sm:gap-6 text-slate-300 font-medium">
                     <span className="flex items-center gap-1.5 hover:text-white">
@@ -184,26 +161,26 @@ export const Hero: React.FC = () => {
 
               </div>
 
-              {/* Base do Laptop (Teclado sutil e Touchpad) */}
-              <div className="h-4 w-40 mx-auto bg-gradient-to-b from-[#132142] to-[#0A1022] rounded-b-xl border-x border-b border-white/10 shadow-md" />
+              {/* Base do Laptop */}
+              <div className="h-3 w-40 mx-auto bg-[#132142] rounded-b-xl" />
             </div>
           </div>
 
           {/* ======================================================== */}
-          {/* AS 4 CARTELAS ACRÍLICAS / GLASS CARDS FLUTUANTES (BIZNEXT) */}
+          {/* AS 4 CARTELAS FLUTUANTES (BIZNEXT STYLE) */}
           {/* ======================================================== */}
           <div className="mt-10 sm:mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-5xl">
             
             {/* Card 1: Tráfego Pago */}
             <div className="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-between">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3 shadow-[0_0_15px_rgba(0,210,255,0.2)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3">
                 <Target className="h-6 w-6" />
               </div>
               <h4 className="font-heading font-bold text-base text-white">
                 Tráfego Pago
               </h4>
               <p className="text-xs text-slate-400 mt-1">
-                Meta Ads & Google Ads
+                Meta Ads e Google Ads
               </p>
               <div className="mt-4 flex gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
@@ -212,12 +189,12 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Card 2: Combo Growth (O DESTAQUE AZUL COBALTO VIBRANTE DO BIZNEXT) */}
-            <div className="glass-card-active rounded-2xl p-5 text-center flex flex-col items-center justify-between relative transform -translate-y-1.5">
-              <span className="absolute -top-2.5 bg-white text-electric-blueDark px-3 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider shadow-md">
+            {/* Card 2: Combo Growth (DESTAQUE AZUL COBALTO) */}
+            <div className="glass-card-active rounded-2xl p-5 text-center flex flex-col items-center justify-between relative transform -translate-y-1">
+              <span className="absolute -top-2.5 bg-white text-electric-blueDark px-3 py-0.5 rounded-full text-xs font-bold">
                 O Carro-Chefe
               </span>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 text-white border border-white/40 mb-3 shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 text-white border border-white/40 mb-3">
                 <Flame className="h-6 w-6 fill-white" />
               </div>
               <h4 className="font-heading font-extrabold text-base text-white">
@@ -235,7 +212,7 @@ export const Hero: React.FC = () => {
 
             {/* Card 3: Landing Pages */}
             <div className="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-between">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3 shadow-[0_0_15px_rgba(0,210,255,0.2)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3">
                 <Globe className="h-6 w-6" />
               </div>
               <h4 className="font-heading font-bold text-base text-white">
@@ -253,14 +230,14 @@ export const Hero: React.FC = () => {
 
             {/* Card 4: Social Media */}
             <div className="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-between">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3 shadow-[0_0_15px_rgba(0,210,255,0.2)]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-electric-blue/15 text-electric-cyan border border-electric-cyan/30 mb-3">
                 <TrendingUp className="h-6 w-6" />
               </div>
               <h4 className="font-heading font-bold text-base text-white">
                 Social Media
               </h4>
               <p className="text-xs text-slate-400 mt-1">
-                Autoridade & Conteúdo
+                Autoridade e Conteúdo
               </p>
               <div className="mt-4 flex gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-electric-cyan" />
@@ -272,11 +249,11 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* ======================================================== */}
-          {/* FAIXA DE ESTATÍSTICAS + BOTAO DE ORÇAMENTO (BIZNEXT STYLE) */}
+          {/* FAIXA DE ESTATÍSTICAS + BOTAO DE ORÇAMENTO */}
           {/* ======================================================== */}
-          <div className="mt-10 sm:mt-14 w-full max-w-5xl rounded-2xl border border-obsidian-border bg-obsidian-900/80 p-5 sm:p-6 backdrop-blur-xl shadow-glass-card flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-10 sm:mt-14 w-full max-w-5xl rounded-2xl border border-obsidian-border bg-obsidian-900 p-5 sm:p-6 flex flex-col md:flex-row items-center justify-between gap-6">
             
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 divide-x divide-white/10 w-full md:w-auto text-center sm:text-left">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 w-full md:w-auto text-center sm:text-left">
               <div className="pr-2 sm:pr-6">
                 <span className="font-heading font-extrabold text-2xl sm:text-3xl text-white block">
                   +R$ 1.6M
@@ -305,7 +282,7 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Botão de Cotação Grátis em Azul Neon */}
+            {/* Botão de Cotação Grátis */}
             <div className="w-full md:w-auto">
               <a
                 href={whatsappHeroHref}
@@ -320,8 +297,8 @@ export const Hero: React.FC = () => {
 
           </div>
 
-          {/* Rodapé da Hero: Cyber Taglines */}
-          <div className="mt-10 flex items-center justify-center gap-3 text-xs text-slate-400 font-sans tracking-widest uppercase">
+          {/* Rodapé da Hero */}
+          <div className="mt-10 flex items-center justify-center gap-3 text-xs text-slate-400 font-sans tracking-wide">
             <span className="w-6 h-[2px] bg-electric-cyan rounded-full" />
             <span>Moderno</span>
             <span className="text-electric-cyan">•</span>

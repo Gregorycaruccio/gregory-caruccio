@@ -7,17 +7,11 @@ export const ServicesSection: React.FC = () => {
     <section id="servicos" className="py-20 md:py-28 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
+        {/* Header Direto Sem Kicker */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="h-2 w-2 rounded-full bg-electric-cyan shadow-[0_0_8px_#00D2FF]" />
-            <span className="text-xs font-bold text-electric-cyan uppercase tracking-wider">
-              Soluções Modulares
-            </span>
-          </div>
           <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
             Contratações individuais <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-electric-cyan">
+            <span className="text-electric-cyan">
               para a etapa exata da sua empresa.
             </span>
           </h2>
@@ -34,7 +28,7 @@ export const ServicesSection: React.FC = () => {
             return (
               <div
                 key={servico.id}
-                className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between relative group"
+                className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between">
@@ -48,14 +42,14 @@ export const ServicesSection: React.FC = () => {
                     )}
                   </div>
 
-                  <h3 className="mt-2 font-heading font-bold text-xl text-white group-hover:text-electric-cyan transition-colors">
+                  <h3 className="mt-2 font-heading font-bold text-xl text-white">
                     {servico.nome}
                   </h3>
                   <p className="mt-2 text-xs text-slate-300 font-sans leading-relaxed min-h-[3rem]">
                     {servico.descricao}
                   </p>
 
-                  <div className="my-5 rounded-xl bg-obsidian-950/80 border border-electric-blue/15 p-4">
+                  <div className="my-5 rounded-xl bg-obsidian-950 p-4">
                     <div className="flex items-baseline gap-1.5">
                       <span className="font-heading font-extrabold text-2xl text-white">
                         {servico.preco}
@@ -66,7 +60,7 @@ export const ServicesSection: React.FC = () => {
                     </div>
                   </div>
 
-                  <ul className="space-y-2.5">
+                  <ul className="space-y-2">
                     {servico.features.map((feat, fIdx) => (
                       <li
                         key={fIdx}
@@ -79,12 +73,12 @@ export const ServicesSection: React.FC = () => {
                   </ul>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-white/5">
+                <div className="mt-8 pt-4">
                   <a
                     href={whatsappServicoHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-glass w-full justify-center !py-2.5 !text-xs !rounded-full group-hover:bg-electric-blue group-hover:border-electric-blue group-hover:text-white"
+                    className="btn-glass w-full justify-center !py-2.5 !text-xs !rounded-full"
                   >
                     <MessageSquare className="h-3.5 w-3.5" />
                     <span>Solicitar Proposta</span>
