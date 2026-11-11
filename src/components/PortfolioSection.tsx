@@ -86,9 +86,26 @@ export const PortfolioSection: React.FC = () => {
                   </h3>
                 </div>
 
+                {/* 2.5 Badges de Métricas Auditadas */}
+                {nicho.metricas && nicho.metricas.length > 0 && (
+                  <div className="my-3.5 flex flex-wrap gap-1.5">
+                    {nicho.metricas.map((m, mIdx) => (
+                      <div
+                        key={mIdx}
+                        className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-slate-50/90 px-2.5 py-1 text-[11px]"
+                      >
+                        <span className="text-slate-500 font-medium">{m.label}:</span>
+                        <code className="font-mono font-bold text-slate-900 tracking-tight">
+                          {m.valor}
+                        </code>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 {/* 3. Bloco "Estratégia Aplicada" */}
                 <div className="mt-3">
-                  <span className="text-[11px] font-bold text-slate-600 uppercase tracking-wider block mb-1">
+                  <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">
                     Estratégia Aplicada:
                   </span>
                   <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
@@ -97,16 +114,16 @@ export const PortfolioSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* 4. Caixa de "Resultado de Caixa" em Preto Profundo com Gradiente Sutil */}
-              <div className="mt-6 rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 p-4 border border-slate-800 text-white">
+              {/* 4. Caixa de "Resultado Real em Caixa" em Preto Profundo com Gradiente Sutil */}
+              <div className="mt-6 rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 p-4 border border-slate-800 text-white shadow-sm">
                 <div className="flex items-start gap-2.5">
                   <TrendingUp className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block">
-                      Resultado de Caixa:
+                      Resultado Real em Caixa:
                     </span>
                     <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                      <code className="font-mono text-emerald-400 font-semibold tracking-normal">
+                      <code className="font-mono text-emerald-300 font-medium tracking-normal">
                         {nicho.resultado}
                       </code>
                     </p>

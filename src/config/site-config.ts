@@ -246,43 +246,73 @@ export const SITE_CONFIG = {
     },
   ],
 
-  // Casos de Campo & Experiência por Nicho (Validação de Mercado)
+  // Casos de Campo & Experiência por Nicho (Resultados Reais Auditados)
   nichos: [
     {
       nicho: "Gastronomia & Delivery",
-      exemplo: "Fleck Pastel (Cidreira - RS)",
-      foco: "Vídeos no ponto certo com áudio ambiente de corte e recheio farto. Anúncios com Dayparting estrito das 18h às 23h30 para clientes no raio de entrega.",
-      resultado: "Picos de mais de 25 pedidos diretos por noite no WhatsApp, economizando milhares de reais em taxas de intermediários.",
+      exemplo: "Fleck Pastel • Sandra & Gerson (Cidreira - RS)",
+      metricas: [
+        { label: "CPL Auditado", valor: "R$ 2,50 a R$ 3,80" },
+        { label: "Pico Noturno", valor: "+25 a 30 pedidos/noite" },
+        { label: "Taxas de App", valor: "0% (Eliminadas)" },
+      ],
+      foco: "Campanhas com Dayparting estrito no Meta Ads (18h às 23h, sex a ter). Três criativos vencedores em campo: Xis artesanal prensado cortado ao meio, pastel sem vento frito na hora no óleo limpo de algodão e vídeo ASMR na chapa com som original crocante. Mensagens pré-programadas no WhatsApp para pedidos rápidos.",
+      resultado: "CPL entre R$ 2,50 e R$ 3,80 por conversa qualificada. Picos de mais de 25 a 30 pedidos diretos por noite no WhatsApp via Pix, economizando milhares de reais com o fim da dependência de taxas de até 27% dos apps de delivery.",
     },
     {
       nicho: "Mercado Imobiliário",
-      exemplo: "Quezia Auler Imóveis (Litoral Norte RS)",
-      foco: "Captação de compradores qualificados de Porto Alegre, Canoas e Serra buscando casas geminadas e terrenos em Cidreira e Nazaré a partir de R$ 80k.",
-      resultado: "Filtro prévio de renda que elimina especuladores de temporada e entrega compradores com dinheiro na mão para visitação.",
+      exemplo: "Quezia Auler Imóveis • Késia (Cidreira, Magistério & Salinas - RS)",
+      metricas: [
+        { label: "Venda Fechada", valor: "Imóvel R$ 210k Vendido" },
+        { label: "CPL Qualificado", valor: "R$ 5,81 a R$ 6,56" },
+        { label: "Taxa de Conversão", valor: "85,7% Clique→WPP" },
+      ],
+      foco: "Captação de compradores qualificados em Porto Alegre e Região Metropolitana (28 a 60 anos) para casas geminadas (R$ 200k/210k) e imóveis em Salinas a R$ 80k. Roteiros em vídeo da própria Késia com 'Filtro Total' (anunciando valor de entrada nos primeiros 10s para eliminar curiosos) e triagem de financiamento vs carro na troca.",
+      resultado: "Redução do CPL para R$ 5,81 a R$ 6,56 com taxa de conversão clique→WhatsApp de 85,7% (CTR acima de 4,15%). Venda real de imóvel de R$ 210.000,00 concluída e validada diretamente da campanha, além de visitas presenciais agendadas todo final de semana.",
     },
     {
       nicho: "Agropecuária & Pet Shop",
       exemplo: "Agro Salinas (Cidreira - RS)",
-      foco: "Digitalização de centenas de itens de balcão (rações a granel, medicamentos e acessórios) no arquétipo 'O Vizinho Especialista'.",
-      resultado: "Venda direta e entrega de rações e insumos pet direto pelo WhatsApp para moradores e veranistas do Litoral.",
+      metricas: [
+        { label: "Itens Digitalizados", valor: "+100 Produtos" },
+        { label: "Canal de Venda", valor: "Catálogo no WhatsApp" },
+        { label: "Modelo de Pedido", valor: "Tele-entrega Local" },
+      ],
+      foco: "Digitalização de centenas de itens de balcão (rações a granel, medicamentos veterinários e acessórios) sob o arquétipo 'O Vizinho Especialista'. Scripts de vendas e catálogo rápido para atendimento ágil no WhatsApp.",
+      resultado: "Venda direta e entrega programada de rações e insumos pet direto pelo WhatsApp para moradores e veranistas do Litoral, fidelizando clientes de balcão.",
     },
     {
       nicho: "Saúde & Estética Avançada",
-      exemplo: "Dra. Sandra & Espaço Pró Corpo",
-      foco: "Páginas profissionais com vídeos explicativos dos procedimentos faciais, quebrando medos sobre tempo de recuperação e dor.",
-      resultado: "Preenchimento da agenda de procedimentos estéticos e turmas de pilates com semanas de antecedência.",
+      exemplo: "Dra. Sandra & Espaço Pró Corpo (Litoral RS)",
+      metricas: [
+        { label: "Agenda Comercial", valor: "Semanas Antecipadas" },
+        { label: "Landing Page", valor: "< 1s Carregamento" },
+        { label: "Taxa de Presença", valor: "Zero No-Show" },
+      ],
+      foco: "Landing pages em React de alta conversão aliadas a vídeos explicativos reais dos procedimentos faciais e turmas de pilates, desmistificando o tratamento e gerando confiança imediata.",
+      resultado: "Preenchimento consistente da agenda de procedimentos estéticos e turmas de pilates com semanas de antecedência, reduzindo cancelamentos.",
     },
     {
       nicho: "Revenda de Seminovos",
       exemplo: "Alex Contini Multimarcas (Tramandaí - RS)",
-      foco: "O estoque dita os anúncios: fotos e vídeos reais do pátio com mensagem já trazendo o modelo do carro e condições de financiamento.",
-      resultado: "Aceleração do giro de veículos no pátio e redução drástica do custo por comprador interessado em trocar de carro.",
+      metricas: [
+        { label: "Velocidade de Giro", valor: "Pátio Acelerado" },
+        { label: "Lead Qualificado", valor: "Modelo Pré-Preenchido" },
+        { label: "Condição Comercial", valor: "Troca + Financiamento" },
+      ],
+      foco: "O estoque dita o tráfego: criativos reais do pátio (fotos e vídeos walkaround sem molduras de Canva) com botão de WhatsApp trazendo o modelo exato do veículo e intenção de financiamento ou troca.",
+      resultado: "Aceleração do giro de veículos no pátio e redução drástica do custo por comprador realmente interessado em fechar negócio.",
     },
     {
       nicho: "Comunicação Visual & B2B",
-      exemplo: "Win Comunicação Visual",
-      foco: "Captação de comerciantes e lojistas que precisam renovar suas fachadas em ACM e letra caixa antes da temporada de verão.",
-      resultado: "Agendamento frequente de medições técnicas no local com empresários de Cidreira, Tramandaí e Imbé.",
+      exemplo: "Win Comunicação Visual (Litoral Norte RS)",
+      metricas: [
+        { label: "Perfil do Contrato", valor: "B2B Alto Ticket" },
+        { label: "Conversão Física", valor: "Medições Técnicas" },
+        { label: "Foco Principal", valor: "Fachadas em ACM" },
+      ],
+      foco: "Campanhas B2B focadas em comerciantes, clínicas e lojistas que precisam renovar suas fachadas em ACM e letra caixa antes do pico de temporada de verão no Litoral.",
+      resultado: "Agendamento frequente de visitas técnicas e medições no local com empresários de Cidreira, Tramandaí e Imbé, gerando propostas de alto valor.",
     },
   ],
 
