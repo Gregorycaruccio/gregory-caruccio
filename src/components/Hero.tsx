@@ -9,7 +9,6 @@ import {
   Dog,
   Sparkles,
   Building2,
-  CheckCircle2,
 } from "lucide-react";
 import { SITE_CONFIG } from "../config/site-config";
 
@@ -17,160 +16,158 @@ export const Hero: React.FC = () => {
   const whatsappHeroHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Quero%20entender%20como%20estruturar%20uma%20m%C3%A1quina%20de%20vendas%20no%20WhatsApp%20para%20minha%20empresa.`;
 
   return (
-    <header className="relative pt-24 sm:pt-28 pb-10 sm:pb-16 bg-transparent text-slate-900 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <div>
+      {/* ======================================================== */}
+      {/* BANNER HERO DE PONTA A PONTA COM FOTO DE FUNDO E GRADIENTE */}
+      {/* ======================================================== */}
+      <header className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center bg-[#05070E] text-white overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
         
-        {/* ======================================================== */}
-        {/* ILHA FLUTUANTE 1: HERO MONUMENTAL ESCURO (ESTILO SAASIFY/LINEAR) */}
-        {/* ======================================================== */}
-        <div className="rounded-[2.5rem] bg-[#070A14] border border-slate-800/90 text-white p-6 sm:p-10 lg:p-12 relative overflow-hidden shadow-2xl shadow-blue-950/40">
-          
-          {/* Efeitos de Glow Ambiente Interno */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-to-br from-blue-600/25 via-indigo-600/15 to-transparent rounded-full blur-3xl"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-indigo-600/15 rounded-full blur-3xl"
+        {/* Layer de Fundo com Foto e Gradientes de Fusão */}
+        <div className="absolute inset-0 z-0">
+          {/* Foto Real do Grégory no Escritório */}
+          <img
+            src="/images/gregory-hero.jpg"
+            alt="Grégory Caruccio trabalhando no planejamento e otimização de campanhas"
+            className="w-full h-full object-cover object-[72%_center] md:object-[80%_center] lg:object-[83%_center]"
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+          {/* Gradiente Horizontal: Escuro profundo na esquerda (onde fica o texto) até suave na direita */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#05070E] via-[#05070E]/95 via-50% md:via-46% lg:via-42% to-[#05070E]/30" />
+
+          {/* Gradiente Vertical: Suaviza o topo para a navbar e a base para a próxima seção */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#05070E] via-transparent to-[#05070E]/80" />
+
+          {/* Glow de Atmosfera Azul */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-3xl"
+          />
+        </div>
+
+        {/* Conteúdo em Frente (Texto, Headline e CTAs) */}
+        <div className="relative z-10 mx-auto max-w-6xl px-5 sm:px-8 w-full">
+          <div className="max-w-2xl text-left">
             
-            {/* Coluna Esquerda: Proposta de Valor e Ações */}
-            <div className="lg:col-span-7 flex flex-col items-start text-left">
-              {/* Badge de Operação Viva */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-950/70 px-3.5 py-1.5 text-xs text-blue-300 font-semibold mb-6 shadow-xs">
-                <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="tracking-tight">
-                  Operação Ativa • Otimização Diária de Campanhas
-                </span>
-              </div>
-
-              {/* Headline Monumental em Branco e Azul */}
-              <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[54px] text-white tracking-tight leading-[1.12] max-w-xl">
-                Compradores reais no seu WhatsApp, <span className="text-blue-400">todos os dias.</span>
-              </h1>
-
-              {/* Subtítulo Analítico e Sem Clichês */}
-              <p className="mt-5 text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-lg">
-                Gestão profissional de tráfego pago no Meta e Google Ads, autoridade no Instagram, páginas ultra rápidas em React e automações com bots e SDRs de Inteligência Artificial. Zero intermediários.
-              </p>
-
-              {/* Botões de Ação */}
-              <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
-                <a
-                  href={whatsappHeroHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 px-7 py-3.5 text-xs sm:text-sm font-bold text-white transition-all duration-150 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-600/30"
-                >
-                  <span>Solicitar Diagnóstico Comercial</span>
-                  <ArrowRight className="h-4 w-4 text-blue-200" />
-                </a>
-
-                <a
-                  href="#combo-growth"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700/80 bg-slate-900/90 hover:bg-slate-800 text-slate-200 px-5 py-3.5 text-xs sm:text-sm font-semibold transition-colors"
-                >
-                  <span>Conhecer o Combo Growth</span>
-                </a>
-              </div>
-
-              {/* Micro Prova Social com Avatares Estilo Saasify */}
-              <div className="mt-8 pt-6 border-t border-white/[0.08] flex items-center gap-3.5 text-xs text-slate-300">
-                <div className="flex -space-x-2">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-white font-bold text-[10px] ring-2 ring-[#070A14]">
-                    FP
-                  </span>
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 text-white font-bold text-[10px] ring-2 ring-[#070A14]">
-                    QA
-                  </span>
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-600 text-white font-bold text-[10px] ring-2 ring-[#070A14]">
-                    AS
-                  </span>
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-800 text-blue-300 font-bold text-[10px] ring-2 ring-[#070A14]">
-                    +15
-                  </span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-semibold text-white">
-                    +R$ 1.6 milhão gerados em vendas reais
-                  </span>
-                  <span className="text-[11px] text-slate-400">
-                    Fleck Pastel, Quezia Imóveis, Agro Salinas e parceiros
-                  </span>
-                </div>
-              </div>
+            {/* Badge de Operação Ativa */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-950/70 backdrop-blur-md px-3.5 py-1.5 text-xs text-blue-300 font-semibold mb-6 shadow-xs">
+              <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="tracking-tight">
+                Operação Ativa • Otimização Diária de Campanhas
+              </span>
             </div>
 
-            {/* Coluna Direita: Foto Executiva do Grégory com Badges Flutuantes */}
-            <div className="lg:col-span-5 relative flex justify-center lg:justify-end mt-4 lg:mt-0">
-              <div className="relative w-full max-w-[420px] rounded-3xl overflow-hidden border border-blue-500/30 shadow-2xl bg-[#0B0F1D] group">
-                {/* Imagem Real do Grégory no Escritório com MacBook */}
-                <img
-                  src="/images/gregory-hero.jpg"
-                  alt="Grégory Caruccio trabalhando no planejamento e otimização de campanhas"
-                  className="w-full h-auto object-cover aspect-[4/5] object-center group-hover:scale-[1.02] transition-transform duration-500"
-                />
+            {/* Headline Monumental com Destaque em Azul */}
+            <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.12]">
+              Compradores reais no seu WhatsApp, <span className="text-blue-400">todos os dias.</span>
+            </h1>
 
-                {/* Gradiente Suave de Integração no Rodapé da Foto */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070A14] via-transparent to-transparent opacity-60 pointer-events-none" />
+            {/* Subtítulo Analítico e Direto */}
+            <p className="mt-6 text-base sm:text-lg text-slate-300 font-sans leading-relaxed max-w-xl">
+              Gestão profissional de tráfego pago no Meta e Google Ads, autoridade no Instagram, páginas ultra velozes em React e automações com bots e SDRs de Inteligência Artificial. Zero intermediários.
+            </p>
 
-                {/* Badge Flutuante 1 (Topo Esquerdo): Case Delivery */}
-                <div className="absolute top-4 left-4 rounded-xl border border-white/10 bg-slate-950/85 backdrop-blur-md px-3.5 py-2 text-xs font-semibold text-white shadow-xl flex items-center gap-2">
-                  <TrendingUp className="h-4 w-4 text-emerald-400 shrink-0" />
-                  <span>+25 pedidos/noite • Delivery</span>
-                </div>
+            {/* Botões de Ação */}
+            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a
+                href={whatsappHeroHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 px-7 py-4 text-xs sm:text-sm font-bold text-white transition-all duration-150 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-600/30"
+              >
+                <span>Solicitar Diagnóstico Comercial</span>
+                <ArrowRight className="h-4 w-4 text-blue-200" />
+              </a>
 
-                {/* Badge Flutuante 2 (Base Direita): Atendimento 100% Direto */}
-                <div className="absolute bottom-4 right-4 rounded-xl border border-white/10 bg-slate-950/85 backdrop-blur-md px-3.5 py-2 text-xs font-semibold text-white shadow-xl flex items-center gap-2">
-                  <ShieldCheck className="h-4 w-4 text-blue-400 shrink-0" />
-                  <span>Atendimento 100% Direto</span>
-                </div>
+              <a
+                href="#combo-growth"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700/80 bg-slate-900/80 backdrop-blur-md hover:bg-slate-800 text-slate-200 px-6 py-4 text-xs sm:text-sm font-semibold transition-colors"
+              >
+                <span>Conhecer o Combo Growth</span>
+              </a>
+            </div>
+
+            {/* Micro Prova Social */}
+            <div className="mt-10 pt-6 border-t border-white/[0.1] flex items-center gap-3.5 text-xs text-slate-300">
+              <div className="flex -space-x-2">
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-white font-bold text-[10px] ring-2 ring-[#05070E]">
+                  FP
+                </span>
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 text-white font-bold text-[10px] ring-2 ring-[#05070E]">
+                  QA
+                </span>
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-600 text-white font-bold text-[10px] ring-2 ring-[#05070E]">
+                  AS
+                </span>
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-800 text-blue-300 font-bold text-[10px] ring-2 ring-[#05070E]">
+                  +15
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <span className="font-semibold text-white">
+                  +R$ 1.6 milhão gerados em vendas reais
+                </span>
+                <span className="text-[11px] text-slate-400">
+                  Fleck Pastel, Quezia Imóveis, Agro Salinas e parceiros locais
+                </span>
               </div>
             </div>
 
           </div>
-        </div>
 
-        {/* ======================================================== */}
-        {/* BARRA DE NICHOS ATENDIDOS (TICKER ESTILO SAASIFY PARTNERS) */}
-        {/* ======================================================== */}
-        <div className="mt-6 px-5 py-4 rounded-2xl border border-slate-200/80 bg-white/75 backdrop-blur-md flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-slate-600 shadow-xs">
+          {/* Badges Flutuantes em Vidro Fosco sobre a Foto */}
+          <div className="hidden lg:block">
+            <div className="absolute right-8 bottom-16 rounded-2xl border border-white/10 bg-slate-950/80 backdrop-blur-md px-4 py-3 text-xs font-semibold text-white shadow-2xl flex items-center gap-2.5">
+              <ShieldCheck className="h-4 w-4 text-blue-400 shrink-0" />
+              <span>Atendimento 100% Direto com o Grégory</span>
+            </div>
+
+            <div className="hidden xl:flex items-center gap-2.5 rounded-2xl border border-white/10 bg-slate-950/80 backdrop-blur-md px-4 py-3 text-xs font-semibold text-white shadow-2xl absolute right-12 top-40">
+              <TrendingUp className="h-4 w-4 text-emerald-400 shrink-0" />
+              <span>+25 pedidos/noite • Delivery</span>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      {/* ======================================================== */}
+      {/* SEÇÃO SEGUINTE: TICKER DE NICHOS & MÉTRICAS AUDITADAS */}
+      {/* ======================================================== */}
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+        
+        {/* Barra de Nichos Atendidos Flutuante */}
+        <div className="px-5 py-4 rounded-2xl border border-slate-800/80 bg-[#090D18]/90 backdrop-blur-md flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-slate-300 shadow-xl">
           <span className="text-slate-400 uppercase tracking-wider text-[11px] font-bold">
             Especialidades Validadas em Campo:
           </span>
 
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-            <span className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors">
-              <Utensils className="h-3.5 w-3.5 text-blue-600" /> Gastronomia & Delivery
+            <span className="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+              <Utensils className="h-3.5 w-3.5 text-blue-400" /> Gastronomia & Delivery
             </span>
-            <span className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors">
-              <Home className="h-3.5 w-3.5 text-blue-600" /> Mercado Imobiliário
+            <span className="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+              <Home className="h-3.5 w-3.5 text-blue-400" /> Mercado Imobiliário
             </span>
-            <span className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors">
-              <Car className="h-3.5 w-3.5 text-blue-600" /> Revenda de Seminovos
+            <span className="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+              <Car className="h-3.5 w-3.5 text-blue-400" /> Revenda de Seminovos
             </span>
-            <span className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors">
-              <Dog className="h-3.5 w-3.5 text-blue-600" /> Agropecuária & Pet Shop
+            <span className="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+              <Dog className="h-3.5 w-3.5 text-blue-400" /> Agropecuária & Pet Shop
             </span>
-            <span className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors">
-              <Sparkles className="h-3.5 w-3.5 text-blue-600" /> Saúde & Estética Facial
+            <span className="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+              <Sparkles className="h-3.5 w-3.5 text-blue-400" /> Saúde & Estética Facial
             </span>
-            <span className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors">
-              <Building2 className="h-3.5 w-3.5 text-blue-600" /> Comunicação Visual B2B
+            <span className="inline-flex items-center gap-1.5 hover:text-blue-400 transition-colors">
+              <Building2 className="h-3.5 w-3.5 text-blue-400" /> Comunicação Visual B2B
             </span>
           </div>
         </div>
 
-        {/* ======================================================== */}
-        {/* ILHA FLUTUANTE 2: MÉTRICAS AUDITADAS (ESTILO SAASIFY STATS) */}
-        {/* ======================================================== */}
-        <div className="mt-8 rounded-[2.5rem] border border-slate-200/90 bg-white/90 backdrop-blur-md p-8 sm:p-12 shadow-sm relative overflow-hidden">
+        {/* Ilha de Métricas Auditadas (Estilo Saasify Stats) */}
+        <div className="mt-8 mb-12 sm:mb-16 rounded-[2.5rem] border border-slate-200/90 bg-white/95 backdrop-blur-md p-8 sm:p-12 shadow-sm relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Lado Esquerdo: Chamada com Prova Real */}
+            {/* Lado Esquerdo */}
             <div className="lg:col-span-5">
               <div className="inline-flex items-center gap-2 border border-blue-200 bg-blue-50 text-blue-700 text-xs px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider mb-4">
                 <span>Resultados Auditados em Caixa</span>
@@ -260,6 +257,6 @@ export const Hero: React.FC = () => {
         </div>
 
       </div>
-    </header>
+    </div>
   );
 };

@@ -8,7 +8,7 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 15);
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
@@ -22,8 +22,8 @@ export const Navbar: React.FC = () => {
       data-ui
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-xl border-b border-slate-200/90 py-3 shadow-xs"
-          : "bg-white/80 backdrop-blur-md border-b border-slate-200/60 py-3.5"
+          ? "bg-[#05070E]/90 backdrop-blur-xl border-b border-slate-800/80 py-3 shadow-md"
+          : "bg-[#05070E]/50 backdrop-blur-md border-b border-white/[0.06] py-3.5"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 sm:px-8">
@@ -33,56 +33,56 @@ export const Navbar: React.FC = () => {
             GC
           </div>
           <div className="flex flex-col">
-            <span className="font-heading font-extrabold text-slate-950 text-sm sm:text-base tracking-tight leading-none group-hover:text-blue-600 transition-colors whitespace-nowrap">
+            <span className="font-heading font-extrabold text-white text-sm sm:text-base tracking-tight leading-none group-hover:text-blue-400 transition-colors whitespace-nowrap">
               {SITE_CONFIG.nome}
             </span>
-            <span className="text-[11px] text-slate-500 font-medium tracking-normal mt-0.5 whitespace-nowrap hidden sm:block">
+            <span className="text-[11px] text-slate-400 font-medium tracking-normal mt-0.5 whitespace-nowrap hidden sm:block">
               Tráfego, IA & Performance RS
             </span>
           </div>
         </a>
 
-        {/* Links Desktop — Concisos, 100% em Linha Única (Sem Quebra de Linha) */}
-        <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-semibold text-slate-600">
+        {/* Links Desktop — Concisos, 100% em Linha Única */}
+        <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-semibold text-slate-300">
           <a
             href="#metodo"
-            className="hover:text-blue-600 transition-colors whitespace-nowrap"
+            className="hover:text-white transition-colors whitespace-nowrap"
           >
             Método
           </a>
 
           <a
             href="#nichos"
-            className="hover:text-blue-600 transition-colors whitespace-nowrap"
+            className="hover:text-white transition-colors whitespace-nowrap"
           >
             Cases
           </a>
 
           <a
             href="#combo-growth"
-            className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200/80 px-3 py-1 text-blue-700 hover:bg-blue-100 transition-colors font-bold whitespace-nowrap shrink-0"
+            className="inline-flex items-center gap-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 px-3 py-1 text-blue-300 hover:bg-blue-900/60 transition-colors font-bold whitespace-nowrap shrink-0"
           >
             <span>Combo Growth</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
           </a>
 
           <a
             href="#servicos"
-            className="hover:text-blue-600 transition-colors whitespace-nowrap"
+            className="hover:text-white transition-colors whitespace-nowrap"
           >
             Serviços
           </a>
 
           <a
             href="#sobre"
-            className="hover:text-blue-600 transition-colors whitespace-nowrap"
+            className="hover:text-white transition-colors whitespace-nowrap"
           >
             Sobre
           </a>
 
           <a
             href="#faq"
-            className="hover:text-blue-600 transition-colors whitespace-nowrap"
+            className="hover:text-white transition-colors whitespace-nowrap"
           >
             Dúvidas
           </a>
@@ -103,13 +103,13 @@ export const Navbar: React.FC = () => {
           {/* Menu Mobile Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex lg:hidden rounded-xl p-2 text-slate-700 hover:bg-slate-100 focus:outline-none border border-slate-200"
+            className="flex lg:hidden rounded-xl p-2 text-slate-300 hover:bg-slate-900 focus:outline-none border border-slate-800"
             aria-label="Abrir menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-5 w-5" />
+              <X className="h-5 w-5 text-white" />
             ) : (
-              <Menu className="h-5 w-5" />
+              <Menu className="h-5 w-5 text-white" />
             )}
           </button>
         </div>
@@ -117,48 +117,48 @@ export const Navbar: React.FC = () => {
 
       {/* Menu Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-5 pt-3 pb-6 shadow-md">
+        <div className="lg:hidden bg-[#070A14]/98 backdrop-blur-xl border-b border-slate-800 px-5 pt-3 pb-6 shadow-xl">
           <div className="flex flex-col gap-2 text-sm">
             <a
               href="#metodo"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2 text-slate-700 font-medium hover:bg-slate-50"
+              className="rounded-xl px-3.5 py-2 text-slate-300 font-medium hover:bg-slate-900"
             >
               Método A.C.C.O
             </a>
             <a
               href="#nichos"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2 text-slate-700 font-medium hover:bg-slate-50"
+              className="rounded-xl px-3.5 py-2 text-slate-300 font-medium hover:bg-slate-900"
             >
               Cases Práticos de Vendas
             </a>
             <a
               href="#combo-growth"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2.5 font-bold text-blue-700 bg-blue-50 border border-blue-200 flex items-center justify-between"
+              className="rounded-xl px-3.5 py-2.5 font-bold text-blue-300 bg-blue-950/70 border border-blue-500/40 flex items-center justify-between"
             >
               <span>Combo Growth (R$ 1.600/mês)</span>
-              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
             </a>
             <a
               href="#servicos"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2 text-slate-700 font-medium hover:bg-slate-50"
+              className="rounded-xl px-3.5 py-2 text-slate-300 font-medium hover:bg-slate-900"
             >
               Serviços e Planos
             </a>
             <a
               href="#sobre"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2 text-slate-700 font-medium hover:bg-slate-50"
+              className="rounded-xl px-3.5 py-2 text-slate-300 font-medium hover:bg-slate-900"
             >
               Sobre o Grégory
             </a>
             <a
               href="#faq"
               onClick={() => setMobileMenuOpen(false)}
-              className="rounded-xl px-3.5 py-2 text-slate-700 font-medium hover:bg-slate-50"
+              className="rounded-xl px-3.5 py-2 text-slate-300 font-medium hover:bg-slate-900"
             >
               Dúvidas Frequentes
             </a>
