@@ -9,56 +9,63 @@ export const AboutSection: React.FC = () => {
   const getIcon = (idx: number) => {
     switch (idx) {
       case 0:
-        return <UserCheck className="h-5 w-5 text-blue-600" />;
+        return <UserCheck className="h-5 w-5 text-blue-400" />;
       case 1:
-        return <Camera className="h-5 w-5 text-amber-600" />;
+        return <Camera className="h-5 w-5 text-amber-400" />;
       case 2:
-        return <TrendingUp className="h-5 w-5 text-emerald-600" />;
+        return <TrendingUp className="h-5 w-5 text-emerald-400" />;
       case 3:
-        return <Bot className="h-5 w-5 text-indigo-600" />;
+        return <Bot className="h-5 w-5 text-indigo-400" />;
       default:
-        return <MapPin className="h-5 w-5 text-blue-600" />;
+        return <MapPin className="h-5 w-5 text-blue-400" />;
     }
   };
 
   const getIconBg = (idx: number) => {
     switch (idx) {
       case 0:
-        return "bg-blue-50 border-blue-100";
+        return "bg-blue-950/70 border-blue-800/60";
       case 1:
-        return "bg-amber-50 border-amber-100";
+        return "bg-amber-950/70 border-amber-800/60";
       case 2:
-        return "bg-emerald-50 border-emerald-100";
+        return "bg-emerald-950/70 border-emerald-800/60";
       case 3:
-        return "bg-indigo-50 border-indigo-100";
+        return "bg-indigo-950/70 border-indigo-800/60";
       default:
-        return "bg-blue-50 border-blue-100";
+        return "bg-blue-950/70 border-blue-800/60";
     }
   };
 
   return (
-    <section id="sobre" className="scroll-mt-28 py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        
-        {/* Header */}
+    <section
+      id="sobre"
+      className="scroll-mt-28 py-20 md:py-28 bg-[#06080F] text-white border-t border-slate-800/90 relative overflow-hidden"
+    >
+      {/* Glow de Fundo */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-32 left-1/3 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl -z-10"
+      />
+
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 relative z-10">
+        {/* Header em Dark Mode */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 border border-blue-200 bg-blue-50 text-blue-700 text-xs px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-950/60 text-blue-400 text-xs px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider mb-4">
             <span>Atendimento Direto com o Especialista</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-3xl">
-            Quem comanda a sua <span className="text-blue-600">estratégia comercial.</span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight max-w-3xl">
+            Quem comanda a sua <span className="text-blue-400">estratégia comercial.</span>
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
             {sobre.subtitulo}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          
           {/* Lado Esquerdo: Manifesto Direto em Preto e Gradiente com CTA */}
-          <div className="lg:col-span-5 rounded-3xl border border-slate-900 bg-gradient-to-br from-slate-950 via-slate-900 to-[#111A30] p-7 sm:p-9 text-white flex flex-col justify-between">
+          <div className="lg:col-span-5 rounded-3xl border border-blue-500/30 bg-gradient-to-br from-[#0B0F1A] via-[#0E1526] to-[#121B32] p-7 sm:p-9 text-white flex flex-col justify-between shadow-2xl">
             <div>
               <span className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider block mb-3">
                 Posicionamento Técnico
@@ -66,7 +73,7 @@ export const AboutSection: React.FC = () => {
               <p className="font-heading text-lg sm:text-xl font-bold text-white leading-snug">
                 "O mesmo especialista que planeja a estratégia comercial é quem aperta os botões e cobra resultados de caixa toda semana."
               </p>
-              
+
               <div className="mt-6 pt-6 border-t border-white/[0.08] space-y-3.5 text-xs sm:text-sm text-slate-300 font-sans leading-relaxed">
                 <p>
                   Sem intermediários ou estagiários terceirizados postando frases motivacionais. Aqui o trabalho é técnico, pragmático e construído no campo de batalha.
@@ -82,7 +89,7 @@ export const AboutSection: React.FC = () => {
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-150 hover:scale-[1.01] active:scale-[0.99]"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-150 hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-blue-600/30"
               >
                 <span>Falar com o Grégory</span>
                 <ArrowRight className="h-4 w-4 text-blue-200" />
@@ -95,32 +102,36 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Lado Direito: Os 5 Pilares de Confiança Técnica em Cards Brancos */}
+          {/* Lado Direito: Os 5 Pilares de Confiança Técnica em Cards Escuros */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {sobre.diferenciais.map((dif, idx) => (
               <div
                 key={idx}
-                className={`rounded-3xl border border-slate-200/90 bg-[#FAFBFF] p-6 flex flex-col justify-between hover:border-blue-400 hover:bg-white transition-all duration-200 ${
+                className={`rounded-3xl border border-slate-800/80 bg-[#0B0F1A]/85 p-6 flex flex-col justify-between hover:border-blue-500/40 hover:bg-[#0E1424] transition-all duration-200 text-white shadow-sm ${
                   idx === 4 ? "sm:col-span-2" : ""
                 }`}
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border ${getIconBg(idx)}`}>
-                    {getIcon(idx)}
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border ${getIconBg(
+                        idx
+                      )}`}
+                    >
+                      {getIcon(idx)}
+                    </div>
+                    <h3 className="font-heading font-extrabold text-sm sm:text-base text-white">
+                      {dif.titulo}
+                    </h3>
                   </div>
-                  <h3 className="font-heading font-extrabold text-sm sm:text-base text-slate-950">
-                    {dif.titulo}
-                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 font-sans leading-relaxed">
+                    {dif.descricao}
+                  </p>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                  {dif.descricao}
-                </p>
               </div>
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );

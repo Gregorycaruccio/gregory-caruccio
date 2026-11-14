@@ -3,7 +3,7 @@ import { SITE_CONFIG } from "../config/site-config";
 
 export const ProcessSection: React.FC = () => {
   return (
-    <section id="processo" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
+    <section id="processo" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF]/80 backdrop-blur-[2px] text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio */}

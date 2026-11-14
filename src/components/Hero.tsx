@@ -7,11 +7,11 @@ export const Hero: React.FC = () => {
   const whatsappHeroHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Quero%20entender%20como%20estruturar%20uma%20m%C3%A1quina%20de%20vendas%20no%20WhatsApp%20para%20minha%20empresa.`;
 
   return (
-    <header className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-[#FAFBFF] text-slate-900 overflow-hidden">
+    <header className="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-transparent text-slate-900 overflow-hidden">
       {/* Background Gradient Mesh Efeitos Flowora */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-gradient-to-tr from-blue-400/15 via-indigo-400/20 to-purple-400/10 blur-3xl rounded-full -z-10"
+        className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-gradient-to-tr from-blue-400/20 via-indigo-400/20 to-purple-400/15 blur-3xl rounded-full -z-10"
       />
 
       <div className="mx-auto max-w-6xl px-5 sm:px-8">

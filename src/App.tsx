@@ -1,4 +1,5 @@
 import React from "react";
+import { ScrollDepthBackground } from "./components/ScrollDepthBackground";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { EcosystemSection } from "./components/EcosystemSection";
@@ -16,21 +17,27 @@ import { WhatsAppFloat } from "./components/WhatsAppFloat";
 export const App: React.FC = () => {
   return (
     <div className="min-h-[100dvh] bg-[#FAFBFF] text-slate-900 flex flex-col font-sans selection:bg-blue-600 selection:text-white relative overflow-x-clip">
-      <Navbar />
-      <main className="flex-1 overflow-x-clip">
-        <Hero />
-        <EcosystemSection />
-        <PortfolioSection />
-        <ComboGrowthSection />
-        <ServicesSection />
-        <AboutSection />
-        <ProcessSection />
-        <CtaBanner />
-        <FaqSection />
-        <ContactSection />
-      </main>
-      <Footer />
-      <WhatsAppFloat />
+      {/* Background Dinâmico de Profundidade com Parallax no Scroll */}
+      <ScrollDepthBackground />
+
+      {/* Conteúdo da Aplicação */}
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-1 overflow-x-clip">
+          <Hero />
+          <EcosystemSection />
+          <PortfolioSection />
+          <ComboGrowthSection />
+          <ServicesSection />
+          <AboutSection />
+          <ProcessSection />
+          <CtaBanner />
+          <FaqSection />
+          <ContactSection />
+        </main>
+        <Footer />
+        <WhatsAppFloat />
+      </div>
     </div>
   );
 };

@@ -33,7 +33,7 @@ export const EcosystemSection: React.FC = () => {
   };
 
   return (
-    <section id="metodo" className="scroll-mt-28 py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
+    <section id="metodo" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF]/80 backdrop-blur-[2px] text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio com Método A.C.C.O */}

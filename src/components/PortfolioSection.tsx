@@ -86,7 +86,7 @@ export const PortfolioSection: React.FC = () => {
   return (
     <section
       id="nichos"
-      className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80 overflow-x-clip"
+      className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF]/80 backdrop-blur-[2px] text-slate-900 border-t border-slate-200/80 overflow-x-clip"
     >
       {/* Anchor alias para #portfolio */}
       <div id="portfolio" className="scroll-mt-28" />

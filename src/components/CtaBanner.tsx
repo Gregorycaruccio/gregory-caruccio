@@ -6,7 +6,7 @@ export const CtaBanner: React.FC = () => {
   const whatsappCtaHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Quero%20solicitar%20meu%20diagn%C3%B3stico%20comercial%20gratuito.`;
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-transparent">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Banner Gradiente Estilo Flowora */}

@@ -10,7 +10,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
+    <section id="faq" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF]/80 backdrop-blur-[2px] text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio */}
