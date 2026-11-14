@@ -64,9 +64,29 @@ export const AboutSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Lado Esquerdo: Manifesto Direto em Preto e Gradiente com CTA */}
+          {/* Lado Esquerdo: Manifesto Direto em Preto e Gradiente com CTA e Foto Real */}
           <div className="lg:col-span-5 rounded-3xl border border-blue-500/30 bg-gradient-to-br from-[#0B0F1A] via-[#0E1526] to-[#121B32] p-7 sm:p-9 text-white flex flex-col justify-between shadow-2xl">
             <div>
+              {/* Foto de Perfil Executiva do Grégory */}
+              <div className="flex items-center gap-4 mb-6 pb-6 border-b border-white/[0.1]">
+                <img
+                  src="/images/gregory-portrait.jpg"
+                  alt="Grégory Caruccio"
+                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-cover object-top border-2 border-blue-500/40 shadow-lg shrink-0"
+                />
+                <div>
+                  <span className="font-heading font-extrabold text-white text-base sm:text-lg block leading-snug">
+                    {SITE_CONFIG.nome}
+                  </span>
+                  <span className="text-xs text-blue-400 font-semibold block mt-0.5">
+                    Estrategista de Vendas & Tráfego Pago
+                  </span>
+                  <span className="text-[11px] text-slate-400 block mt-1">
+                    Litoral Norte RS & Atendimento Nacional
+                  </span>
+                </div>
+              </div>
+
               <span className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider block mb-3">
                 Posicionamento Técnico
               </span>
