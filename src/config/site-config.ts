@@ -246,7 +246,196 @@ export const SITE_CONFIG = {
     },
   ],
 
-  // Casos de Campo & Experiência por Nicho (Resultados Reais Auditados)
+  // =========================================================================
+  // PORTFÓLIO ESTRUTURADO POR SERVIÇO (TRÁFEGO PAGO, SOCIAL MEDIA, SITES)
+  // =========================================================================
+  portfolioServicos: [
+    {
+      id: "trafego-pago",
+      categoria: "Tráfego Pago",
+      titulo: "Tráfego Pago & Performance",
+      subtitulo: "Meta Ads, Google Ads, Dayparting & Vendas Diretas no WhatsApp",
+      badge: "Aquisição & Vendas Reais",
+      destaque: "ROI Comprovado em Caixa",
+      cor: "blue",
+      descricao:
+        "Campanhas hiperlocais no Meta e Google com Dayparting estrito nos horários de funcionamento da sua equipe. Criativos nativos e filtros de qualificação para colocar compradores no seu WhatsApp sem pagar taxas abusivas de aplicativos.",
+      cases: [
+        {
+          id: "fleck-pastel",
+          cliente: "Fleck Pastel",
+          subtitulo: "Sandra & Gerson (Cidreira - RS)",
+          nicho: "Gastronomia & Delivery",
+          localizacao: "Cidreira - RS",
+          metricas: [
+            { label: "CPL Auditado", valor: "R$ 2,50 a R$ 3,80" },
+            { label: "Pico Noturno", valor: "+25 a 30 pedidos/noite" },
+            { label: "Taxas de App", valor: "0% Eliminadas (Pix)" },
+          ],
+          oqueFoiFeito:
+            "Campanhas com Dayparting estrito no Meta Ads ativadas exclusivamente nos horários de pico (18h às 23h, sex a ter). Produção de criativos nativos validados em campo: vídeo ASMR do pastel crocante frito na hora no óleo limpo de algodão cortado ao meio, xis artesanal prensado e fotos reais de bandejas sem vento. Roteamento direto com mensagens pré-programadas para fechamento rápido no WhatsApp.",
+          resultado:
+            "CPL médio entre R$ 2,50 e R$ 3,80 por conversa qualificada. Picos consistentes de mais de 25 a 30 pedidos por noite via Pix no WhatsApp, eliminando a dependência e as taxas de até 27% dos aplicativos de delivery.",
+        },
+        {
+          id: "quezia-imoveis",
+          cliente: "Quezia Auler Imóveis",
+          subtitulo: "Késia (Cidreira, Magistério & Salinas - RS)",
+          nicho: "Mercado Imobiliário",
+          localizacao: "Cidreira & Região - RS",
+          metricas: [
+            { label: "Venda Fechada", valor: "Imóvel R$ 210k Vendido" },
+            { label: "CPL Qualificado", valor: "R$ 5,81 a R$ 6,56" },
+            { label: "Taxa de Conversão", valor: "85,7% Clique→WPP" },
+          ],
+          oqueFoiFeito:
+            "Segmentação geográfica de compradores qualificados em Porto Alegre, Canoas e Região Metropolitana (28 a 60 anos) para casas geminadas (R$ 200k/210k) e terrenos em Salinas a R$ 80k. Roteiros em vídeo com 'Filtro Total' (anunciando valor de entrada e parcela nos primeiros 10 segundos para eliminar curiosos) e triagem de financiamento vs permuta.",
+          resultado:
+            "CPL estável de R$ 5,81 a R$ 6,56 com taxa de conversão clique→WhatsApp de 85,7% (CTR acima de 4,15%). Venda real de imóvel de R$ 210.000,00 concluída e validada diretamente da campanha, além de visitas presenciais agendadas todo final de semana.",
+        },
+        {
+          id: "alex-contini",
+          cliente: "Alex Contini Multimarcas",
+          subtitulo: "Revenda de Veículos Seminovos (Tramandaí - RS)",
+          nicho: "Revenda de Seminovos",
+          localizacao: "Tramandaí - RS",
+          metricas: [
+            { label: "Velocidade de Giro", valor: "Pátio Acelerado" },
+            { label: "Lead Qualificado", valor: "Modelo Pré-Preenchido" },
+            { label: "Condição Comercial", valor: "Troca + Financiamento" },
+          ],
+          oqueFoiFeito:
+            "O estoque dita o tráfego: criativos reais do pátio (fotos e vídeos walkaround sem molduras genéricas de Canva) com botão de WhatsApp trazendo o modelo exato do veículo no interesse do cliente e intenção de financiamento ou carro na troca.",
+          resultado:
+            "Aceleração expressiva no giro de seminovos no pátio e redução drástica do custo por comprador com real intenção de visita presencial e avaliação do usado.",
+        },
+      ],
+    },
+    {
+      id: "social-media",
+      categoria: "Social Media",
+      titulo: "Social Media & Autoridade",
+      subtitulo: "Método dos 4 Pilares de Alfredo Soares & Catálogos de WhatsApp",
+      badge: "Autoridade & Retenção",
+      destaque: "Confiança que Vence o Desejo",
+      cor: "indigo",
+      descricao:
+        "Gestão de perfil com posicionamento estratégico baseado nos 4 Pilares (Educar, Conectar, Vender e Entreter). Transformamos sua rotina de balcão e bastidores em autoridade sólida, confiança e vendas recorrentes.",
+      cases: [
+        {
+          id: "agro-salinas",
+          cliente: "Agro Salinas",
+          subtitulo: "Agropecuária & Pet Shop (Cidreira - RS)",
+          nicho: "Agropecuária & Pet Shop",
+          localizacao: "Cidreira - RS",
+          metricas: [
+            { label: "Itens Digitalizados", valor: "+100 Produtos" },
+            { label: "Canal de Venda", valor: "Catálogo no WhatsApp" },
+            { label: "Modelo de Pedido", valor: "Tele-entrega Local" },
+          ],
+          oqueFoiFeito:
+            "Posicionamento sob o arquétipo 'O Vizinho Especialista' ('A agropecuária que conhece seu pet pelo nome'). Digitalização completa de centenas de itens de balcão (rações a granel, medicamentos veterinários e insumos) e estruturação de catálogo dinâmico de tele-entrega rápida pelo WhatsApp.",
+          resultado:
+            "Criação de um novo canal de vendas recorrente: dezenas de pedidos semanais de rações e medicamentos veterinários enviados direto no WhatsApp para moradores e veranistas do Litoral, fidelizando clientes de balcão.",
+        },
+        {
+          id: "helfy-io",
+          cliente: "Helfy.io",
+          subtitulo: "SaaS Clínico & Saúde Digital",
+          nicho: "SaaS & Tecnologia Médica",
+          localizacao: "Brasil (Nacional)",
+          metricas: [
+            { label: "Arquétipo Central", valor: "O Copiloto Clínico" },
+            { label: "Público B2B", valor: "Médicos & Clínicas" },
+            { label: "Funil Comercial", valor: "Demonstrações Ativas" },
+          ],
+          oqueFoiFeito:
+            "Estratégia dupla de conteúdo (B2B para médicos/gestores e B2C para pacientes) sob o arquétipo 'O Copiloto Clínico'. Produção de carrosséis técnicos e posts atacando a dor do tempo perdido com prontuários de papel e glosas, direcionando para agendamento de demonstração do software.",
+          resultado:
+            "Atração contínua e qualificada de médicos particulares e gestores de clínicas para demonstrações de software, posicionando a Helfy.io como solução moderna e confiável de gestão clínica.",
+        },
+        {
+          id: "pro-corpo",
+          cliente: "Espaço Pró Corpo & Academia",
+          subtitulo: "Pilates, Estética Facial & Terapias (Litoral RS)",
+          nicho: "Saúde, Bem-estar & Estética",
+          localizacao: "Litoral RS",
+          metricas: [
+            { label: "Agenda Comercial", valor: "Semanas Antecipadas" },
+            { label: "Taxa de Presença", valor: "Zero No-Show" },
+            { label: "Fidelização", valor: "Turmas Lotadas" },
+          ],
+          oqueFoiFeito:
+            "Estruturação editorial nos 4 Pilares de Conteúdo sob o arquétipo 'O Refúgio do Autocuidado'. Gravação e edição de vídeos de procedimentos reais de estética facial, acolhimento da nova psicóloga e demonstrações práticas de pilates, humanizando a equipe e educando o público sobre benefícios posturais.",
+          resultado:
+            "Preenchimento consistente da agenda de procedimentos estéticos e das turmas de pilates com semanas de antecedência, reduzindo o índice de cancelamentos a quase zero.",
+        },
+      ],
+    },
+    {
+      id: "sites",
+      categoria: "Sites & Landing Pages",
+      titulo: "Sites & Landing Pages",
+      subtitulo: "Desenvolvimento Próprio em React, Tailwind CSS & Foco em WhatsApp",
+      badge: "Código Próprio & Velocidade",
+      destaque: "Carregamento < 1s no Celular",
+      cor: "emerald",
+      descricao:
+        "Páginas de alta performance desenvolvidas sob medida, sem templates pesados de WordPress ou plataformas limitadas. Feitas para carregar instantaneamente no 4G e conduzir o visitante direto para a conversa de vendas no WhatsApp.",
+      cases: [
+        {
+          id: "renova-face",
+          cliente: "Renova Face • Dra. Sandra",
+          subtitulo: "Estética Facial Avançada (Litoral Norte RS)",
+          nicho: "Saúde & Estética Facial",
+          localizacao: "Litoral Norte RS",
+          metricas: [
+            { label: "Velocidade", valor: "< 1s Carregamento" },
+            { label: "Design", valor: "Editorial Dark & Clean" },
+            { label: "Ação Principal", valor: "Agendamento no WPP" },
+          ],
+          oqueFoiFeito:
+            "Criação de landing page sob medida em React e Tailwind CSS com design editorial escuro de alta autoridade, galeria comparativa de antes/depois explicativos, FAQ de segurança sobre procedimentos e botão fixo de agendamento via WhatsApp.",
+          resultado:
+            "Eliminação do abandono de página por lentidão e aumento substancial na taxa de conversão de visitantes vindos de anúncios em agendamentos presenciais confirmados.",
+        },
+        {
+          id: "espaco-salutar",
+          cliente: "Espaço Salutar",
+          subtitulo: "Clínica Integrativa & Multidisciplinar",
+          nicho: "Clínica Multidisciplinar",
+          localizacao: "Terapias Integrativas",
+          metricas: [
+            { label: "Estrutura", valor: "100% Responsiva" },
+            { label: "Clareza", valor: "Especialidades Mapeadas" },
+            { label: "Triagem", valor: "Fluxo Direto no WPP" },
+          ],
+          oqueFoiFeito:
+            "Desenvolvimento de site institucional moderno e acolhedor apresentando a equipe multidisciplinar, catálogo detalhado de especialidades terapêuticas e integração fluida com WhatsApp para triagem e agendamento de consultas.",
+          resultado:
+            "Presença digital consolidada para acolhimento de pacientes particulares e fechamento de planos de acompanhamento integrativo.",
+        },
+        {
+          id: "win-comunicacao",
+          cliente: "Win Comunicação Visual",
+          subtitulo: "Fachadas Comerciais & ACM (Litoral Norte RS)",
+          nicho: "Comunicação Visual B2B",
+          localizacao: "Litoral Norte RS",
+          metricas: [
+            { label: "Perfil do Contrato", valor: "B2B Alto Ticket" },
+            { label: "Conversão Física", valor: "Medições Técnicas" },
+            { label: "Foco Principal", valor: "Fachadas em ACM" },
+          ],
+          oqueFoiFeito:
+            "Landing page B2B focada em empresários e lojistas que precisam renovar suas fachadas antes do pico de temporada de verão. Portfólio fotográfico de alta densidade destacando projetos executados de fachadas em ACM e letreiros comerciais no Litoral Gaúcho.",
+          resultado:
+            "Agendamento constante de visitas técnicas e medições presenciais com empresários de Cidreira, Tramandaí e Imbé, gerando propostas comerciais de alto valor.",
+        },
+      ],
+    },
+  ],
+
+  // Casos de Campo & Experiência por Nicho (Retrocompatibilidade)
   nichos: [
     {
       nicho: "Gastronomia & Delivery",
