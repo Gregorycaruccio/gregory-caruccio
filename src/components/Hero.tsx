@@ -1,8 +1,6 @@
 import React from "react";
 import {
   ArrowRight,
-  TrendingUp,
-  ShieldCheck,
   Utensils,
   Home,
   Car,
@@ -119,20 +117,6 @@ export const Hero: React.FC = () => {
             </div>
 
           </div>
-
-          {/* Badges Flutuantes em Vidro Fosco ancorados próximos à mesa do Grégory */}
-          <div className="hidden lg:block">
-            <div className="absolute right-6 xl:right-10 bottom-12 rounded-2xl border border-white/10 bg-slate-950/85 backdrop-blur-md px-4 py-2.5 text-xs font-semibold text-white shadow-2xl flex items-center gap-2.5">
-              <ShieldCheck className="h-4 w-4 text-blue-400 shrink-0" />
-              <span>Atendimento 100% Direto com o Grégory</span>
-            </div>
-
-            <div className="hidden xl:flex items-center gap-2.5 rounded-2xl border border-white/10 bg-slate-950/85 backdrop-blur-md px-4 py-2.5 text-xs font-semibold text-white shadow-2xl absolute right-8 top-32">
-              <TrendingUp className="h-4 w-4 text-emerald-400 shrink-0" />
-              <span>+25 pedidos/noite • Delivery</span>
-            </div>
-          </div>
-
         </div>
       </header>
 
