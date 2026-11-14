@@ -7,7 +7,7 @@ export const ComboGrowthSection: React.FC = () => {
   const whatsappComboHref = `https://wa.me/${SITE_CONFIG.telefoneRaw}?text=Ol%C3%A1%20Gr%C3%A9gory!%20Tenho%20interesse%20no%20Combo%20Growth%20(R$%201.600/m%C3%AAs)%20para%20minha%20empresa.%20Como%20funciona%20o%20in%C3%ADcio?`;
 
   return (
-    <section id="combo-growth" className="py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
+    <section id="combo-growth" className="scroll-mt-28 py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio */}
@@ -16,11 +16,8 @@ export const ComboGrowthSection: React.FC = () => {
             <span>O Carro-Chefe Mais Contratado</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-            Combo Growth: <br />
-            <span className="text-blue-600">
-              Tráfego pago e autoridade no mesmo contrato.
-            </span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-3xl">
+            Combo Growth: <span className="text-blue-600">tráfego e autoridade unificados.</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
             Em vez de contratar um gestor de anúncios de um lado e um freelancer de posts do outro, o Combo Growth une as duas maiores fontes de receita com um único responsável técnico pelo seu resultado comercial.
@@ -84,10 +81,10 @@ export const ComboGrowthSection: React.FC = () => {
                     <Check className="h-3.5 w-3.5" />
                   </div>
                   <div>
-                    <h5 className="font-heading font-bold text-sm text-white">
+                    <h5 className="font-heading font-bold text-sm sm:text-base text-white">
                       {item.titulo}
                     </h5>
-                    <p className="mt-1 text-xs text-slate-300 font-sans leading-relaxed">
+                    <p className="mt-1 text-xs sm:text-sm text-slate-300 font-sans leading-relaxed">
                       {item.detalhe}
                     </p>
                   </div>
@@ -98,7 +95,7 @@ export const ComboGrowthSection: React.FC = () => {
 
           {/* Rodapé do Combo: CTA e Garantia com Botão Gradiente */}
           <div className="mt-9 pt-6 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
-            <div className="flex items-center gap-2.5 text-xs text-slate-300">
+            <div className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-300">
               <ShieldCheck className="h-4 w-4 text-emerald-400 shrink-0" />
               <span>Contrato mensal renovável sem fidelidade burocrática • Atendimento direto com Grégory</span>
             </div>

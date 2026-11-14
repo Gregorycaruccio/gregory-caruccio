@@ -32,13 +32,13 @@ export const Navbar: React.FC = () => {
           <span className="font-heading font-extrabold text-slate-900 text-base tracking-tight group-hover:text-blue-600 transition-colors">
             {SITE_CONFIG.nome}
           </span>
-          <span className="text-[11px] text-slate-500 font-sans tracking-normal">
+          <span className="text-xs text-slate-500 font-sans tracking-normal">
             Tráfego Pago, Automação & Performance RS
           </span>
         </a>
 
         {/* Links Desktop */}
-        <div className="hidden lg:flex items-center gap-6 text-xs font-semibold text-slate-600">
+        <div className="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
           <a href="#" className="text-slate-900 hover:text-blue-600 transition-colors">
             Início
           </a>

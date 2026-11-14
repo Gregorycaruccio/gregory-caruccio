@@ -28,7 +28,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia no meu ne
   };
 
   return (
-    <section id="contato" className="py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
+    <section id="contato" className="scroll-mt-28 py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
@@ -38,11 +38,8 @@ Gostaria de entender os próximos passos para aplicar essa estratégia no meu ne
               <span>Linha Direta de Atendimento</span>
             </div>
 
-            <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-              Vamos conversar sobre o seu <br />
-              <span className="text-blue-600">
-                próximo salto de vendas.
-              </span>
+            <h2 className="font-heading font-extrabold text-2xl sm:text-3xl text-slate-950 tracking-tight leading-tight">
+              Vamos conversar sobre o seu <span className="text-blue-600">próximo salto de vendas.</span>
             </h2>
 
             <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
@@ -72,7 +69,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia no meu ne
 
             <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50/70 p-5 flex items-center justify-between">
               <div>
-                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">WhatsApp Comercial Oficial:</p>
+                <p className="text-xs font-semibold text-slate-500 mb-0.5">WhatsApp Comercial Oficial:</p>
                 <p className="font-heading font-extrabold text-sm sm:text-base text-slate-950">{SITE_CONFIG.telefoneFormatado}</p>
               </div>
               <a
@@ -93,7 +90,7 @@ Gostaria de entender os próximos passos para aplicar essa estratégia no meu ne
                 <h3 className="font-heading font-extrabold text-lg sm:text-xl text-slate-950">
                   Solicitar Diagnóstico Comercial
                 </h3>
-                <p className="text-xs text-slate-500 font-sans mt-0.5">
+                <p className="text-xs sm:text-sm text-slate-500 font-sans mt-0.5">
                   Selecione suas preferências e inicie o atendimento em 1 clique
                 </p>
               </div>

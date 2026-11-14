@@ -28,9 +28,8 @@ export const CtaBanner: React.FC = () => {
               <span>Diagnóstico Comercial Gratuito</span>
             </div>
 
-            <h2 className="font-heading font-extrabold text-2xl sm:text-4xl text-white tracking-tight leading-tight">
-              Pronto para transformar seu WhatsApp <br className="hidden sm:inline" />
-              em uma máquina diária de vendas?
+            <h2 className="font-heading font-extrabold text-xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-tight max-w-xl">
+              Transforme seu WhatsApp em máquina de vendas.
             </h2>
 
             <p className="mt-3 text-sm sm:text-base text-blue-100 font-sans leading-relaxed">

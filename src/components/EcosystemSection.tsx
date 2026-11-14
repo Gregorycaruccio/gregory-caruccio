@@ -33,20 +33,17 @@ export const EcosystemSection: React.FC = () => {
   };
 
   return (
-    <section id="metodo" className="py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
+    <section id="metodo" className="scroll-mt-28 py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio com Método A.C.C.O */}
         <div className="max-w-3xl mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 border border-blue-200 bg-blue-50 text-blue-700 text-xs px-3.5 py-1.5 rounded-full font-bold tracking-wider uppercase mb-4">
+          <div className="inline-flex items-center gap-2 border border-blue-200 bg-blue-50 text-blue-700 text-xs px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider mb-4">
             <span>MÉTODO A.C.C.O</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-            Um ecossistema comercial integrado. <br />
-            <span className="text-blue-600">
-              Não ações isoladas.
-            </span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-3xl">
+            Um ecossistema integrado, <span className="text-blue-600">não ações isoladas.</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
             Contratar posts avulsos ou rodar anúncios sem autoridade no perfil desperdiça orçamento. No Método A.C.C.O (Atrair, Construir, Converter e Otimizar), cada etapa cumpre uma função direta na decisão de compra do cliente.
@@ -64,7 +61,7 @@ export const EcosystemSection: React.FC = () => {
                 <div className="flex items-center justify-between mb-5">
                   {getIconBadge(idx)}
                   <span className="font-mono text-xs font-bold text-blue-600 bg-blue-50 border border-blue-100 px-2.5 py-1 rounded-lg">
-                    0{idx + 1}
+                    Fase {idx + 1}
                   </span>
                 </div>
 
@@ -82,14 +79,14 @@ export const EcosystemSection: React.FC = () => {
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-200/60">
-                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2.5">
+                <p className="text-xs font-semibold text-slate-500 mb-2.5">
                   Canais em operação:
                 </p>
                 <ul className="space-y-2">
                   {item.canais.map((canal, cIdx) => (
                     <li
                       key={cIdx}
-                      className="text-xs text-slate-700 flex items-center gap-2"
+                      className="text-xs sm:text-sm text-slate-700 flex items-center gap-2"
                     >
                       <ArrowRight className="h-3 w-3 text-blue-600 shrink-0" />
                       <span>{canal}</span>

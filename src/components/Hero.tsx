@@ -26,11 +26,8 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Headline Monumental Limpa e Direta */}
-          <h1 className="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl text-slate-950 tracking-tight max-w-4xl leading-[1.08]">
-            Compradores reais no seu WhatsApp. <br />
-            <span className="text-blue-600">
-              Todos os dias.
-            </span>
+          <h1 className="font-heading font-extrabold text-[27px] sm:text-5xl lg:text-6xl text-slate-950 tracking-tight max-w-4xl leading-[1.14]">
+            Compradores reais no seu WhatsApp, <span className="text-blue-600">todos os dias.</span>
           </h1>
 
           {/* Subtítulo Analítico e Sem Clichês */}
@@ -105,7 +102,7 @@ export const Hero: React.FC = () => {
                     +R$ 1.6M
                   </code>
                 </div>
-                <span className="text-[11px] font-medium text-emerald-600 block mt-1.5">
+                <span className="text-xs font-medium text-emerald-600 block mt-1.5">
                   ↑ Gerados diretamente no balcão
                 </span>
               </div>
@@ -119,7 +116,7 @@ export const Hero: React.FC = () => {
                     R$ 3,40
                   </code>
                 </div>
-                <span className="text-[11px] font-medium text-slate-500 block mt-1.5">
+                <span className="text-xs font-medium text-slate-500 block mt-1.5">
                   Leads qualificados no WhatsApp
                 </span>
               </div>
@@ -133,7 +130,7 @@ export const Hero: React.FC = () => {
                     4.8x
                   </code>
                 </div>
-                <span className="text-[11px] font-medium text-slate-500 block mt-1.5">
+                <span className="text-xs font-medium text-slate-500 block mt-1.5">
                   Média consolidada dos clientes
                 </span>
               </div>
@@ -147,7 +144,7 @@ export const Hero: React.FC = () => {
                     98%
                   </code>
                 </div>
-                <span className="text-[11px] font-medium text-slate-500 block mt-1.5">
+                <span className="text-xs font-medium text-slate-500 block mt-1.5">
                   Contratos renovados mensalmente
                 </span>
               </div>
@@ -155,7 +152,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Plataformas e Ferramentas Oficiais com Chips Clean */}
-            <div className="mt-6 rounded-2xl bg-slate-50 border border-slate-100 p-4 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+            <div className="mt-6 rounded-2xl bg-slate-50 border border-slate-100 p-4 flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm text-slate-600">
               <span className="font-bold text-slate-800">
                 Tecnologias e canais em operação ativa:
               </span>
@@ -182,7 +179,7 @@ export const Hero: React.FC = () => {
 
           {/* Logo Strip de Confiança estilo Flowora ("Loved by innovative teams") */}
           <div className="mt-14 pt-8 border-t border-slate-200/80 w-full flex flex-col items-center">
-            <p className="text-xs font-semibold uppercase tracking-wider text-slate-600 mb-5">
+            <p className="text-sm font-semibold text-slate-600 mb-5">
               Marcas e empresas locais com estratégias validadas em campo:
             </p>
             <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 text-xs sm:text-sm font-bold text-slate-700">

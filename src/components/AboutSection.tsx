@@ -37,7 +37,7 @@ export const AboutSection: React.FC = () => {
   };
 
   return (
-    <section id="sobre" className="py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
+    <section id="sobre" className="scroll-mt-28 py-20 md:py-28 bg-white text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header */}
@@ -46,11 +46,8 @@ export const AboutSection: React.FC = () => {
             <span>Atendimento Direto com o Especialista</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-            Quem comanda a sua <br />
-            <span className="text-blue-600">
-              estratégia comercial.
-            </span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-3xl">
+            Quem comanda a sua <span className="text-blue-600">estratégia comercial.</span>
           </h2>
 
           <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
@@ -115,7 +112,7 @@ export const AboutSection: React.FC = () => {
                     {dif.titulo}
                   </h3>
                 </div>
-                <p className="text-xs text-slate-600 font-sans leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
                   {dif.descricao}
                 </p>
               </div>

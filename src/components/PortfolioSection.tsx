@@ -38,7 +38,7 @@ export const PortfolioSection: React.FC = () => {
   };
 
   return (
-    <section id="nichos" className="py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
+    <section id="nichos" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80 overflow-x-clip">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header Editorial Flowora */}
@@ -47,11 +47,8 @@ export const PortfolioSection: React.FC = () => {
             <span>Resultados e Casos Práticos</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-            Experiência prática no balcão <br />
-            <span className="text-blue-600">
-              dos principais negócios locais.
-            </span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-3xl">
+            Resultados reais no balcão <span className="text-blue-600">dos principais negócios locais.</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
             Nada de teorias vazias. Conhecemos a rotina da loja física, a sazonalidade do litoral, a comissão imobiliária, o pico noturno do delivery e o estoque de seminovos.
@@ -59,7 +56,7 @@ export const PortfolioSection: React.FC = () => {
         </div>
 
         {/* Grid de Casos Práticos */}
-        <div className="overflow-x-auto snap-x snap-mandatory flex gap-5 no-scrollbar pb-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0">
+        <div className="overflow-x-auto snap-x snap-mandatory flex gap-5 no-scrollbar pb-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0 w-full max-w-full">
           {SITE_CONFIG.nichos.map((nicho, idx) => (
             <div
               key={idx}
@@ -68,10 +65,10 @@ export const PortfolioSection: React.FC = () => {
               <div>
                 {/* 1. Header com o Nicho em tag discreta */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-[11px] font-bold text-blue-700 bg-blue-50 border border-blue-200/70 px-3 py-1 rounded-full">
+                  <span className="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200/70 px-3 py-1 rounded-full">
                     {getNichoTag(idx)}
                   </span>
-                  <span className="text-[11px] font-semibold text-slate-600">
+                  <span className="text-xs font-semibold text-slate-500">
                     Case {idx + 1}
                   </span>
                 </div>
@@ -92,7 +89,7 @@ export const PortfolioSection: React.FC = () => {
                     {nicho.metricas.map((m, mIdx) => (
                       <div
                         key={mIdx}
-                        className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-slate-50/90 px-2.5 py-1 text-[11px]"
+                        className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-slate-50/90 px-2.5 py-1 text-xs"
                       >
                         <span className="text-slate-500 font-medium">{m.label}:</span>
                         <code className="font-mono font-bold text-slate-900 tracking-tight">
@@ -105,7 +102,7 @@ export const PortfolioSection: React.FC = () => {
 
                 {/* 3. Bloco "Estratégia Aplicada" */}
                 <div className="mt-3">
-                  <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">
+                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">
                     Estratégia Aplicada:
                   </span>
                   <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
@@ -115,14 +112,14 @@ export const PortfolioSection: React.FC = () => {
               </div>
 
               {/* 4. Caixa de "Resultado Real em Caixa" em Preto Profundo com Gradiente Sutil */}
-              <div className="mt-6 rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 p-4 border border-slate-800 text-white shadow-sm">
+              <div className="mt-6 rounded-2xl bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 p-4 border border-slate-800 text-white">
                 <div className="flex items-start gap-2.5">
                   <TrendingUp className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
-                    <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider block">
+                    <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wider block">
                       Resultado Real em Caixa:
                     </span>
-                    <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
                       <code className="font-mono text-emerald-300 font-medium tracking-normal">
                         {nicho.resultado}
                       </code>

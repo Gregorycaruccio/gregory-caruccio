@@ -4,7 +4,7 @@ import { SITE_CONFIG } from "../config/site-config";
 
 export const ServicesSection: React.FC = () => {
   return (
-    <section id="servicos" className="py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
+    <section id="servicos" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio */}
@@ -13,11 +13,8 @@ export const ServicesSection: React.FC = () => {
             <span>Serviços Modulares e Avulsos</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-            Contratações individuais <br />
-            <span className="text-blue-600">
-              para a etapa exata da sua empresa.
-            </span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight max-w-3xl">
+            Contratações individuais <span className="text-blue-600">para cada etapa da sua empresa.</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
             Seja para criar sua primeira Landing Page com carregamento instantâneo ou para estruturar bots e SDRs com Inteligência Artificial no WhatsApp, nossos contratos são objetivos e transparentes.
@@ -40,7 +37,7 @@ export const ServicesSection: React.FC = () => {
                       {servico.categoria}
                     </span>
                     {servico.destaque && (
-                      <span className="rounded-full bg-blue-50 border border-blue-200 px-2.5 py-0.5 text-[11px] font-bold text-blue-700">
+                      <span className="rounded-full bg-blue-50 border border-blue-200 px-2.5 py-0.5 text-xs font-bold text-blue-700">
                         {servico.destaque}
                       </span>
                     )}
@@ -49,7 +46,7 @@ export const ServicesSection: React.FC = () => {
                   <h3 className="mt-3 font-heading font-extrabold text-lg text-slate-950">
                     {servico.nome}
                   </h3>
-                  <p className="mt-2 text-xs text-slate-600 font-sans leading-relaxed min-h-[3rem]">
+                  <p className="mt-2 text-xs sm:text-sm text-slate-600 font-sans leading-relaxed min-h-[3rem]">
                     {servico.descricao}
                   </p>
 
@@ -68,7 +65,7 @@ export const ServicesSection: React.FC = () => {
                     {servico.features.map((feat, fIdx) => (
                       <li
                         key={fIdx}
-                        className="flex items-start gap-2.5 text-xs text-slate-700 font-sans leading-relaxed"
+                        className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 font-sans leading-relaxed"
                       >
                         <Check className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" />
                         <span>{feat}</span>
@@ -83,7 +80,7 @@ export const ServicesSection: React.FC = () => {
                     href={whatsappServicoHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 px-4 py-3 text-xs font-bold text-slate-700 transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 px-4 py-3 text-xs sm:text-sm font-bold text-slate-700 transition-colors"
                   >
                     <span>Solicitar Proposta</span>
                     <ArrowRight className="h-3.5 w-3.5" />

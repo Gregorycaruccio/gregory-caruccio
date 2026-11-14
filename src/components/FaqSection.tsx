@@ -10,7 +10,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
+    <section id="faq" className="scroll-mt-28 py-20 md:py-28 bg-[#FAFBFF] text-slate-900 border-t border-slate-200/80">
       <div className="mx-auto max-w-4xl px-5 sm:px-8">
         
         {/* Header Direto e Sóbrio */}
@@ -19,11 +19,8 @@ export const FaqSection: React.FC = () => {
             <span>Perguntas Frequentes</span>
           </div>
 
-          <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-slate-950 tracking-tight leading-tight">
-            Dúvidas frequentes <br />
-            <span className="text-blue-600">
-              sobre a assessoria comercial.
-            </span>
+          <h2 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-950 tracking-tight leading-tight">
+            Dúvidas frequentes sobre <span className="text-blue-600">a assessoria comercial.</span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 font-sans">
             Informações claras sobre investimento em anúncios, rotina de entregas, bots e contratos.
@@ -63,7 +60,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-slate-100 text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-slate-100 text-sm text-slate-600 font-sans leading-relaxed">
                     {item.resposta}
                   </div>
                 )}

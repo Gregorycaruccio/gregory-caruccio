@@ -15,9 +15,9 @@ import { WhatsAppFloat } from "./components/WhatsAppFloat";
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-[100dvh] bg-[#FAFBFF] text-slate-900 flex flex-col font-sans selection:bg-blue-600 selection:text-white relative">
+    <div className="min-h-[100dvh] bg-[#FAFBFF] text-slate-900 flex flex-col font-sans selection:bg-blue-600 selection:text-white relative overflow-x-clip">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-clip">
         <Hero />
         <EcosystemSection />
         <PortfolioSection />
