@@ -18,35 +18,41 @@ export const Hero: React.FC = () => {
   return (
     <div>
       {/* ======================================================== */}
-      {/* BANNER HERO DE PONTA A PONTA COM FOTO DE FUNDO E GRADIENTE */}
+      {/* BANNER HERO DE PONTA A PONTA COM FOTO NÍTIDA E GRADIENTE */}
       {/* ======================================================== */}
-      <header className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center bg-[#05070E] text-white overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
+      <header className="relative w-full min-h-[92vh] lg:min-h-screen flex items-center bg-[#05070E] text-white overflow-hidden pt-28 pb-16 lg:pt-32 lg:pb-20">
         
-        {/* Layer de Fundo com Foto e Gradientes de Fusão */}
-        <div className="absolute inset-0 z-0">
-          {/* Foto Real do Grégory no Escritório */}
+        {/* Layer da Foto do Grégory ancorada à direita (Sem cobrir o rosto) */}
+        <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[58%] xl:w-[52%] h-full z-0 overflow-hidden">
+          {/* Foto com enquadramento no rosto (object-[center_20%]) */}
           <img
             src="/images/gregory-hero.jpg"
             alt="Grégory Caruccio trabalhando no planejamento e otimização de campanhas"
-            className="w-full h-full object-cover object-[72%_center] md:object-[80%_center] lg:object-[83%_center]"
+            className="w-full h-full object-cover object-[center_22%] sm:object-[center_20%] lg:object-[center_18%]"
           />
 
-          {/* Gradiente Horizontal: Escuro profundo na esquerda (onde fica o texto) até suave na direita */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#05070E] via-[#05070E]/95 via-50% md:via-46% lg:via-42% to-[#05070E]/30" />
+          {/* Gradiente Horizontal de Fusão na Borda Esquerda da Foto */}
+          <div className="hidden lg:block absolute inset-y-0 left-0 w-48 xl:w-72 bg-gradient-to-r from-[#05070E] via-[#05070E]/80 to-transparent pointer-events-none" />
 
-          {/* Gradiente Vertical: Suaviza o topo para a navbar e a base para a próxima seção */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#05070E] via-transparent to-[#05070E]/80" />
+          {/* Gradiente Vertical Superior (suaviza a navbar) */}
+          <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#05070E] via-[#05070E]/60 to-transparent pointer-events-none" />
 
-          {/* Glow de Atmosfera Azul */}
+          {/* Gradiente Vertical Inferior (suaviza a base do banner) */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#05070E] via-[#05070E]/80 to-transparent pointer-events-none" />
+
+          {/* No Mobile/Tablet: Escurecimento suave apenas na metade inferior para não tapar o rosto no topo */}
+          <div className="block lg:hidden absolute inset-0 bg-gradient-to-t from-[#05070E] via-[#05070E]/85 via-60% to-transparent/40 pointer-events-none" />
+
+          {/* Glow de Luz Azul sutil atrás do ombro */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-3xl"
+            className="pointer-events-none absolute top-1/4 right-1/4 w-72 h-72 bg-blue-600/15 rounded-full blur-3xl"
           />
         </div>
 
-        {/* Conteúdo em Frente (Texto, Headline e CTAs) */}
+        {/* Conteúdo em Frente à Esquerda (100% de contraste, zero sobreposição no rosto) */}
         <div className="relative z-10 mx-auto max-w-6xl px-5 sm:px-8 w-full">
-          <div className="max-w-2xl text-left">
+          <div className="max-w-xl lg:max-w-lg xl:max-w-xl text-left">
             
             {/* Badge de Operação Ativa */}
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-950/70 backdrop-blur-md px-3.5 py-1.5 text-xs text-blue-300 font-semibold mb-6 shadow-xs">
@@ -57,22 +63,22 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Headline Monumental com Destaque em Azul */}
-            <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.12]">
+            <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[54px] text-white tracking-tight leading-[1.12]">
               Compradores reais no seu WhatsApp, <span className="text-blue-400">todos os dias.</span>
             </h1>
 
             {/* Subtítulo Analítico e Direto */}
-            <p className="mt-6 text-base sm:text-lg text-slate-300 font-sans leading-relaxed max-w-xl">
+            <p className="mt-5 text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-lg">
               Gestão profissional de tráfego pago no Meta e Google Ads, autoridade no Instagram, páginas ultra velozes em React e automações com bots e SDRs de Inteligência Artificial. Zero intermediários.
             </p>
 
             {/* Botões de Ação */}
-            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
               <a
                 href={whatsappHeroHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 px-7 py-4 text-xs sm:text-sm font-bold text-white transition-all duration-150 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-600/30"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 px-7 py-3.5 text-xs sm:text-sm font-bold text-white transition-all duration-150 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-600/30"
               >
                 <span>Solicitar Diagnóstico Comercial</span>
                 <ArrowRight className="h-4 w-4 text-blue-200" />
@@ -80,14 +86,14 @@ export const Hero: React.FC = () => {
 
               <a
                 href="#combo-growth"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700/80 bg-slate-900/80 backdrop-blur-md hover:bg-slate-800 text-slate-200 px-6 py-4 text-xs sm:text-sm font-semibold transition-colors"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700/80 bg-slate-900/80 backdrop-blur-md hover:bg-slate-800 text-slate-200 px-5 py-3.5 text-xs sm:text-sm font-semibold transition-colors"
               >
                 <span>Conhecer o Combo Growth</span>
               </a>
             </div>
 
             {/* Micro Prova Social */}
-            <div className="mt-10 pt-6 border-t border-white/[0.1] flex items-center gap-3.5 text-xs text-slate-300">
+            <div className="mt-8 pt-6 border-t border-white/[0.1] flex items-center gap-3.5 text-xs text-slate-300">
               <div className="flex -space-x-2">
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-white font-bold text-[10px] ring-2 ring-[#05070E]">
                   FP
@@ -114,14 +120,14 @@ export const Hero: React.FC = () => {
 
           </div>
 
-          {/* Badges Flutuantes em Vidro Fosco sobre a Foto */}
+          {/* Badges Flutuantes em Vidro Fosco ancorados próximos à mesa do Grégory */}
           <div className="hidden lg:block">
-            <div className="absolute right-8 bottom-16 rounded-2xl border border-white/10 bg-slate-950/80 backdrop-blur-md px-4 py-3 text-xs font-semibold text-white shadow-2xl flex items-center gap-2.5">
+            <div className="absolute right-6 xl:right-10 bottom-12 rounded-2xl border border-white/10 bg-slate-950/85 backdrop-blur-md px-4 py-2.5 text-xs font-semibold text-white shadow-2xl flex items-center gap-2.5">
               <ShieldCheck className="h-4 w-4 text-blue-400 shrink-0" />
               <span>Atendimento 100% Direto com o Grégory</span>
             </div>
 
-            <div className="hidden xl:flex items-center gap-2.5 rounded-2xl border border-white/10 bg-slate-950/80 backdrop-blur-md px-4 py-3 text-xs font-semibold text-white shadow-2xl absolute right-12 top-40">
+            <div className="hidden xl:flex items-center gap-2.5 rounded-2xl border border-white/10 bg-slate-950/85 backdrop-blur-md px-4 py-2.5 text-xs font-semibold text-white shadow-2xl absolute right-8 top-32">
               <TrendingUp className="h-4 w-4 text-emerald-400 shrink-0" />
               <span>+25 pedidos/noite • Delivery</span>
             </div>
